@@ -1,0 +1,81 @@
+/*   ////////////////////////////////////////       */
+.contControlsVolume {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 80%;
+  margin: 0% auto;
+  margin-top: 2.8%;
+  padding: 1%;
+  border-radius: 6px;
+  gap: 2%;
+}
+.contControlsVolume > .actionButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgb(224, 229, 236);
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  margin: 0%;
+  padding: 0%;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 6px;
+  transition: all 0.45s ease-in-out;
+}
+.contControlsVolume > .actionButton:hover, .contControlsVolume > .actionButton:focus {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(128, 131, 134);
+  box-shadow: rgba(72, 77, 87, 0.5) 6px 6px 8px 3px, rgb(180, 180, 180) -6px -6px 8px 3px;
+  border-radius: 6px;
+  transform: scale(0.94);
+}
+.contControlsVolume > .valueVolumeReal {
+  position: relative;
+  text-align: justify;
+  font-size: 0.86rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.contControlsVolume > .valueVolume {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(92, 92, 95);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  padding: 0%;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.contControlsVolume > .barVolume {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16rem;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*# sourceMappingURL=CompVolume.css.map */

@@ -1,0 +1,223 @@
+/*   ////////////////////////////////////////       */
+.mainTableOrders {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 35vw;
+  height: auto;
+  margin: 0% auto;
+  padding: 0%;
+}
+.mainTableOrders > .contTableOrders {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  border-radius: 3px 3px 0px 0px;
+  padding: 1%;
+  margin: 0% auto;
+  outline: 1px solid rgb(167, 166, 166);
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  background: linear-gradient(to bottom, rgb(66, 66, 71) 3%, rgb(92, 92, 95) 10%, rgba(23, 23, 24, 0.85) 20%, rgb(63, 63, 63) 30%, rgba(3, 3, 3, 0.93));
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr > th {
+  position: relative;
+  text-align: justify;
+  font-size: 0.76rem;
+  font-weight: bold;
+  color: rgb(246, 240, 240);
+  margin: 1% 2%;
+  padding: 1%;
+  height: 32px;
+  margin: 0% auto;
+  text-align: center;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr > th:nth-child(1) {
+  width: 4%;
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr > th:nth-child(2) {
+  width: 28%;
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr > th:nth-child(3) {
+  width: 14%;
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr > th:nth-child(4) {
+  width: 14%;
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr > th:nth-child(5) {
+  width: 15%;
+}
+.mainTableOrders > .contTableOrders > .theadTableOrders > tr > th:nth-child(6) {
+  width: 10%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  border-radius: 0px;
+  margin: 0% auto;
+  padding: 1%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3vh;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  transition: all 0.45s ease;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem > td {
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem > td:nth-child(1) {
+  width: 4%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem > td:nth-child(2) {
+  width: 28%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem > td:nth-child(3) {
+  width: 14%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem > td:nth-child(4) {
+  width: 14%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem > td:nth-child(5) {
+  width: 15%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem > td:nth-child(6) {
+  width: 10%;
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem:nth-child(even) {
+  background-color: rgb(140, 140, 140);
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem:hover, .mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem:focus {
+  cursor: pointer;
+  background-color: rgb(1, 66, 1);
+  border-radius: 0%;
+  transform: scale(1.03);
+}
+.mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem:hover > td, .mainTableOrders > .contTableOrders > .orderTableBody > .contArticleItem:focus > td {
+  color: rgb(246, 240, 240);
+  font-size: 0.75rem;
+  font-weight: bolder;
+}
+.mainTableOrders > .contTableOrders > .orderTableFoot {
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 0px 0px 6px 6px;
+  margin: 0% auto;
+  padding: 0.5%;
+}
+.mainTableOrders > .contTableOrders > .orderTableFoot > .contSpanText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 60%;
+  padding: 0% 2%;
+  margin: 0%;
+}
+.mainTableOrders > .contTableOrders > .orderTableFoot > .contSpanText > .spanText {
+  position: relative;
+  text-align: justify;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: 700;
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 10%;
+  overflow: hidden;
+  animation: moveSpanText 2s linear forwards;
+}
+.mainTableOrders > .contTableOrders > .orderTableFoot > .contButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 30%;
+  justify-content: flex-end;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 8%;
+}
+
+@keyframes moveSpanText {
+  0% {
+    transform: translateX(-101%);
+  }
+  100% {
+    transform: translateX 100%;
+  }
+}
+
+/*# sourceMappingURL=Orders.css.map */

@@ -1,0 +1,156 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+.contCompWavesbar {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-between;
+  @include g.displayGlassmorphismus;
+  height: 2.4rem;
+  margin: 0% auto;
+  padding: 0.3% auto;
+  box-shadow: v.$boxShadow3;
+  border: 2px solid v.$backgroundColorHellGrayT;
+  border-radius: 6px;
+
+  &>.contBoxes {
+    @include l.layoutFlexboxRowCenter;
+    // @include g.displayGlassmorphismus;
+    justify-content: space-around;
+    --boxSize: 0.34rem;
+    --gutter: 2.4rem;
+    width: calc((var(--boxSize) + var(--gutter)) * 13);
+    height: 2.4rem;
+    border-radius: 6px;
+
+    &>.box {
+      transform: scale(0.6);
+      height: 100%;
+      width: var(--boxSize);
+      background: v.$gradientSlicePinkdark2 no-repeat;
+      border-radius: 1px;
+    }
+
+    &>.active {
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    &>.box1 {
+      animation-name: quiet;
+    }
+
+    &>.box2 {
+      animation-name: normal;
+    }
+
+    &>.box3 {
+      animation-name: normal;
+    }
+
+    &>.box4 {
+      animation-name: loud;
+    }
+
+    &>.box5 {
+      animation-name: normal;
+    }
+
+    &>.box6 {
+      animation-name: loud;
+    }
+
+    &>.box7 {
+      animation-name: normal;
+    }
+
+    &>.box8 {
+      animation-name: quiet;
+    }
+  } 
+}
+
+.isActive {
+  box-shadow: v.$boxShadow12; 
+}
+
+
+@keyframes quiet {
+  0% {
+    transform: scale(.2);
+    background: v.$colorHell4;
+  }
+
+  25% {
+    transform: scale(.4)
+  }
+
+  50% {
+    transform: scale(.3)
+  }
+
+  75% {
+    transform: scale(.7)
+  }
+
+  100% {
+    transform: scale(.2)
+  }
+}
+
+@keyframes normal {
+  0% {
+    transform: scale(0.6);
+    background: v.$gradientSliceBluedark no-repeat;
+  }
+
+  25% {
+    transform: scale(1);
+    background: v.$colorHell7;
+  }
+
+  50% {
+    transform: scale(.6);
+    background: v.$colorHell9;
+  }
+
+  75% {
+    transform: scale(1.1);
+    background: v.$colorHell7;
+  }
+
+  100% {
+    transform: scale(0.4);
+    background: v.$colorHell9;
+  }
+}
+
+@keyframes loud {
+  0% {
+    transform: scale(1.2);
+    background: v.$colorRedTrans;
+  }
+
+  25% {
+    transform: scale(1.5);
+    background: v.$colorbackgroudGoogle;
+  }
+
+  50% {
+    transform: scale(.8);
+    background: v.$colorRedTrans;
+  }
+
+  75% {
+    transform: scale(1.2);
+    background: v.$colorbackgroudGoogle;
+  }
+
+  100% {
+    transform: scale(0.7);
+    background: v.$colorRedTrans;
+  }
+}

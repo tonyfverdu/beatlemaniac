@@ -1,0 +1,170 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+
+.contCompShowSong {
+  @include l.layoutFlexboxColumCenter;
+  align-items: flex-start;
+  height: 100%;
+  margin: 0%;
+
+  &>.figureAlbum {
+    @include d.figure;
+    @include g.GlassMorphismus1;
+    background-color: transparent;
+    box-shadow: v.$boxShadow9;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 6px;
+    margin: 8% auto;
+    padding: 1%;
+
+    &>.imgAlbum {
+      @include d.imageGenerall;
+      width: 10.8rem;
+      height: 10.8rem;
+      border-radius: 3px;
+      padding: 0%;
+      margin: 0% auto;
+    }
+  }
+
+  &>.contInfoAlbum {
+    @include l.layoutFlexboxColumCenter;
+    align-items: flex-start;
+    margin: 0% auto;
+    gap: 2%;
+
+    &>.firstLine {
+      @include l.layoutFlexboxRowCenter;
+      width: 16rem;
+      align-items: flex-start;
+      margin-bottom: 0%;
+
+      &>.contHidden {
+        @include l.layoutFlexboxRowCenter;
+        @include g.GlassMorphismus1;
+        width: 11rem;
+        border-radius: 0%;
+        overflow: hidden;
+        margin: 0% auto;
+        margin-left: 12%;
+
+        &>.infoMov {
+          @include d.configurationText2 (v.$colorNavy, 0.65rem);
+          width: 150%;
+          text-align: center;
+          text-shadow: v.$textShadow1;
+          overflow: hidden;
+          background-color: transparent;
+
+          animation: movText 6s linear infinite;
+        }
+      }
+
+      &>.contIcoFrage {
+        @include l.layoutFlexboxColumCenter;
+        justify-content: flex-start;
+        width: 2.4rem;
+        margin: 0% 1%;
+        margin-right: 0%;
+        padding: 0%;
+
+        &>.contIco {
+          @include l.layoutFlexboxRowCenter;
+          width: 2.4rem;
+          height: 2.4rem;
+          margin: 0% auto;
+          padding: 0%;
+          border-radius: 50%;
+          color: v.$colorRedNew;
+          transition: all ease 0.25s;
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            width: 2.3rem;
+            height: 2.3rem;
+            border-radius: 50%;
+          }
+        }
+
+        &>.contIcoActive {
+          color: v.$colorHell;
+          background-color: v.$colorRedNeu;
+
+          &:hover,
+          &:focus {
+            color: v.$colorRedNeu;
+            background-color: v.$colorHell;
+           
+          }
+        }
+
+        &>.contIcoInactive {
+          color: v.$colorRedNeu;
+          background-color: v.$colorHell;
+
+          &:hover,
+          &:focus {
+            background-color: v.$colorHell;
+            color: v.$colorRedNeu;
+          }
+        }
+
+        &>.AreDoYouLikeIt {
+          @include d.configurationText2 (v.$colorTextIni, 0.65rem);
+          width: 8.9rem;
+          margin: 0%;
+          margin-top: 14%;
+        }
+
+        &>.yesItIsLike {
+          @include d.configurationText2 (v.$colorRedNeu, 0.65rem);
+          width: 4.6rem;
+          margin: 0%;
+          margin-top: 14%;
+        }
+      }
+    }
+
+    &>.contRealeased {
+      @include l.layoutFlexboxRowCenter;
+      width: 90%;
+      justify-content:flex-start;
+      margin: 0%;
+      margin-left: 8%;
+
+      &>.secondLine {
+        @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.72rem);
+        text-align: left;
+        text-shadow: v.$textShadow2;
+        margin: 0%;
+        margin-right: 2%;
+        padding: 0%;
+      }
+
+      &>.thirdLine {
+        @include d.configurationText2 (v.$backgroundColorDunkelGray2, 0.62rem);
+        text-align: left;
+        text-shadow: v.$textShadow2;
+        margin: 0%;
+        margin-right: 18%;
+        padding: 0%;
+      }
+    }
+  }
+}
+
+@keyframes movText {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

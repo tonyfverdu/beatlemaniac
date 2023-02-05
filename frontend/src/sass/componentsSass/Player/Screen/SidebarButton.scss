@@ -1,0 +1,50 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+
+.contSidebarButton {
+  @include l.layoutFlexboxColumCenter;
+  width: 3.9rem;
+  height: 3.4rem;
+  margin: 6% auto;
+  @include n.teclaNeumorphismus1;
+  transition: all ease 0.45s;
+
+  &>.icoReact {
+    width: 2.3rem;
+    height: 2.3rem;
+
+    &>.contIcon {
+      @include l.layoutFlexboxRowCenter;
+      padding: 1.5%;
+    }
+  }
+
+  &>.nameIcon {
+    @include d.configurationText2 (v.$backgroundColorDunkelGray2, 0.8rem);
+    margin: 2% auto;
+    text-shadow: v.$textShadow1;
+    transition: all ease 0.45s;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    @include n.teclaNeumorphismus1Hover;
+    transform: scale(0.92);
+
+    &>.nameIcon {
+      color: v.$colorRedNeu;
+      font-size: 0.8rem;
+      font-weight: bolder;
+      text-shadow: v.$textShadowRed;
+    }
+  }
+}
+
+.active {
+  @include n.teclaNeumorphismusGreen;
+}

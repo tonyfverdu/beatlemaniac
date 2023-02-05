@@ -1,0 +1,130 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../glassMorphismus' as g;
+
+
+.headerTypeArticle {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-between;
+  width: 54.85%;
+  height: 6.8rem;
+  padding: 2%;
+  margin: 1% auto;
+  transition: all 0.45s ease;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: scale(0.97);
+
+    &>.headerTypeArticle>.titleTypeArticle>span {
+      color: v.$colorHell1;
+    }
+  }
+
+  &>.figuresArticles {
+    @include l.layoutFlexboxRowCenter;
+    width: 34%;
+    height: 5rem;
+    padding: 0%;
+    overflow: hidden;
+
+    &>.ulImgs {
+      @include l.layoutFlexboxRowCenter;
+      margin:0%;
+      padding: 0%;
+      height: 5rem;
+      list-style: none;
+
+      &>.liImgs {
+        @include l.layoutFlexboxRowCenter;
+        border-radius: 50%;
+        margin: 0% 4%;
+        padding: 0%;
+        transition: all 0.7s ease;
+
+        &>.image {
+          width: 4.5rem;
+          height: 4.5rem;
+          border-radius: 50%;
+        }
+
+        &>.imgColorRed {
+          box-shadow: v.$boxShadow8;
+        }
+
+        &>.imgColorGreen {
+          box-shadow: v.$boxShadow9;
+        }
+      }
+      &>.liAnimated:nth-child(1) {
+        animation: transitionImage 6s ease-in-out forwards;
+      }
+    }
+  }
+
+  &>.titleTypeArticle {
+    @include d.desigHeader (v.$backgroundColorIni);
+    width: 50%;
+    height: auto;
+    padding: 1%;
+    margin: 0% auto;
+    background-color: transparent;
+
+    &>span {
+      @include d.desig_H_element (v.$colorHell, 1.8rem);
+      text-align: center;
+      margin: 0% auto;
+      transition: all 0.45s ease;
+
+      &:first-child {
+        width: 25rem;
+      }
+    }
+  }
+}
+
+.colorRed {
+  @include g.GlassMorphismus5;
+
+  &:hover,
+  &:focus {
+    @include g.GlassMorphismus7;
+  }
+}
+
+.colorGreen {
+  @include g.GlassMorphismus6;
+
+  &:hover,
+  &:focus {
+    @include g.GlassMorphismus8;
+  }
+}
+
+#ico {
+  color: v.$backgroundColorIniT2;
+  transform: scale(1.6);
+  transition: all 0.45s ease;
+  margin: 0% auto;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: v.$colorHell;
+    z-index: 20;
+    transform: scale(4);
+  }
+}
+
+@keyframes transitionImage {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+

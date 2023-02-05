@@ -1,0 +1,1109 @@
+/*   ////////////////////////////////////////       */
+.contMainPI {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 595px;
+  height: 842px;
+  /* to centre page on screen*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3% 2%;
+  margin: 0% auto;
+  background: rgb(253, 253, 253);
+}
+.contMainPI > .topHeader {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainPI > .topHeader > .contLeftHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 30%;
+  height: 72px;
+  padding: 0%;
+  margin: 0% auto;
+  margin-top: 2%;
+}
+.contMainPI > .topHeader > .contLeftHeader > .figureCompanyLogo {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 100%;
+  height: 63px;
+  padding: 1%;
+  margin-left: 0%;
+  background-color: transparent;
+}
+.contMainPI > .topHeader > .contLeftHeader > .figureCompanyLogo > .imageCompanyLogo {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+}
+.contMainPI > .topHeader > .contLeftHeader > .headerCompanyName {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1%;
+  margin: 0% auto;
+}
+.contMainPI > .topHeader > .contLeftHeader > .headerCompanyName > .titleCompanyName {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0% auto;
+}
+.contMainPI > .topHeader > .contRightHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 70%;
+  height: 72px;
+  padding: 0%;
+  margin: 0%;
+  margin-top: 2%;
+}
+.contMainPI > .topHeader > .contRightHeader > .headerTitlePreInvoce {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  margin: 0% auto;
+  margin-bottom: 0%;
+}
+.contMainPI > .topHeader > .contRightHeader > .headerTitlePreInvoce > .titlePreInvoce {
+  color: rgba(4, 32, 52, 0.9);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+  text-align: center;
+  margin: 0% auto;
+}
+.contMainPI > .topHeader > .contRightHeader > .contPreInvoceDatas {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 350px;
+  margin: 0% 1%;
+  margin-left: 0%;
+  gap: 5%;
+}
+.contMainPI > .topHeader > .contRightHeader > .contPreInvoceDatas > .cont2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 150px;
+}
+.contMainPI > .topHeader > .contRightHeader > .contPreInvoceDatas > .cont2Fields:nth-child(1) {
+  width: 180px;
+}
+.contMainPI > .topHeader > .contRightHeader > .contPreInvoceDatas > .cont2Fields > .titleField {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  margin-bottom: 0%;
+}
+.contMainPI > .topHeader > .contRightHeader > .contPreInvoceDatas > .cont2Fields > .field {
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 1% auto;
+}
+.contMainPI > .mainSections > .sellerAndBuyer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.3);
+  width: 50%;
+  height: 160px;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .headerSB {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .headerSB > .titleSB {
+  color: rgba(4, 32, 52, 0.9);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+  text-align: center;
+  margin: 0.5% auto;
+  margin-left: 3%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .contHeaderAddress {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .contHeaderAddress > .headerAddress {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1%;
+  margin: 0%;
+  margin-bottom: 0%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .contHeaderAddress > .headerAddress > .address {
+  color: rgba(4, 32, 52, 0.9);
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+  text-align: center;
+  margin: 0%;
+  margin-left: 3.6%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .contHeaderAddress > .dataSB {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.3%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .contHeaderAddress > .dataSB > .contRowSB {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 3.8%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .contHeaderAddress > .dataSB > .contRowSB > .name {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin-left: 0%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .contHeaderAddress > .dataSB > .contRowSB > .data {
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  margin: 0% 2%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .dataSB {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .dataSB > .ulDataSB {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .dataSB > .ulDataSB > .liData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0.5% 2%;
+}
+.contMainPI > .mainSections > .sellerAndBuyer > .contSB > .addressSB > .dataSB > .ulDataSB > .liData > .dataAddress {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0% 2%;
+}
+.contMainPI > .mainSections > .orderArticles {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: auto;
+  padding: 0%;
+  margin: 0.8% auto;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableHead {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  border-radius: 3px 3px 0px 0px;
+  padding: 0.5%;
+  margin: 0% auto;
+  outline: 1px solid rgb(167, 166, 166);
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableHead > tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableHead > tr > th {
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgb(1, 1, 68);
+  margin: 1% 2%;
+  padding: 1%;
+  height: 20px;
+  margin: 0% auto;
+  text-align: center;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  border-radius: 0px;
+  margin: 0% auto;
+  padding: 0%;
+  margin-bottom: 0.3%;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody > .contArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3vh;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  transition: all 0.45s ease;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody > .contArticleItem > td {
+  position: relative;
+  text-align: justify;
+  font-size: 0.55rem;
+  font-weight: bold;
+  color: rgb(1, 14, 131);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  padding: 0.3%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody > .contArticleItem:nth-child(even) {
+  background-color: rgba(167, 166, 166, 0.6);
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody > .contArticleItem:hover, .contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody > .contArticleItem:focus {
+  cursor: pointer;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  border-radius: 0%;
+  transform: scale(1.12);
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody > .contArticleItem:hover > td, .contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableBody > .contArticleItem:focus > td {
+  font-size: 0.65rem;
+  color: rgb(1, 1, 68);
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  height: 10vh;
+  margin: 0% auto;
+  padding: 0.6%;
+  border-radius: 0%;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2vh;
+  margin: 0% auto;
+  background-color: transparent;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > td {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > td:nth-child(1) {
+  justify-content: flex-end;
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+  text-align: right;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > td:nth-child(2) {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 16%;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > #titleTheTotal {
+  font-size: 0.8rem;
+}
+.contMainPI > .mainSections > .orderArticles > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > #theTotal {
+  color: rgb(250, 29, 29);
+  font-size: 0.8rem;
+}
+.contMainPI > .mainSections > .section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 5vh;
+  padding: 0%;
+  margin: 0.8% auto;
+  background-color: rgba(231, 230, 230, 0.3);
+  border: 1px solid rgba(167, 166, 166, 0.3);
+}
+.contMainPI > .mainSections > .section > .headerSection {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  padding: 0.5%;
+  margin: 0%;
+  margin-bottom: 0.6%;
+}
+.contMainPI > .mainSections > .section > .headerSection > .titleSection {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-shadow: none;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .topData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .topData > .contSide {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 36%;
+  margin-bottom: 1%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .topData > .contSide:last-child {
+  width: 50%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .topData > .contSide > .name {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bold;
+  text-align: left;
+  padding: 0%;
+  margin: 0% 5%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .topData > .contSide > .data {
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: 400;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 3%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .downData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  margin: 0%;
+  padding: 0%;
+  margin: 1% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .downData > .headerDeliveryAddress {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  justify-items: flex-start;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .downData > .headerDeliveryAddress > .titleDeliveryAddress {
+  position: relative;
+  text-align: justify;
+  font-size: 0.62rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0%;
+  padding: 0%;
+  text-align: left;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .downData > ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  list-style: none;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .downData > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0%;
+  list-style: none;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contDeliveryData > .downData > ul > li > .dataAddress {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0% 2%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contLeftSide {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  width: 30%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contLeftSide > .cont2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contLeftSide > .cont2Fields > .titleData {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  margin: 0% 2%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contLeftSide > .cont2Fields > .dataData {
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: 400;
+  margin: 0% 2%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contRightSide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contRightSide > ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  list-style: none;
+  margin: 0% auto;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contRightSide > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 60%;
+  text-decoration: none;
+  list-style: none;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contRightSide > ul > li:nth-child(1) {
+  width: 28%;
+  margin-right: 5%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contRightSide > ul > li:nth-child(2) {
+  width: 90%;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contRightSide > ul > li > .titleData {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% 2%;
+  padding: 0%;
+  width: 3rem;
+  text-align: end;
+}
+.contMainPI > .mainSections > .section > .contDataSection > .contPaymentData > .contRightSide > ul > li > .dataData {
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 4rem;
+  font-weight: 400;
+  margin: 0% 2%;
+  padding: 0%;
+  text-align: start;
+}
+.contMainPI > .mainSections > .deliverySection {
+  height: 11.5vh;
+}
+.contMainPI > .termsFooter {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: 7.5vh;
+  margin: 1% auto;
+  background-color: rgba(231, 230, 230, 0.3);
+  border: 1px solid rgba(167, 166, 166, 0.3);
+}
+.contMainPI > .termsFooter > .terms_Conditions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  margin: 0.3% auto;
+  margin-bottom: 0%;
+}
+.contMainPI > .termsFooter > .terms_Conditions > .headerTermsConditions {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-items: flex-start;
+  width: 10rem;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 0.5%;
+}
+.contMainPI > .termsFooter > .terms_Conditions > .headerTermsConditions > .titleTermsConditions {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  padding: 0%;
+  text-align: left;
+  margin-left: 5%;
+}
+.contMainPI > .termsFooter > .terms_Conditions > .divTermsConditions {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainPI > .termsFooter > .terms_Conditions > .divTermsConditions > .ulConditionsOfOrder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contMainPI > .termsFooter > .terms_Conditions > .divTermsConditions > .ulConditionsOfOrder > .liTermCondition {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  margin-bottom: 0.3%;
+  padding: 0%;
+}
+.contMainPI > .termsFooter > .terms_Conditions > .divTermsConditions > .ulConditionsOfOrder > .liTermCondition > .textTermCondition {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 0.45rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: normal;
+  text-align: left;
+  padding: 0% 0.3%;
+  margin: 0%;
+}
+.contMainPI > .termsFooter > .terms_Conditions > .thankyou {
+  position: relative;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgb(162, 3, 3);
+  margin: 0% 2%;
+  padding: 1%;
+  position: absolute;
+  top: 30%;
+  right: -2.5%;
+  transform: rotate(15deg);
+}
+
+.contButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  position: absolute;
+  top: 18%;
+  right: 26%;
+  width: 40%;
+  float: right;
+  gap: 6%;
+}
+
+.invoceName {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bold;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 1%;
+}
+
+.invoceData {
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: 400;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 3%;
+}
+
+.phoneEmail {
+  font-size: 0.5rem;
+}
+
+/*# sourceMappingURL=PreInvoce.css.map */

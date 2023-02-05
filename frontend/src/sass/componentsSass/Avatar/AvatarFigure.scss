@@ -1,0 +1,55 @@
+@use '../../layouts' as l;
+@use '../../designElement' as d;
+@use '../../myvariables' as v;
+@use '../../glassMorphismus' as g;
+
+
+.contAvatar {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    width: auto;
+    position: absolute;
+    top: 0%;
+    left: 38%;
+    min-height: auto;
+    margin-top: 1%;
+    z-index: 20;
+
+    &>.figImgAvatarRegister {
+        @include d.figure;
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 50%;
+        padding: 0% auto;
+        margin: 1% 0%;
+        background-color: transparent;
+    
+        &>.imgAvatar {
+            @include d.imageGenerall;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            padding: 0%;
+            margin: 0%;
+            transition: all 0.95s ease;
+    
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                transform: scale(2)
+            }
+        }
+    }
+
+    &>.nameAvatar {
+        @include l.layoutFlexboxRowCenter;
+        @include d.configurationLabel (v.$colorTextIni, 0.8rem);
+        @include g.GlassMorphismus8;
+        border: none;
+        border-radius: 3px;
+        width: 50%;
+        margin: 0% auto;
+        margin-left: 10%;
+        padding: 4% 8%;
+    }
+}

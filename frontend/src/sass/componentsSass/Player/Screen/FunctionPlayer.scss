@@ -1,0 +1,36 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+
+.contFunctionPlayer {
+    @include l.layoutFlexboxColumCenter;
+    height: 100%;
+    border-radius: 0px 29px 29px 0px;
+}
+
+.Feed {
+    background-color: red;
+}
+
+.Trending {
+    background-color: orange;
+}
+
+.PlayerMusic {
+    background-color: yellow;
+}
+
+.Like {
+    background-color: green;
+}
+
+.Library {
+    background-color: blue;
+}
+
+.Setting {
+    background-color: aqua;
+}

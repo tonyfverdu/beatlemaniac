@@ -1,0 +1,94 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+
+.formSearch {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: flex-start;
+  width: 22rem;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+  margin-right: 2%;
+
+  &>.contInputSearch {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    margin-right: 3%;
+    transition: all ease 0.35s;
+
+    &>.icoSearch {
+      transform: scale(2.5);
+      width: 1.5rem;
+      height: 1.2rem;
+      background-color: v.$colorDarkBlue1;
+      color: v.$Colorhell2;
+      transition: all ease 0.35s;
+    }
+
+    &>.inputSearch {
+      @include l.layoutBlockGenerall(190px);
+      width: 12.8rem;
+      height: 2.8rem;
+      border: 1px solid v.$backgroundColorIni2;
+      @include d.configurationText2 (v.$backgroundColorDunkelGray4, 0.9rem);
+      padding: 0.8%;
+      transition: all 0.45s ease;
+    }
+
+    &:hover,
+    &:focus {
+      &>.inputSearch {
+        border: 2px solid v.$colorRedNeu;
+        color: v.$colorTextIni;
+      }
+
+      .iconSearch {
+        background-color: v.$colorRedNeu;
+      }
+    }
+  }
+
+  &>.contButtonSearch {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: space-between;
+    transition: all 0.45s ease;
+
+    &>i {
+      position: absolute;
+      width:34%;
+      top: 32%;
+      left: -54%;
+      color: v.$colorRedNeu2;
+      transform: scale(1.4);
+      padding: 1%;
+      margin-right: 2%;
+      transition: all 0.45s ease;
+    }
+
+    &>button {
+      width: 100%;
+      height: 2.8rem;
+      padding: 1% 2%;
+      margin-left: 5%;
+      font-size: 0.6rem;
+      transition: all 0.45s ease;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+
+      &>i {
+        z-index: 20;
+        transform: scale(2.4) translateX(-5px) rotate(100deg);
+      }
+    }
+  }
+}

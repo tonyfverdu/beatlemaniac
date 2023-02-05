@@ -1,0 +1,57 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+.contControlsVolume {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-between;
+  @include n.neuMorphismus4;
+  width: 80%;
+  margin: 0% auto;
+  margin-top: 2.8%;
+  padding: 1%;
+  border-radius: 6px;
+  gap: 2%;
+
+  &>.actionButton {
+    @include l.layoutFlexboxRowCenter;
+    @include n.teclaNeumorphismus1;
+    margin: 0%;
+    padding: 0%;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 6px;
+    transition: all 0.45s ease-in-out;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      @include n.teclaNeumorphismus1Hover;
+      border-radius: 6px;
+      transform: scale(0.94);
+    }
+  }
+
+  &>.valueVolumeReal {
+    @include d.configurationText2 (v.$colorRedNeu, 0.86rem);
+    margin: 0%;
+    text-shadow: v.$textShadow2;
+  }
+
+  &>.valueVolume {
+    @include d.configurationText2 (v.$backgroundColorDunkelGray2, 0.8rem);
+    margin: 0%;
+    padding: 0%;
+    text-shadow: v.$textShadow2;
+  }
+
+  &>.barVolume {
+    @include l.layoutFlexboxRowCenter;
+    width: 16rem;
+    justify-content: center;
+    margin: 0%;
+    padding:0%;
+  }
+}

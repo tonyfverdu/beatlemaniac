@@ -1,0 +1,28 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../glassMorphismus' as g;
+
+
+.contMainArticles {
+  @include l.layoutFlexboxRowCenter;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @include g.GlassMorphismus8;
+  width: 86%;
+  height: auto;
+  border-radius: 3px;
+  overflow-y: scroll;
+  margin: 0% auto;
+  background-color: v.$colorGreenHellT2;
+
+  &>.contArticleItem {
+    @include l.layoutFlexboxRowCenter;
+    width: 70%;
+    height: auto;
+    padding:0.1%;
+    margin: 0 auto;
+    gap: 1%;
+    width: 19.8%;
+    background-color:transparent;
+  }
+}

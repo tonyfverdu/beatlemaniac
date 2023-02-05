@@ -1,0 +1,689 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+
+.contMainPI {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  width: 595px;
+  height: 842px;
+  /* to centre page on screen*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3% 2%;
+  margin: 0% auto;
+
+  background: v.$backgroundColorIniWhite;
+
+  &>.topHeader {
+    @include l.layoutFlexboxRowCenter;
+    height: auto;
+    padding: 0%;
+    margin: 0% auto;
+
+    &>.contLeftHeader {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      width: 30%;
+      height: 72px;
+      padding: 0%;
+      margin: 0% auto;
+      margin-top: 2%;
+
+      &>.figureCompanyLogo {
+        @include d.figure;
+        width: 100%;
+        height: 63px;
+        padding: 1%;
+        margin-left: 0%;
+        background-color: transparent;
+
+        &>.imageCompanyLogo {
+          @include d.imageGenerall;
+          width: 100%;
+          height: 100%;
+          padding: 0%;
+        }
+      }
+
+      &>.headerCompanyName {
+        @include d.desigHeader ('transparent');
+        @include l.layoutFlexboxColumCenter;
+        align-items: flex-start;
+        padding: 1%;
+        margin: 0% auto;
+
+        &>.titleCompanyName {
+          @include d.desig_H_element (v.$colorTextIni, 0.6rem);
+          text-align: center;
+          margin: 0% auto;
+        }
+      }
+    }
+
+    &>.contRightHeader {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 70%;
+      height: 72px;
+      padding: 0%;
+      margin: 0%;
+      margin-top: 2%;
+
+      &>.headerTitlePreInvoce {
+        @include d.desigHeader ('transparent');
+        @include l.layoutFlexboxColumCenter;
+        padding: 1%;
+        margin: 0% auto;
+        margin-bottom: 0%;
+
+        &>.titlePreInvoce {
+          @include d.desig_H_element (v.$colorDunkelSecondary, 1.8rem);
+          text-shadow: none;
+          text-align: center;
+          margin: 0% auto;
+        }
+      }
+
+      &>.contPreInvoceDatas {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-end;
+        width: 350px;
+        margin: 0% 1%;
+        margin-left: 0%;
+        gap: 5%;
+
+        &>.cont2Fields {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-end;
+          width: 150px;
+
+          &:nth-child(1) {
+            width: 180px;
+          }
+
+          &>.titleField {
+            @include d.configurationText2 (v.$colorDunkelSecondary, 0.6rem);
+            font-weight: bolder;
+            margin-bottom: 0%;
+          }
+
+          &>.field {
+            @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.5rem);
+            margin: 0% auto;
+          }
+        }
+      }
+    }
+  }
+
+  &>.mainSections {
+    @include l.layoutFlexboxColumCenter;
+    justify-content: flex-start;
+    margin: 1% auto;
+
+    &>.sellerAndBuyer {
+      @include l.layoutFlexboxRowCenter;
+      align-items: flex-start;
+
+      &>.contSB {
+        @include l.layoutFlexboxColumCenter;
+        background-color: v.$backgroundColorIniWhiteT3;
+        width: 50%;
+        height: 160px;
+
+        &>.headerSB {
+          @include d.desigHeader ('transparent');
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-start;
+          padding: 1%;
+          margin: 0% auto;
+
+          &>.titleSB {
+            @include d.desig_H_element (v.$colorDunkelSecondary, 1rem);
+            text-shadow: none;
+            text-align: center;
+            margin: 0.5% auto;
+            margin-left: 3%;
+          }
+        }
+
+        &>.addressSB {
+          @include l.layoutFlexboxColumCenter;
+          align-items: flex-start;
+
+          &>.contHeaderAddress {
+            @include l.layoutFlexboxColumCenter;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            &>.headerAddress {
+              @include d.desigHeader ('transparent');
+              @include l.layoutFlexboxColumCenter;
+              align-items: flex-start;
+              padding: 1%;
+              margin: 0%;
+              margin-bottom: 0%;
+
+              &>.address {
+                @include d.desig_H_element (v.$colorDunkelSecondary, 0.7rem);
+                text-shadow: none;
+                text-align: center;
+                margin: 0%;
+                margin-left: 3.6%;
+              }
+            }
+
+            &>.dataSB {
+              @include l.layoutFlexboxRowCenter;
+              margin-bottom: 0.3%;
+
+              &>.contRowSB {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                margin-left: 3.8%;
+
+                &>.name {
+                  @include d.configurationText2 (v.$colorTextIni, 0.6rem);
+                  margin-left: 0%;
+                }
+
+                &>.data {
+                  @include d.configurationText1 (v.$colorTextIni, 0.5rem);
+                  margin: 0% 2%;
+                }
+              }
+            }
+          }
+
+          &>.dataSB {
+            @include l.layoutFlexboxColumCenter;
+            justify-content: flex-start;
+            margin: 0%;
+            padding: 0%;
+
+            &>.ulDataSB {
+              @include l.layoutFlexboxColumCenter;
+              margin: 0%;
+              padding: 0%;
+
+              &>.liData {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                list-style: none;
+                margin: 0.5% 2%;
+
+                &>.dataAddress {
+                  @include l.layoutFlexboxRowCenter;
+                  justify-content: flex-start;
+                  margin: 0% 2%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &>.orderArticles {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      height: auto;
+      padding: 0%;
+      margin: 0.8% auto;
+
+      &>.contTableStriped {
+        @include l.layoutFlexboxColumCenter;
+        margin: 0% auto;
+
+        &>.orderTableHead {
+          @include l.layoutFlexboxRowCenter;
+          @include g.boxShadowGlassMorpCard;
+          box-shadow: v.$boxShadow3;
+          border-radius: 3px 3px 0px 0px;
+          padding: 0.5%;
+          margin: 0% auto;
+          outline: 1px solid v.$backgroundColorHellGray;
+
+          &>tr {
+            @include l.layoutFlexboxRowCenter;
+            margin: 0% auto;
+
+            &>th {
+              @include d.configurationText2 (v.$colorDarkBlueNavy, 0.65rem);
+              height: 20px;
+              margin: 0% auto;
+              text-align: center;
+              text-shadow: g.$textShadowGlassMorphismusText1;
+            }
+          }
+        }
+
+        &>.orderTableBody {
+          @include l.layoutFlexboxColumCenter;
+          @include g.GlassMorphismus1;
+          border-radius: 0px;
+          margin: 0% auto;
+          padding: 0%;
+          margin-bottom: 0.3%;
+
+          &>.contArticleItem {
+            @include l.layoutFlexboxRowCenter;
+            height: 3vh;
+            margin: 0% auto;
+            padding: 0%;
+            background-color: transparent;
+            transition: all 0.45s ease;
+
+            &>td {
+              @include d.configurationText2 (v.$colorDarkBlue1, 0.55rem);
+              margin: 0% auto;
+              padding: 0.3%;
+              background-color: transparent;
+              overflow: hidden;
+            }
+
+            &:nth-child(even) {
+              background-color: v.$backgroundColorHellGrayT;
+            }
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              @include g.GlassMorphismus6;
+              border-radius: 0%;
+              transform: scale(1.12);
+
+              &>td {
+                font-size: 0.65rem;
+                color: v.$colorDarkBlueNavy;
+              }
+            }
+          }
+        }
+
+        &>.orderTableFoot {
+          @include l.layoutFlexboxColumCenter;
+          justify-content: flex-start;
+          @include n.neuMorphismus4;
+          height: 10vh;
+          margin: 0% auto;
+          padding: 0.6%;
+          border-radius: 0%;
+
+          &>.containerTableResults {
+            @include l.layoutFlexboxColumCenter;
+            margin: 0% auto;
+
+            &>.tableBody {
+              @include l.layoutFlexboxColumCenter;
+              margin: 0% auto;
+              padding: 0%;
+
+              &>tr {
+                @include l.layoutFlexboxRowCenter;
+                height: 2vh;
+                margin: 0% auto;
+                background-color: transparent;
+
+                &>td {
+                  @include l.layoutFlexboxRowCenter;
+                  margin: 0% auto;
+                  padding: 0%;
+                  background-color: transparent;
+                  overflow: hidden;
+
+                  &:nth-child(1) {
+                    justify-content: flex-end;
+                    @include d.configurationText2 (v.$colorTextIni, 0.7rem);
+                    width: 100%;
+                    margin: 0% auto;
+                    padding: 0%;
+                    text-align: right;
+                  }
+
+                  &:nth-child(2) {
+                    @include d.configurationText2 (v.$colorTextIni, 0.7rem);
+                    width: 16%;
+                    margin: 0% auto;
+                    padding: 0%;
+                  }
+                }
+
+                &>#titleTheTotal {
+                  font-size: 0.8rem;
+                }
+
+                &>#theTotal {
+                  color: v.$colorRedNeu;
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &>.section {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 5vh;
+      padding: 0%;
+      margin: 0.8% auto;
+      background-color: v.$backgroundColorIniT3;
+      border: 1px solid v.$backgroundColorHellGrayT3;
+
+      &>.headerSection {
+        @include d.desigHeader ('transparent');
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        width: auto;
+        padding: 0.5%;
+        margin: 0%;
+        margin-bottom: 0.6%;
+
+        &>.titleSection {
+          @include d.desig_H_element (v.$colorTextIni, 0.7rem);
+          text-align: center;
+          text-shadow: none;
+          padding: 0%;
+          margin: 0% auto;
+        }
+      }
+
+      &>.contDataSection {
+        @include l.layoutFlexboxRowCenter;
+        padding: 0%;
+        margin: 0% auto;
+
+        &>.contDeliveryData {
+          @include l.layoutFlexboxColumCenter;
+          align-items: flex-start;
+          padding: 0%;
+          margin: 0% auto;
+
+          &>.topData {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-start;
+            margin: 0%;
+            padding: 0%;
+
+            &>.contSide {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              width: 36%;
+              margin-bottom: 1%;
+
+              &:last-child {
+                width: 50%;
+              }
+
+              &>.name {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.6rem);
+                font-weight: bold;
+                text-align: left;
+                padding: 0%;
+                margin: 0% 5%;
+              }
+
+              &>.data {
+                @include d.configurationText2 (v.$colorTextIni, 0.5rem);
+                font-weight: 400;
+                text-align: left;
+                padding: 0%;
+                margin: 0%;
+                margin-right: 3%;
+              }
+            }
+          }
+
+          &>.downData {
+            @include l.layoutFlexboxColumCenter;
+            align-items: flex-start;
+            margin: 0%;
+            padding: 0%;
+            margin: 1% auto;
+
+            &>.headerDeliveryAddress {
+              @include d.desigHeader ('transparent');
+              @include l.layoutFlexboxRowCenter;
+              width: auto;
+              justify-items: flex-start;
+              padding: 0%;
+              margin: 0%;
+              margin-left: 2%;
+              margin-bottom: 1%;
+
+              &>.titleDeliveryAddress {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.62rem);
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                width: auto;
+                margin: 0%;
+                padding: 0%;
+                text-align: left;
+              }
+            }
+
+            &>ul {
+              @include l.layoutFlexboxColumCenter;
+              padding: 0%;
+              list-style: none;
+              margin: 0% auto;
+
+              &>li {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                padding: 0%;
+                list-style: none;
+                margin: 0% auto;
+
+                &>.dataAddress {
+                  @include l.layoutFlexboxRowCenter;
+                  justify-content: flex-start;
+                  margin: 0% 2%;
+                }
+              }
+            }
+          }
+        }
+
+        &>.contPaymentData {
+          @include l.layoutFlexboxRowCenter;
+          align-items: flex-start;
+          padding: 0%;
+          margin: 0% auto;
+
+          &>.contLeftSide {
+            @include l.layoutFlexboxRowCenter;
+            padding: 0%;
+            width: 30%;
+
+            &>.cont2Fields {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+
+              &>.titleData {
+                @include d.configurationText2 (v.$colorTextIni, 0.6rem);
+                margin: 0%;
+                margin: 0% 2%;
+              }
+
+              &>.dataData {
+                @include d.configurationText2 (v.$colorTextIni, 0.5rem);
+                font-weight: 400;
+                margin: 0% 2%;
+              }
+            }
+          }
+
+          &>.contRightSide {
+            @include l.layoutFlexboxColumCenter;
+            padding: 0%;
+            margin: 0%;
+
+            &>ul {
+              @include l.layoutFlexboxRowCenter;
+              padding: 0%;
+              list-style: none;
+              margin: 0% auto;
+
+              &>li {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                width: 60%;
+                text-decoration: none;
+                list-style: none;
+                margin: 0% auto;
+                padding: 0%;
+
+                &:nth-child(1) {
+                  width: 28%;
+                  margin-right: 5%;
+                }
+
+                &:nth-child(2) {
+                  width: 90%;
+                }
+
+                &>.titleData {
+                  @include d.configurationText2 (v.$colorTextIni, 0.6rem);
+                  margin: 0% 2%;
+                  padding: 0%;
+                  width: 3rem;
+                  text-align: end;
+                }
+
+                &>.dataData {
+                  @include d.configurationText2 (v.$colorTextIni, 0.5rem);
+                  width: 4rem;
+                  font-weight: 400;
+                  margin: 0% 2%;
+                  padding: 0%;
+                  text-align: start;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &>.deliverySection {
+      height: 11.5vh;
+    }
+  }
+
+  &>.termsFooter {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    @include l.layoutFlexboxColumCenter;
+    justify-content: flex-start;
+    height: 7.5vh;
+    margin: 1% auto;
+    background-color: v.$backgroundColorIniT3;
+    border: 1px solid v.$backgroundColorHellGrayT3;
+
+    &>.terms_Conditions {
+      @include l.layoutFlexboxColumCenter;
+      align-items: flex-start;
+      margin: 0.3% auto;
+      margin-bottom: 0%;
+
+      &>.headerTermsConditions {
+        @include d.desigHeader ('transparent');
+        @include l.layoutFlexboxRowCenter;
+        justify-items: flex-start;
+        width: 10rem;
+        padding: 0%;
+        margin: 0%;
+        margin-bottom: 0.5%;
+
+        &>.titleTermsConditions {
+          @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.7rem);
+          margin: 0%;
+          padding: 0%;
+          text-align: left;
+          margin-left: 5%;
+        }
+      }
+
+      &>.divTermsConditions {
+        @include l.layoutFlexboxRowCenter;
+        margin: 0% auto;
+
+        &>.ulConditionsOfOrder {
+          @include l.layoutFlexboxColumCenter;
+          text-decoration: none;
+          margin: 0% auto;
+          padding: 0%;
+
+          &>.liTermCondition {
+            @include l.layoutFlexboxRowCenter;
+            margin: 0% auto;
+            margin-bottom: 0.3%;
+            padding: 0%;
+
+            &>.textTermCondition {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              @include d.configurationText2 (v.$colorTextIni, 0.45rem);
+              font-weight: normal;
+              text-align: left;
+              padding: 0% 0.3%;
+              margin: 0%;
+            }
+          }
+        }
+      }
+
+      &>.thankyou {
+        @include d.configurationLabel(v.$colorRedNeuDunkel3, 0.7rem);
+        position: absolute;
+        top: 30%;
+        right: -2.5%;
+        transform: rotate(15deg)
+      }
+    }
+  }
+}
+
+.contButtons {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: flex-end;
+  position: absolute;
+  top: 18%;
+  right: 26%;
+  width: 40%;
+  float: right;
+  gap: 6%;
+}
+
+.invoceName {
+  @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.6rem);
+  font-weight: bold;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 1%;
+}
+
+.invoceData {
+  @include d.configurationText2 (v.$colorTextIni, 0.5rem);
+  font-weight: 400;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 3%;
+}
+
+.phoneEmail {
+  font-size: 0.5rem;
+}

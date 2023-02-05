@@ -1,0 +1,362 @@
+/*   ////////////////////////////////////////       */
+.contMainResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  min-width: 100vw;
+  height: 100vh;
+  margin: 0% auto;
+  padding: 0%;
+  margin-bottom: 1%;
+  background-image: url(../src/images/theBeatles/The-Beatles-1.webp);
+  background-position: -2rem -14.4rem;
+  background-size: 36% 125%;
+  background-repeat: no-repeat;
+  background-color: rgba(3, 3, 3, 0.93);
+  filter: contrast(90%);
+}
+.contMainResultSearch > .contGlobalSongs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  background: rgba(1, 109, 10, 0.3);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(0, 7, 2, 0.2);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 70, 0.68);
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  width: 18vw;
+  min-height: 40vh;
+  border-radius: 6px;
+  padding: 0% auto;
+  margin: 0% auto;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4% auto;
+  padding: 0%;
+  transform: scale(0.9);
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contImageResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 60%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  padding: 0%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contImageResultSearch > .contFigureResultSearch {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  border-radius: 60%;
+  width: 60%;
+  padding: 0.5%;
+  margin-bottom: 1%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contImageResultSearch > .contFigureResultSearch > .imgResultSearch {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 58%;
+  padding: 0.3%;
+  background-color: linear-gradient(to bottom, rgb(167, 166, 166) 55%, rgb(231, 230, 230));
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  animation: moveRecord 24s linear infinite;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 84%;
+  min-height: 17vh;
+  padding: 0% auto;
+  margin: 1% auto;
+  margin-bottom: 0%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .headerTitleSong {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2% auto;
+  margin-bottom: 3%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .headerTitleSong > .titleSong {
+  color: rgb(1, 14, 131);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  padding: 0% auto;
+  margin: 0% auto;
+  background-color: transparent;
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+  font-weight: bolder;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .contLabelText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 96%;
+  margin: 0% 4%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .contLabelText > .label {
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin: 0%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .contLabelText > .textInfo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  margin: 0%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .duration {
+  width: 30%;
+  margin-left: 50%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .duration > .label {
+  font-size: 0.7rem;
+  margin-right: 4%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .duration > .textInfo {
+  font-size: 0.7rem;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contPriceTax {
+  display: block;
+  float: right;
+  align-items: flex-end;
+  width: 42%;
+  margin: 0%;
+  margin-left: 56%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .Price {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  font-weight: bold;
+  padding: 0% 2%;
+  margin: 0% 2%;
+  margin-right: 0%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .valuePrice {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(250, 29, 29);
+  margin: 0% auto;
+  font-weight: bolder;
+  padding: 0%;
+  margin-left: 4%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .Tax {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(92, 92, 95);
+  margin: 0% auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  margin: 0% 2%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .Tax > .valueTax {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(66, 66, 71);
+  margin: 0% auto;
+  margin-left: 10%;
+  font-weight: bold;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contShoppingCart {
+  position: absolute;
+  top: 8%;
+  right: 12%;
+  width: 25px;
+  height: 25px;
+  color: rgba(250, 29, 29, 0.3);
+  padding: 0%;
+  animation: pulseShoppingCart 1s linear infinite alternate;
+  transition: all 0.45s ease;
+  border-radius: 50%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contShoppingCart > .iconAddToShoopingCart {
+  transform: scale(1);
+  width: 25px;
+  height: 25px;
+  color: rgb(246, 240, 240);
+  font-weight: bold;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contShoppingCart:hover, .contMainResultSearch > .contGlobalSongs > .contMainResultLeft > .contShoppingCart:focus {
+  cursor: pointer;
+  animation: hoverShoppingCart 0.85s ease-in-out forwards;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultRigth {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 64%;
+  height: 100vh;
+  min-height: auto;
+  margin: 0% auto;
+  margin-left: 32%;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultRigth > .headerResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  border-radius: 6px;
+  padding: 1%;
+  margin: 1% auto;
+}
+.contMainResultSearch > .contGlobalSongs > .contMainResultRigth > .headerResultSearch > .titleResultSearch {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0% auto;
+}
+
+@keyframes pulseShoppingCart {
+  0% {
+    transform: scale(1.9) translateX(-8px);
+    color: rgb(56, 1, 1);
+    background-color: rgb(250, 29, 29);
+  }
+  50% {
+    transform: scale(1.6) translateX(0px);
+    color: rgba(249, 19, 19, 0.4);
+    background-color: rgba(249, 19, 19, 0.4);
+  }
+  100% {
+    transform: scale(1.9) translateX(8px);
+    color: rgb(56, 1, 1);
+    background-color: rgb(250, 29, 29);
+  }
+}
+@keyframes hoverShoppingCart {
+  0% {
+    transform: scale(2.1) translateY(0px);
+    background-color: rgba(249, 19, 19, 0.4);
+  }
+  100% {
+    transform: scale(2.8) translateY(-8px);
+    color: rgb(246, 240, 240);
+    background-color: rgb(250, 29, 29);
+  }
+}
+@keyframes moveRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=ResultSongs.css.map */

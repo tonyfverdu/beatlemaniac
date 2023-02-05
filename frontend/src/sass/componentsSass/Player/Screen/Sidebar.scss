@@ -1,0 +1,21 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+.contSidebar {
+    @include l.layoutFlexboxColumCenter;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0%;
+    background-color: v.$backgroundColorIniWhiteT;
+    border-radius: 29px 0px 0px 29px;
+    
+
+    &>.containerSidebarButton {
+        @include l.layoutFlexboxColumCenter;
+        justify-content: space-between;
+        gap: 4%;
+    }
+}

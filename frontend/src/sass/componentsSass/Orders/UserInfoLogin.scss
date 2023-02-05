@@ -1,0 +1,116 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+
+.contOutRegister {
+    @include l.layoutFlexboxColumCenter;
+    @include n.neuMorphismus4;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    width: 35vw;
+    padding: 0%;
+    overflow: hidden;
+
+    &>.contButtomAcc {
+        @include l.layoutFlexboxColumCenter;
+        justify-content:space-between;
+        gap: 30%;
+    
+        &>.accordion {
+            @include l.layoutFlexboxRowCenter;
+            width: 100%;
+            padding: 4%;
+            margin: 0%;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            transition: all 0.35s ease;
+        
+            &>.headerTitelRegister {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                @include d.desigHeader (transparent);
+                padding: 0%;
+                margin: 0%;
+                border-radius: 6px;
+        
+                &>.textTitelRegister {
+                    @include d.desig_H_element (v.$colorTextIni, 1.8rem);
+                    font-weight: bolder;
+                    text-align: left;
+                    margin: 0%;
+                    text-shadow: v.$textShadow1;
+                }
+            }
+        }
+
+        &>.active {
+            @include g.GlassMorphismus8;
+            margin: 0%;
+            padding: 3%;
+            background-color: v.$colorGreenHellT2;
+            border-radius: 6px;
+        
+            &:after {
+                content: '\02795';
+                /* Unicode character for "plus" sign (+) */
+                font-size: 1rem;
+                color: v.$colorGreen;
+                float: right;
+                margin-left: 2%;
+            }
+        }
+
+        &>.inactive {
+            @include g.GlassMorphismus5;
+            background-color: v.$colorRedNeu3;
+            border-radius: 6px;
+        
+            &:after {
+                content: "\2796";
+                /* Unicode character for "plus" sign (+) */
+                font-size: 1rem;
+                color: v.$colorRedNeu;
+                float: right;
+                margin-left: 2%;
+            }
+        }
+    }
+
+
+    &>.contShowRegisterData {
+        @include l.layoutFlexboxColumCenter;
+        height: auto;
+        margin: 0% auto;
+        padding: 0%;
+
+        &>.UlDataOfCustomer {
+            @include l.layoutFlexboxColumCenter;
+            margin: 0% auto;
+            padding: 0% 2%;
+
+            &>.contDataGeneral {
+                @include l.layoutFlexboxColumCenter;
+                margin: 0% auto;
+                padding: 0%;
+            }
+        }
+    }
+}
+
+.contGruppeButtons {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-end;
+    gap: 10%;
+    margin-right: 18%;
+
+    &>.SuccessMessage {
+        @include d.configurationText2 (v.$colorGreen, 1.3rem);
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,140 @@
+.activeClassMenu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(1, 109, 10, 0.3);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(0, 7, 2, 0.2);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 70, 0.68);
+  width: 4rem;
+  height: 5.2rem;
+  padding: 1% auto;
+  margin: 0% auto;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  background-color: rgba(5, 247, 5, 0.3);
+  border: 1px solid rgba(2, 110, 2, 0.9);
+  border-radius: 6px 3px 0px 0px;
+  text-decoration: none;
+  transition: all ease 0.35s;
+}
+.activeClassMenu > .textItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(246, 240, 240);
+  margin: 0% auto;
+  transform: scale(1.16) translateY(-10px);
+  padding: 0% auto;
+  margin: 0% auto;
+  margin-top: 12%;
+  font-weight: 700;
+  transition: all ease 0.45s;
+}
+.activeClassMenu:hover, .activeClassMenu:focus {
+  background-color: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 6px 8px 12px 2px rgba(167, 253, 105, 0.8), inset 7px 7px 18px 3px rgba(8, 245, 24, 0.9215686275), 6px 6px 12px 9px #0a6802;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.38);
+  cursor: pointer;
+  bottom: 0%;
+  height: 89px;
+  animation: moveUpGreen 0.35s ease forwards;
+}
+.activeClassMenu:hover > .textItem, .activeClassMenu:focus > .textItem {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(246, 240, 240);
+  margin: 1% 2%;
+  padding: 1%;
+}
+
+.inactiveClassMenu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(1, 109, 10, 0.3);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(0, 7, 2, 0.2);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 70, 0.68);
+  width: 3.2rem;
+  height: 4rem;
+  padding: 1% auto;
+  margin: 0% auto;
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+  background-color: rgba(249, 19, 19, 0.4);
+  border: 1px solid rgba(249, 19, 19, 0.4);
+  border-radius: 6px 3px 0px 0px;
+  text-decoration: none;
+  transition: all ease 0.35s;
+}
+.inactiveClassMenu > .textItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(246, 240, 240);
+  margin: 0% auto;
+  transform: scale(1) translateY(-4px);
+  padding: 0% auto;
+  margin: 0% auto;
+  margin-top: 12%;
+  font-weight: 700;
+  transition: all ease 0.35s;
+}
+.inactiveClassMenu:hover, .inactiveClassMenu:focus {
+  cursor: pointer;
+  animation: moveUpRed 0.35s ease forwards;
+}
+.inactiveClassMenu:hover > .textItem, .inactiveClassMenu:focus > .textItem {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(246, 240, 240);
+  margin: 1% 2%;
+  padding: 1%;
+}
+
+@keyframes moveUpGreen {
+  to {
+    box-shadow: 6px 8px 12px 2px rgba(167, 253, 105, 0.8), inset 7px 7px 18px 3px rgba(8, 245, 24, 0.9215686275), 6px 6px 12px 9px #0a6802;
+    background-color: rgba(54, 250, 54, 0.4);
+    transform: translateY(-10px);
+  }
+}
+@keyframes moveUpRed {
+  to {
+    box-shadow: 6px 8px 12px 2px rgba(251, 123, 123, 0.8), inset 7px 7px 18px 3px #f42411, 6px 6px 12px 9px #750202;
+    background-color: rgba(249, 19, 19, 0.4);
+    transform: translateY(-4px);
+  }
+}
+
+/*# sourceMappingURL=ItemMenu.css.map */

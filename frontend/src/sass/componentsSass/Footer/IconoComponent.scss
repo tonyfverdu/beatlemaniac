@@ -1,0 +1,88 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+
+
+.contIconComponent {
+  @include l.layoutFlexboxColumCenter;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: v.$backgroundColorIniT;
+  border-radius: 50%;
+  padding: 0.5%;
+  margin: 0% 1%;
+
+  transition: all 0.45s ease-in-out;
+
+  &>.linkIcons {
+    @include l.layoutFlexboxColumCenter;
+    padding: 0.1%;
+    margin: 0% auto;
+
+    &>.icon {
+      @include l.layoutFlexboxRowCenter;
+      padding: 1%;
+      transform: scale(1.45);
+    }
+
+    &>.TbBrandMeta {
+      color: v.$colorbackgroudFacebook;
+    }
+
+    &>.FaTwitter {
+      color: v.$colorbackgroudTwitter;
+    }
+
+    &>.FaGoogle {
+      color: v.$colorbackgroudGoogle;
+    }
+
+    &>.FaInstagramSquare {
+      color: v.$colorbackgroudInstagram;
+    }
+
+    &>.FaLinkedin {
+      color: v.$colorbackgroudLinkedin;
+    }
+
+    &>.FaGithub {
+      color: v.$colorHellCardGlassBorder;
+    }
+  }
+
+  &>.textIcon {
+    @include d.configurationText2 (v.$colorHell, 0.9rem);
+    margin: 0% auto;
+    margin-top: 15%;
+    opacity: 0.8;
+    transition: all 0.45s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: v.$backgroundColorDunkelGray4T;
+    &>.linkIcons {
+      animation: iconoHover 0.45s ease forwards;
+    }
+
+    &>.textIcon {
+      opacity: 1;
+      transform: translateY(12px);
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+@keyframes iconoHover {
+  from {
+    transform: scale(1.45) translateY(0px);
+  }
+
+  to {
+    transform: scale(2.8) translateY(-8px);
+    color: v.$colorRedNeu;
+  }
+}

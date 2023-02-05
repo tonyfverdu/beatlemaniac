@@ -1,0 +1,61 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+
+.contAudioPlayer {
+  @include l.layoutFlexboxRowCenter;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  border: 1px solid blue;
+
+  &>.audioPlayerLeft {
+    @include l.layoutFlexboxRowCenter;
+    align-items: flex-start;
+
+    border: 1px solid red;
+
+    
+  }
+
+  &>.audioPlayerRigth {
+    @include l.layoutFlexboxColumCenter;
+    width: 63%;
+    justify-content: space-between;
+
+    &>.titleSong {
+      @include d.configurationText2 (v.$colorTextIni, 1rem);
+      margin: 0px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    &>.artistSong {
+      @include d.configurationText2 (v.$colorTextIni, 0.7rem);
+    }
+
+    &>.audioPlayerRigthBotton {
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+
+      &>.durationSong {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        &>.duration {
+          @include d.configurationText1 (v.$colorTextIni, 0.9rem);
+          margin: 0%;
+        }
+      }
+    }
+  }
+}

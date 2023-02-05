@@ -1,0 +1,154 @@
+/*   ////////////////////////////////////////       */
+.contFormularRegister {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  background-image: linear-gradient(rgba(3, 3, 3, 0.93) 16%, rgba(3, 3, 3, 0.2) 36%, rgba(3, 3, 3, 0.93)), url("../../images/theBeatles/B&W8.jpg");
+  background-size: 25%;
+  background-position: 0% 48%;
+  background-repeat: no-repeat;
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.contFormularRegister > .headerTitelRegister {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  background: rgba(244, 34, 34, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(125, 70, 70, 0.68);
+  width: 54%;
+  padding: 0.5% 2%;
+  margin: 1% auto;
+  margin-bottom: 0.8%;
+}
+.contFormularRegister > .headerTitelRegister > .titelFormularRegisterCustomer {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 0% auto;
+  text-shadow: 0.8rem 0.3rem 0.5rem rgb(151, 68, 68);
+}
+.contFormularRegister > .contForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 54%;
+  margin: 0% auto;
+  padding: 0.3%;
+}
+.contFormularRegister > .contForm > .formRegister {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0% 2%;
+  margin: 0% auto;
+}
+.contFormularRegister > .contForm > .formRegister > .headerSubtitelCreateAccount {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.2% auto;
+  justify-content: flex-start;
+  margin: 0.5% auto;
+}
+.contFormularRegister > .contForm > .formRegister > .headerSubtitelCreateAccount > .subtitelCreateAccount {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 0%;
+  padding: 0%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contFormularRegister > .contForm > .formRegister > .containerButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  width: 30%;
+  bottom: -9.6%;
+  right: 3%;
+  position: absolute;
+}
+.contFormularRegister > .contForm > .formRegister > .containerButtons > button {
+  width: 16vw;
+}
+.contFormularRegister > .contForm > .formRegister > .containerButtons > button:first-child {
+  margin-left: 5%;
+}
+.contFormularRegister > .contForm > .formRegister > .containerDataOfRegister_1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contWelcome {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=RegisterCustomer1.css.map */

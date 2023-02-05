@@ -1,0 +1,307 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+
+.contMainResultSearchRecords {
+  @include l.layoutFlexboxRowCenter;
+  align-items: flex-start;
+  min-width: 100vw;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+  background-image: linear-gradient(to top, v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 69%, v.$backgroundColorDunkelBlack), url(../src/images/theBeatles/TopLeft.jpg);
+  background-position: -67rem -9rem;
+  background-repeat:no-repeat;
+  background-size: 96% 96%;
+  background-color: v.$backgroundColorDunkelBlack;
+  filter: contrast(90%);
+
+  &>.contMainResultLeft {
+    @include l.layoutFlexboxRowCenter;
+    width: 26%;
+    height: 100vh;
+    padding: 0%;
+    margin: 2% 2%;
+    background-color: transparent;
+
+    &>.contCard {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      @include g.GlassMorphismus3;
+      position: fixed;
+      top: 22%;
+      left: 4%;
+      width: 18vw;
+      min-height: 42vh;
+      border-radius: 6px;
+      padding: 0% auto;
+      margin: 0% auto;
+
+      &>.contButton {
+        @include l.layoutFlexboxRowCenter;
+        margin: 4% auto;
+        padding: 0%;
+        transform: scale(0.9);
+      }
+
+      &>.contImageResultSearch {
+        @include l.layoutFlexboxRowCenter;
+        width: 60%;
+        margin: 0% auto;
+        margin-bottom: 1%;
+        padding: 0%;
+
+        &>.contFigureResultSearch {
+          @include d.figure;
+          border-radius: 60%;
+          width: 60%;
+          padding: 0.5%;
+          margin-bottom: 1%;
+
+          &>.imageResultSearch {
+            @include d.imageGenerall;
+            border-radius: 58%;
+            padding: 0.3%;
+            background-color: v.$gradientSlice;
+            box-shadow: v.$boxShadow12;
+            animation: moveRecord 24s linear infinite;
+          }
+        }
+      }
+
+      &>.contInfoResultSearch {
+        @include l.layoutFlexboxColumCenter;
+        justify-content: flex-start;
+        @include n.neuMorphismus4;
+        width: 84%;
+        height: 17vh;
+        max-height: 17vh;
+        padding: 0% auto;
+        margin: 2% auto;
+        margin-bottom: 0%;
+
+        &>.headerTitleAlbum {
+          @include l.layoutFlexboxRowCenter;
+          padding: 0%;
+          margin: 6% auto;
+          margin-bottom: 7%;
+
+          &>.titleAlbum {
+            @include d.desig_H_element (v.$colorDarkBlue1, 0.9rem);
+            padding: 0% auto;
+            margin: 0% auto;
+            background-color: transparent;
+            text-align: center;
+            text-shadow: v.$textShadow3;
+            font-weight: bolder;
+          }
+        }
+
+        &>.contLabelInfoAlbum {
+          @include l.layoutFlexboxRowCenter;
+          justify-content:space-between;
+          margin: 0.3% 0%;
+          margin-bottom: 4%;
+
+          &>.contLabelText {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-start;
+            width: 98%;
+            margin: 0% 4%;
+
+            &>.label {
+              @include d.configurationLabel (v.$colorTextIni, 0.7rem);
+              margin: 0%;
+              margin-right: 2%;
+            }
+
+            &>.textInfo {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              width: 6.5rem;
+              @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.65rem);
+              margin: 0%;
+            }
+          }
+
+          &>.released {
+            margin-left: 4%;
+
+            &>.label {
+              margin-right: 4%;
+            }
+          }
+        }
+
+        &>.contStockPrice {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: space-around;
+          padding:0%;
+          margin: 0.3% 0%;
+          margin-bottom: 2%;
+
+          &>.stockArticle {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-start;
+            width: 60px;
+            margin: 0% 2%;
+            margin-right: 24%;
+
+            &>.stockSpan {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              @include d.configurationText1 (v.$colorGreen, 1.1rem);
+              font-weight: bold;
+              margin: 0% 2%;
+
+              &>i {
+                transform: scale(2);
+                background-color: transparent;
+                color: v.$colorHell;
+                margin: 0% 1%;
+                margin-right: 4%;
+              }
+            }
+          }
+
+          &>.containerPriceTax {
+            @include l.layoutFlexboxColumCenter;
+            justify-content: center;
+            width: 95px;
+            margin-right: 3%;
+
+            &>.Price {
+              @include d.configurationText1 (v.$colorTextIni, 0.8rem);
+              font-weight: bold;
+              padding: 0.5% 2%;
+              margin: 0% 2%;
+
+              &>.valuePrice {
+                @include d.configurationText1 (v.$colorRedNew, 0.9rem);
+                font-weight: bolder;
+                margin-left: 8%;
+              }
+            }
+
+            &>.Tax {
+              @include d.configurationText1 (v.$backgroundColorDunkelGray2, 0.7rem);
+              @include l.layoutFlexboxRowCenter;
+              font-weight: bold;
+              margin: 0% 2%;
+              margin-left: 39%;
+
+              &>.valueTax {
+                @include d.configurationText1 (v.$backgroundColorDunkelGray, 0.6rem);
+                margin-left: 16%;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+      &>.contShoppingCart {
+        position: absolute;
+        top: 8%;
+        right: 12%;
+        width: 25px;
+        height: 25px;
+        color: v.$colorRedNeu3;
+        padding: 0%;
+        animation: pulseShoppingCart 1s linear infinite alternate;
+        transition: all 0.45s ease;
+        border-radius: 50%;
+
+        &>.iconAddToShoopingCart {
+          transform: scale(1);
+          width: 25px;
+          height: 25px;
+          color: v.$colorHell;
+          font-weight: bold;
+          padding: 0%;
+          margin: 0% auto;
+        }
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          animation: hoverShoppingCart 0.85s ease-in-out forwards;
+        }
+      }
+    }
+  }
+
+  &>.contMainResultRigth {
+    @include l.layoutFlexboxColumCenter;
+    @include g.GlassMorphismus3;
+    align-items: flex-start;
+    width: 78%;
+    max-height: auto;
+    padding: 1%;
+    margin: 2% auto;
+    margin-right: 3%;
+
+    &>.headerResultSearch {
+      @include d.desigHeader (transparent);
+      @include g.GlassMorphismus6;
+      border-radius: 6px;
+      padding: 1%;
+      margin: 1% auto;
+      background-color: transparent;
+
+      &>.titleResultSearch {
+        @include d.desig_H_element (v.$colorHell, 2.1rem);
+        margin: 0% auto;
+      }
+    }
+  }
+}
+
+
+@keyframes pulseShoppingCart {
+  0% {
+    transform: scale(1.9) translateX(-8px);
+    color: v.$colorRedNeu2;
+    background-color: v.$colorRedNeu;
+  }
+
+  50% {
+    transform: scale(1.6) translateX(0px);
+    color: v.$colorRedNeuT;
+    background-color: v.$colorRedNeuT;
+  }
+
+  100% {
+    transform: scale(1.9) translateX(8px);
+    color: v.$colorRedNeu2;
+    background-color: v.$colorRedNeu;
+  }
+}
+
+@keyframes hoverShoppingCart {
+  0% {
+    transform: scale(2.1) translateY(0px);
+    background-color: v.$colorRedNeuT;
+  }
+
+  100% {
+    transform: scale(2.8) translateY(-8px);
+    color: v.$colorHell;
+    background-color: v.$colorRedNeu;
+  }
+
+}
+
+@keyframes moveRecord {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+
+}

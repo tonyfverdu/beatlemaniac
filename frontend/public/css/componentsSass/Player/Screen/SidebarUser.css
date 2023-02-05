@@ -1,0 +1,117 @@
+.contSidebarUser {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  margin: 0% auto;
+  margin-top: 10%;
+  transition: all 0.45s ease;
+}
+.contSidebarUser > .avatarUser {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.contSidebarUser > .avatarUser > .figAvatarUser {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+  margin: 0% auto;
+  margin-bottom: 2%;
+  padding: 1%;
+  background-color: rgb(231, 230, 230);
+}
+.contSidebarUser > .avatarUser > .figAvatarUser > .imgAvatarUser {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 50%;
+  width: 3.1rem;
+  height: 3.1rem;
+  margin: 0% auto;
+  padding: 0%;
+  transition: all lineal 0.45s;
+}
+.contSidebarUser > .avatarUser > .userImgLogged {
+  border: 2px solid rgba(54, 250, 54, 0.9);
+  animation: imgLogged 6s linear reverse infinite;
+}
+.contSidebarUser > .avatarUser > .userImgNotLogged {
+  border: 2px solid rgb(250, 29, 29);
+  animation: imgNotLogged 6s linear reverse infinite;
+}
+.contSidebarUser > .avatarUser > .nameUser {
+  position: relative;
+  text-align: justify;
+  font-size: 0.96rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  transition: all 0.45s ease;
+}
+.contSidebarUser > .avatarUser:hover, .contSidebarUser > .avatarUser:focus {
+  cursor: pointer;
+  transform: scale(0.96);
+}
+.contSidebarUser > .avatarUser:hover > .nameUser, .contSidebarUser > .avatarUser:focus > .nameUser {
+  font-size: 0.9rem;
+  color: rgb(250, 29, 29);
+  font-weight: bold;
+}
+.contSidebarUser > .avatarUser > .userNotLogged {
+  color: rgb(250, 29, 29);
+  text-shadow: -4px -3px 4px rgba(253, 39, 39, 0.3), 2px 3px 4px rgba(246, 39, 39, 0.3);
+}
+.contSidebarUser > .avatarUser > .userLogged {
+  color: rgba(2, 110, 2, 0.9);
+  text-shadow: -4px -3px 4px rgba(39, 253, 39, 0.3), 2px 3px 4px rgba(39, 246, 39, 0.3);
+}
+
+@keyframes imgLogged {
+  0% {
+    box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  }
+  40% {
+    box-shadow: 6px 8px 12px 2px rgba(167, 253, 105, 0.8), inset 7px 7px 18px 3px rgba(8, 245, 24, 0.9215686275), 6px 6px 12px 9px #0a6802;
+  }
+  60% {
+    box-shadow: 6px 8px 12px 2px rgba(167, 253, 105, 0.8), inset 7px 7px 18px 3px rgba(8, 245, 24, 0.9215686275), 6px 6px 12px 9px #0a6802;
+  }
+  100% {
+    box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  }
+}
+@keyframes imgNotLogged {
+  0% {
+    box-shadow: 0px 1px 2px 2px #ff9898, inset 6px 6px 12px 0px #fb1803, 0px 1px 3px 3px #feb699;
+  }
+  40% {
+    box-shadow: 6px 8px 12px 2px rgba(251, 123, 123, 0.8), inset 7px 7px 18px 3px #f42411, 6px 6px 12px 9px #750202;
+  }
+  60% {
+    box-shadow: 6px 8px 12px 2px rgba(251, 123, 123, 0.8), inset 7px 7px 18px 3px #f42411, 6px 6px 12px 9px #750202;
+  }
+  100% {
+    box-shadow: 0px 1px 2px 2px #ff9898, inset 6px 6px 12px 0px #fb1803, 0px 1px 3px 3px #feb699;
+  }
+}
+
+/*# sourceMappingURL=SidebarUser.css.map */

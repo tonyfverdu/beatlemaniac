@@ -1,0 +1,112 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+
+.contCompAudioPlay {
+  @include l.layoutFlexboxColumCenter;
+
+  &>.headerTitleSong {
+    @include l.layoutFlexboxRowCenter;
+    @include d.desigHeader (transparent);
+    border-radius: 6px;
+    width: 80%;
+    padding: 2% auto;
+    margin: 8% auto;
+    margin-bottom: 6%;
+
+    &>.titleSong {
+      @include d.desig_H_element (v.$colorDunkelGreen, 1.4rem);
+      font-weight: bolder;
+      padding: 1% auto;
+      margin: 0% auto;
+      text-shadow: v.$textShadowGreen;
+    }
+  }
+
+  &>.contSongAlbum {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0% auto;
+
+    &>.labelSongAlbum {
+      @include d.desig_H_element (v.$backgroundColorDunkelGray4, 0.8rem);
+      margin: 0% auto;
+      margin-right: 2%;
+      text-shadow: none;
+    }
+
+    &>.Song {
+      @include d.configurationText2 (v.$colorRedNeu, 0.7rem);
+      margin: 0% auto;
+      text-shadow: v.$textShadow2;
+    }
+
+    &>.Album {
+      @include d.configurationText2 (v.$backgroundColorDunkelGray2, 0.7rem);
+      margin: 0% auto;
+      text-shadow: v.$textShadow2;
+    }
+  }
+
+  &>.contInfoDuration {
+    @include l.layoutFlexboxColumCenter;
+    width: 74%;
+    margin: 2% auto;
+    padding: 1%;
+
+    &>.contCounters {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: space-between;
+      width: 110%;
+
+      &>.contCounters {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: space-between;
+        margin: 0%;
+        padding: 0%;
+
+        &>.counter {
+          @include d.configurationText2 (v.$backgroundColorDunkelGray, 0.8rem);
+          margin: 0%;
+          padding: 0%;
+          text-align: left;
+          text-shadow: v.$textShadow2;
+        }
+
+        &>.textInfoCounter {
+          @include d.configurationText2 (v.$colorNavy, 0.8rem);
+          margin: 0%;
+          padding: 0%;
+          text-align: center;
+          text-shadow: v.$textShadow2;
+          z-index: 20;
+        }
+
+        &>.ini {
+          color: v.$backgroundColorHellGray2;
+        }
+      }
+
+      &>.contProgressBar {
+        @include l.layoutFlexboxRowCenter;
+        max-width: 98%;
+        height: 1rem;
+        margin: 0.1% auto;
+        margin-bottom: 0.6%;
+        padding: 0.1%;
+      }
+    }
+  }
+
+  &>.contControls {
+    @include l.layoutFlexboxColumCenter;
+    align-items: flex-end;
+    width: 96%;
+    margin: 0%;
+    padding: 0%;
+  }
+}

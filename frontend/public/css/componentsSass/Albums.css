@@ -1,0 +1,48 @@
+/*   ////////////////////////////////////////       */
+.contShowRecords {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 0%;
+  margin: 0% auto;
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0.93) 16%, rgba(3, 3, 3, 0.2) 36%, rgba(3, 3, 3, 0.93)), url(../../images/theBeatles/imageBeatles3.jpg);
+  background-repeat: no-repeat;
+  background-position: -3rem 10rem;
+  background-size: 60% 64%;
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.contShowRecords > .containerMainArticles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 86%;
+  height: auto;
+  overflow-y: scroll;
+  margin: 0% auto;
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.contShowRecords > .containerMainArticles > .containerArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 70%;
+  min-height: auto;
+  margin: 0 auto;
+  width: 19.8%;
+}
+
+/*# sourceMappingURL=Albums.css.map */

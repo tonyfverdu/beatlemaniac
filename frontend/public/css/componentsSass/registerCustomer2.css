@@ -1,0 +1,506 @@
+/*   ////////////////////////////////////////       */
+.containerGenerallRegister {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 68vh;
+  padding: 0.5% auto;
+  margin-bottom: 0.5%;
+}
+.containerGenerallRegister > .headerSubtitelCreateAccount {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  padding: 1% 2%;
+  margin: 0.5% auto;
+}
+.containerGenerallRegister > .headerSubtitelCreateAccount > .titelSubtitelA {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 0% auto;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 54%;
+  margin: 0% auto;
+  padding: 1% auto;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .headerSubtitelDataDelivery {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.5%;
+  margin: 0.2% 0%;
+  margin-top: 0.6%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .headerSubtitelDataDelivery > .titelSubtitelDataDelivery {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  margin: 0%;
+  margin-left: 6%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: #e0e0e0;
+  box-shadow: inset 11px 11px 24px #c1c1c1, inset -11px -11px 24px #ffffff;
+  width: 88%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.2% auto;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  margin-bottom: 0.2%;
+  padding: 0.3%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields:nth-child(2) {
+  margin-left: 1.55%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields:nth-child(3) {
+  width: 64%;
+  margin-right: 50%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 1.02rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  margin-bottom: 0.5%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 50px;
+  position: relative;
+  text-align: justify;
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: rgb(83, 83, 84);
+  margin: 0%;
+  padding: 0.6%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel > .inputStreet {
+  width: 600px;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel > .inputCity {
+  width: 300px;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel > .inputState {
+  width: 190px;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel > .inputZip {
+  width: 50px;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfContactCustomer > .container2Fields > .containerInputLabel > .inputCountry {
+  width: 190px;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1%;
+  margin-top: 1%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .headerSubtitelFormPay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.5%;
+  margin: 0.2% 0%;
+  margin-top: 0.6%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .headerSubtitelFormPay > .titelSubtitelFormPay {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  margin: 0%;
+  margin-left: 6%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: #e0e0e0;
+  box-shadow: inset 11px 11px 24px #c1c1c1, inset -11px -11px 24px #ffffff;
+  width: 88%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.2% auto;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  margin-bottom: 0.2%;
+  padding: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 1.02rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  margin-bottom: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: rgb(83, 83, 84);
+  margin: 0%;
+  padding: 0.6%;
+  width: 50px;
+  margin-bottom: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields > .fullname {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 62%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields > .fullname > .container2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  margin-bottom: 0%;
+  padding: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields > .fullname > .container2Fields > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  margin-bottom: 0.3%;
+  padding: 0.1%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields > .fullname > .container2Fields > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  margin-bottom: 0%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container2Fields > .fullname > .container2Fields > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 180px;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(83, 83, 84);
+  margin: 0%;
+  padding: 0.6%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container1Field {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5%;
+  padding: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container1Field > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  margin-bottom: 0.3%;
+  padding: 0.1%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container1Field > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  margin-bottom: 0%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container1Field > .containerInputLabel:nth-child(2) {
+  margin-left: 3%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container1Field > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 260px;
+  position: relative;
+  text-align: justify;
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: rgb(83, 83, 84);
+  margin: 0%;
+  padding: 0.6%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .container1Field > .containerInputLabel > #expirationData {
+  width: 220px;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .securityCode {
+  display: inline;
+  float: right;
+  margin: 0%;
+  margin-left: 73%;
+  width: 25%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .securityCode > .containerInputLabel > .inputText {
+  font-size: 1rem;
+  width: 60px;
+  margin-left: 1%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .acceptConditions {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0%;
+  margin-left: 14%;
+  margin-bottom: 0.3%;
+  padding: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .acceptConditions > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0%;
+  margin: 0%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .acceptConditions > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(1, 1, 68);
+  margin: 0%;
+  padding: 0.6%;
+  font-weight: 700;
+  margin-bottom: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .dataOfPayCustomer > .containerCreditDebitCard > .acceptConditions > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: rgb(83, 83, 84);
+  margin: 0%;
+  padding: 0.6%;
+  transform: scale(2);
+  width: 8%;
+  margin: 0%;
+  margin-bottom: 0.2%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .containerButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  bottom: -14%;
+  right: 6%;
+  position: absolute;
+  width: 30%;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .containerButtons > button {
+  width: 16vw;
+}
+.containerGenerallRegister > .containerRegisterAddressDelivery > .containerButtons > button:first-child {
+  margin-left: 5%;
+}
+
+.figureImageCreditCard {
+  position: absolute;
+  bottom: 10%;
+  right: -9%;
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 50%;
+  height: auto;
+  padding: 0.1%;
+  margin-right: 3.5%;
+}
+.figureImageCreditCard > .textAccept {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(83, 83, 84);
+  margin: 1% 2%;
+  padding: 1%;
+  margin-right: 2%;
+}
+.figureImageCreditCard > .imageCardCreditst {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 36%;
+  padding: 0.1%;
+}
+
+/*# sourceMappingURL=registerCustomer2.css.map */

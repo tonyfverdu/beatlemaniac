@@ -1,0 +1,336 @@
+/*   ////////////////////////////////////////       */
+.containerShoppingCartGlobal {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 49rem;
+  position: relative;
+  justify-content: flex-start;
+  margin: 0.3% auto;
+  margin-left: 5%;
+}
+.containerShoppingCartGlobal > .containerCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  height: 96%;
+  margin-right: 0.2%;
+}
+.containerShoppingCartGlobal > .containerCart > .headerShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  background-color: rgba(246, 240, 240, 0.4);
+  width: 15%;
+  min-height: 100%;
+  padding: 0.5%;
+  margin: 0.2%;
+  transition: all 0.45s ease;
+  border-radius: 12px 0 0 12px;
+  z-index: 20;
+}
+.containerShoppingCartGlobal > .containerCart > .headerShoppingCart > .titleShoppingCart {
+  color: rgb(246, 240, 240);
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 0.3% 0.5%;
+  text-align: center;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.containerShoppingCartGlobal > .containerCart > .headerShoppingCart > .figureShoppingCartPest {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0.5%;
+  margin: 0% auto;
+  margin-top: 6%;
+}
+.containerShoppingCartGlobal > .containerCart > .headerShoppingCart > .figureShoppingCartPest > .imageShoppingCartPest {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  padding: 0.1%;
+  border-radius: 50%;
+  z-index: 20;
+}
+.containerShoppingCartGlobal > .containerCart > .headerShoppingCart:hover .titleShoppingCart, .containerShoppingCartGlobal > .containerCart > .headerShoppingCart:focus .titleShoppingCart {
+  cursor: pointer;
+  color: rgb(250, 29, 29);
+}
+.containerShoppingCartGlobal > .containerCart > .headerShoppingCart:hover .imageShoppingCartPest, .containerShoppingCartGlobal > .containerCart > .headerShoppingCart:focus .imageShoppingCartPest {
+  cursor: pointer;
+  animation: pestShoppingCart 2s ease forwards;
+}
+.containerShoppingCartGlobal > .containerCart > .containerOfArticles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  max-height: 96%;
+  padding: 0%;
+  margin: 0% auto;
+  border-radius: 0%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: transparent;
+}
+.containerShoppingCartGlobal > .containerCart > .containerOfArticles > ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.containerShoppingCartGlobal > .containerCart > .containerOfArticles > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: scale(0.8);
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  background-color: rgba(246, 240, 240, 0.4);
+  justify-content: space-between;
+  width: 180px;
+  min-height: 144px;
+  padding: 0.8%;
+  padding-right: 1.5%;
+  margin: 0.1%;
+  border-radius: 0 12px 12px 0;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .headerTotalArticle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: rgb(231, 230, 230);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 1%;
+  margin: 0% auto;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .headerTotalArticle > .containerTotales {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0%;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .headerTotalArticle > .containerTotales > .Total {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 48%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0%;
+  padding: 0.6%;
+  font-weight: bold;
+  text-align: center;
+  margin: 2% 1%;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .headerTotalArticle > .containerTotales > .resultTotal {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(250, 29, 29);
+  margin: 0%;
+  padding: 0.6%;
+  width: 30%;
+  margin: 1%;
+  font-weight: bolder;
+  text-align: center;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: transparent;
+  width: 100%;
+  height: 38px;
+  margin: 0% auto;
+  transition: all 0.45s ease;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+  margin: 0% auto;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton > i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  right: -35%;
+  color: rgb(202, 4, 4);
+  transform: scale(1);
+  padding: 2%;
+  margin-right: 5%;
+  transition: all 0.35s ease;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:hover, .containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:focus {
+  cursor: pointer;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:hover > i, .containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:focus > i {
+  z-index: 20;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(250, 29, 29);
+  color: rgb(246, 240, 240);
+  border-radius: 50%;
+  transform: scale(2) translateX(13.5px) translateY(-2px);
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart button {
+  width: 58px;
+  height: 36px;
+  padding: 1% 3%;
+  margin: 0% auto;
+  margin-bottom: 4%;
+  font-size: 0.8rem;
+  transition: all 0.35s ease;
+}
+.containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart button:hover, .containerShoppingCartGlobal > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart button:focus {
+  cursor: pointer;
+  transform: scale(0.88);
+}
+
+.containerShoppingCartGlobal > .jaIstOpen {
+  transition: all 1s linear;
+  animation: openShoppingCart 1.2s linear forwards;
+}
+
+.containerShoppingCartGlobal > .neinIstClose {
+  transition: all 1s linear;
+  animation: closeShoppingCart 1.2s linear forwards;
+}
+
+@keyframes openShoppingCart {
+  from {
+    width: 11vw;
+    background-color: transparent;
+  }
+  to {
+    width: 100%;
+    background-color: rgb(140, 140, 140);
+  }
+}
+@keyframes closeShoppingCart {
+  from {
+    width: 100%;
+    background-color: rgb(140, 140, 140);
+  }
+  to {
+    width: 11vw;
+    background-color: transparent;
+  }
+}
+@keyframes pestShoppingCart {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/*# sourceMappingURL=Shoppingcart.css.map */

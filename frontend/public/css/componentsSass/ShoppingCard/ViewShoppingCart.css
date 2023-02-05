@@ -1,0 +1,859 @@
+/*   ////////////////////////////////////////       */
+.containerMainViewSC {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100vw;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0.93) 16%, rgba(3, 3, 3, 0.2) 36%, rgba(3, 3, 3, 0.93)), url(../src/images/theBeatles/beatlescentral.png);
+  background-repeat: no-repeat;
+  background-position: 14rem 0rem;
+  background-size: 72% 72%;
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.containerMainViewSC > .containerResultSC {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 40vw;
+  padding: 1%;
+  margin: 8% auto;
+  margin-bottom: 30%;
+}
+.containerMainViewSC > .containerResultSC > .headerViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0.5%;
+  margin: 0% auto;
+}
+.containerMainViewSC > .containerResultSC > .headerViewShoppingCart > .containerIconShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: -50%;
+  left: 10%;
+  width: 10%;
+  padding: 5%;
+  margin-left: 20%;
+  transition: all 0.45s ease;
+}
+.containerMainViewSC > .containerResultSC > .headerViewShoppingCart > .containerIconShoppingCart:hover, .containerMainViewSC > .containerResultSC > .headerViewShoppingCart > .containerIconShoppingCart:focus {
+  cursor: pointer;
+  animation: shoppingMove 2s ease forwards;
+}
+.containerMainViewSC > .containerResultSC > .headerViewShoppingCart > .containerIconShoppingCart > .iconShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: scale(3);
+  width: 24px;
+  height: 24px;
+  color: rgb(162, 3, 3);
+}
+.containerMainViewSC > .containerResultSC > .headerViewShoppingCart > .titleViewShoppingCart {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0% 5%;
+}
+.containerMainViewSC > .containerResultSC > .headerViewShoppingCart > .subtitleViewShoppingCart {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 0% auto;
+  text-align: center;
+  margin: 0% 1%;
+}
+.containerMainViewSC > .containerResultSC > .headerViewShoppingCart > .subtitleViewShoppingCart > b {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  margin-right: 22%;
+  margin-left: 40%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  margin: 0.5% auto;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  padding: 2%;
+  margin: 0% auto;
+  margin-right: 2%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  padding: 2%;
+  margin: 2 auto;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerImageLeftUpViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: auto;
+  margin: 0% auto;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerImageLeftUpViewShoppingCart > .figureImageOfProduct {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  border-radius: 12px;
+  background-color: rgb(224, 229, 236);
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+  padding: 0.5%;
+  margin: 0% auto;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerImageLeftUpViewShoppingCart > .figureImageOfProduct > .imagefigureImageOfProduct {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  padding: 1%;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  border: 1px solid rgb(205, 204, 204);
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: 20vh;
+  margin-left: 1%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .headerTitelProductViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 1%;
+  margin-bottom: 8%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .headerTitelProductViewShoppingCart > .titleProductViewShoppingCart {
+  color: rgba(2, 2, 101, 0.9);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  margin: 0% 5%;
+  margin-bottom: 2%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock > .containerPrice {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock > .containerPrice > .titelPrice {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: justify;
+  margin: 0% 5%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock > .containerPrice > .price {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: center;
+  margin: 0% 2%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock > .containerStock {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock > .containerStock > .containerIconStock {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 32%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock > .containerStock > .containerIconStock > i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: rgb(250, 29, 29);
+  transform: scale(2);
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftUpViewShoppingCart > .containerInfoLeftUpViewShoppingCart > .price_stock > .containerStock > .stock {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(56, 1, 1);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: center;
+  margin: 0% 1%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .containerImageBrand {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .containerImageBrand > .figureImageBrand {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 1%;
+  margin-left: 0%;
+  background-color: rgb(231, 230, 230);
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .containerImageBrand > .figureImageBrand > .imageBrand {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  padding: 1%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .containerIconShoppingCartOut {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 48%;
+  transition: all 0.25s ease;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .containerIconShoppingCartOut > i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  width: 48%;
+  bottom: 20px;
+  left: -16px;
+  color: rgb(162, 3, 3);
+  transform: scale(1.6);
+  transition: all 0.45s ease;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .containerIconShoppingCartOut:hover > i, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .containerIconShoppingCartOut:focus > i {
+  cursor: pointer;
+  animation: animationIconShoppingCartOut 0.45s ease-in-out forwards;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .isButton, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .more, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .less {
+  display: block;
+  margin: 0% auto;
+  padding: 4% 9%;
+  color: rgb(9, 9, 9);
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(101, 101, 102);
+  font-size: 1.8rem;
+  font-weight: 900;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #f0f0f0, #cacaca);
+  box-shadow: -3px -3px 7px #949494, 2px 2px 4px #ffffff;
+  padding: 0% 12%;
+  margin: 0% auto;
+  transition: all 0.45s ease;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .isButton:hover, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .more:hover, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .less:hover, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .isButton:focus, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .more:focus, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .less:focus {
+  cursor: pointer;
+  animation: pulseButton 0.45s linear forwards;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .less {
+  color: rgb(220, 21, 21);
+  border-radius: 9px 0px 0px 9px;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .more {
+  color: rgba(2, 2, 101, 0.9);
+  margin-left: 0.2%;
+  border-radius: 0px 9px 9px 0px;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .separator {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 45px;
+  height: 45px;
+  margin: 0% 1%;
+  background-color: rgb(167, 166, 166);
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  border: 1px solid rgb(63, 63, 63);
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .containerRegistersOfArticles > .bodyLeftViewShoppingCart > .containerLeftDownViewShoppingCart > .gropuButtonsMoreLess > .separator > .textNumberOfArticle {
+  position: relative;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  height: auto;
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  padding: 2%;
+  margin: 0% auto;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .headerSummaryViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 2%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .headerSummaryViewShoppingCart > .titleSummaryViewShoppingCart {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 1%;
+  margin: 0% 5%;
+  margin-bottom: 0.2%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .headerSummaryViewShoppingCart > .paragraphSummaryViewShoppingCart {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 0% auto;
+  text-align: center;
+  margin: 0% 5%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5%;
+  padding: 1%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerSubtotal_Delibery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerSubtotal_Delibery > .containerSubtotalUp {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerSubtotal_Delibery > .containerSubtotalUp > .titleSubtotal {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: justify;
+  margin: 0% 15%;
+  padding: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerSubtotal_Delibery > .containerSubtotalUp > .subtotal {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerSubtotal_Delibery > .containerDeliveryCost {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerSubtotal_Delibery > .containerDeliveryCost > .titleDeliveryCost {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: justify;
+  margin: 0% 18.5%;
+  padding: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerSubtotal_Delibery > .containerDeliveryCost > .DeliveryCost {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerTotal_Tax {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerTotal_Tax > .containerTotal {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerTotal_Tax > .containerTotal > .titleTotal {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: justify;
+  margin: 0% 22%;
+  padding: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerTotal_Tax > .containerTotal > .total {
+  position: relative;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(220, 21, 21);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: center;
+  margin: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerTotal_Tax > .containerTax {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0%;
+  margin: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerTotal_Tax > .containerTax > .titleVAT {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: justify;
+  margin: 0%;
+  margin-right: 10%;
+  padding: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerButtonCheckOut {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerButtonCheckOut > .buttonCheckOut {
+  display: block;
+  margin: 0% auto;
+  padding: 4% 9%;
+  color: rgba(2, 2, 101, 0.9);
+  text-align: center;
+  text-decoration: none;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(101, 101, 102);
+  font-size: 1.1rem;
+  font-weight: 900;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #f0f0f0, #cacaca);
+  box-shadow: -3px -3px 7px #949494, 2px 2px 4px #ffffff;
+  width: 92%;
+  transition: all 0.35s ease;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerButtonCheckOut > .buttonCheckOut > .iconShoppingCartCheckOut {
+  position: absolute;
+  top: 5%;
+  right: -40%;
+  border-radius: 50%;
+  color: rgb(162, 3, 3);
+  transform: scale(1);
+  transition: all 0.45s ease;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerButtonCheckOut > .buttonCheckOut:hover, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerButtonCheckOut > .buttonCheckOut:focus {
+  cursor: pointer;
+  animation: pulseButton 0.45s linear forwards;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerButtonCheckOut > .buttonCheckOut:hover > .iconShoppingCartCheckOut, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthUpViewShoppingCart > .containerButtonCheckOut > .buttonCheckOut:focus > .iconShoppingCartCheckOut {
+  color: rgb(231, 230, 230);
+  background-color: rgb(220, 21, 21);
+  animation: animationIconCheckOut 0.45s linear forwards;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .textWarnigLogin {
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(162, 3, 3);
+  margin: 0% 2%;
+  padding: 1%;
+  overflow: hidden;
+  transform: translateX(0%);
+  animation: pulseText 0.45s lineal infinte;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart > .containerContinueShopping {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  transition: all 0.45s ease;
+  cursor: pointer;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart > .containerContinueShopping > .textContinueShopping {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 0% auto;
+  font-weight: 500;
+  margin: 0% 5%;
+  padding: 0%;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart > .containerContinueShopping > .iconShoppingCartCheckOut {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 6px;
+  left: 76px;
+  color: rgba(2, 110, 2, 0.9);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart > .containerContinueShopping:hover > .textContinueShopping, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart > .containerContinueShopping:focus > .textContinueShopping {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(250, 29, 29);
+  margin: 0% auto;
+  font-weight: bold;
+}
+.containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart > .containerContinueShopping:hover > i, .containerMainViewSC > .containerResultSC > .bodyViewShoppingCart > .bodyRigthViewShoppingCart > .containerRigthDownViewShoppingCart > .containerContinueShopping:focus > i {
+  animation: animationIconContinueShopping 0.35s ease-in-out forwards;
+}
+
+@keyframes shoppingMove {
+  from {
+    transform: translateX(10px);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  to {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: rgb(246, 240, 240);
+    transform: translateX(150px);
+  }
+}
+@keyframes pulseButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    background: linear-gradient(315deg, #8f8f8f, #414141);
+    box-shadow: -2px -2px 5px #545454, 1px 1px 4px #bababa;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: rgb(227, 154, 19);
+    transform: scale(0.93);
+  }
+}
+@keyframes animationIconCheckOut {
+  to {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(250, 29, 29);
+    color: rgb(246, 240, 240);
+    transform: scale(1.8) translateX(-22px) translateY(4px);
+  }
+}
+@keyframes animationIconShoppingCartOut {
+  from {
+    background-color: rgba(2, 110, 2, 0.9);
+  }
+  to {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(250, 29, 29);
+    color: rgb(246, 240, 240);
+    transform: scale(2.2) translateX(4px) translateY(-6px);
+  }
+}
+@keyframes animationIconContinueShopping {
+  from {
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
+    right: 0px;
+    transform: scale(1.5) translateX(100px);
+  }
+  to {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(43, 211, 43, 0.9);
+    color: rgb(246, 240, 240);
+    transform: scale(1.8) translateX(110px) translateY(8px);
+  }
+}
+@keyframes pulseText {
+  0% {
+    transform: scale(0.8) translateX(-100%);
+    color: rgb(162, 3, 3);
+  }
+  5% {
+    transform: scale(1) translateX(-98%);
+    color: rgb(162, 3, 3);
+  }
+  50% {
+    transform: scale(1) translateX(0%);
+    color: rgb(220, 21, 21);
+  }
+  95% {
+    transform: scale(1) translateX(98%);
+    color: rgb(162, 3, 3);
+  }
+  100% {
+    transform: scale(0.8) translateX(100%);
+    color: rgb(162, 3, 3);
+  }
+}
+
+/*# sourceMappingURL=ViewShoppingCart.css.map */

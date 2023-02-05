@@ -1,0 +1,53 @@
+/*   ////////////////////////////////////////       */
+.contTitel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -15px -15px 29px #aaaaaa, 15px 15px 29px #ffffff;
+  border-radius: 3px;
+  width: 14rem;
+  padding: 1%;
+  margin: 0%;
+  margin-left: 1%;
+  margin-right: 3%;
+}
+.contTitel > .headerDataRegisterd {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1% auto;
+  margin: 0%;
+  margin-left: 0%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contTitel > .headerDataRegisterd > .titelDataRegisterd {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0%;
+  padding: 0%;
+}
+
+/*# sourceMappingURL=TitelData.css.map */

@@ -1,0 +1,409 @@
+/*   ////////////////////////////////////////       */
+.containerSC {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  background-color: transparent;
+  max-width: 59.7rem;
+  height: 100%;
+  margin: 0% auto;
+  margin-left: -10%;
+  border: transparent;
+}
+.containerSC > .containerCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.containerSC > .containerCart > .headerShoppingCart {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 18%;
+  height: inherit;
+  padding: 0% auto;
+  margin: 0% auto;
+  border: 1px solid rgba(231, 230, 230, 0.6);
+  border-radius: 16px 0 0 16px;
+  z-index: 20;
+  transition: all 0.45s ease;
+}
+.containerSC > .containerCart > .headerShoppingCart > .titleShoppingCart {
+  color: rgb(246, 240, 240);
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 16.5% auto;
+  padding: 0% auto;
+  text-align: center;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.containerSC > .containerCart > .headerShoppingCart > .figureShoppingCartPest {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0% auto;
+  margin: 10% auto;
+  margin-bottom: 13.2%;
+}
+.containerSC > .containerCart > .headerShoppingCart > .figureShoppingCartPest > .imageShoppingCartPest {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  object-fit: cover;
+  width: 89px;
+  height: 90px;
+  padding: 2%;
+  border-radius: 50%;
+  z-index: 20;
+}
+.containerSC > .containerCart > .headerShoppingCart:hover .titleShoppingCart, .containerSC > .containerCart > .headerShoppingCart:focus .titleShoppingCart {
+  cursor: pointer;
+  color: rgb(250, 29, 29);
+}
+.containerSC > .containerCart > .headerShoppingCart:hover .imageShoppingCartPest, .containerSC > .containerCart > .headerShoppingCart:focus .imageShoppingCartPest {
+  cursor: pointer;
+  animation: pestShoppingCart 2s ease forwards;
+}
+.containerSC > .containerCart > .containerOfArticles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: inherit;
+  padding: 0%;
+  margin: 0% auto;
+  border-radius: 0%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: transparent;
+}
+.containerSC > .containerCart > .containerOfArticles > ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0% auto;
+  list-style: none;
+}
+.containerSC > .containerCart > .containerOfArticles > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0% auto;
+  transform: scale(0.9);
+}
+.containerSC > .containerCart > .containerOfArticles > ul > li > .containerAmountArticle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  width: 150px;
+  padding: 0%;
+  margin: 0% auto;
+  margin-top: 0%;
+  border-radius: 3px 3px 9px 9px;
+  background: linear-gradient(to top, rgb(167, 166, 166) 8%, rgba(231, 230, 230, 0.6) 22%, rgba(231, 230, 230, 0.6) 50%, rgba(231, 230, 230, 0.3));
+  border: 2px solid rgb(167, 166, 166);
+}
+.containerSC > .containerCart > .containerOfArticles > ul > li > .containerAmountArticle > .amountTitle {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.containerSC > .containerCart > .containerOfArticles > ul > li > .containerAmountArticle > .amountArticle {
+  position: relative;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  background-color: rgba(246, 240, 240, 0.4);
+  justify-content: space-between;
+  width: 180px;
+  height: inherit;
+  padding: 0% auto;
+  margin: 0% auto;
+  padding-right: 1%;
+  border: 1px solid rgba(231, 230, 230, 0.6);
+  border-radius: 0 9px 9px 0;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .headerTotalArticle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: rgb(231, 230, 230);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 1%;
+  margin: 14% auto;
+  margin-bottom: 20%;
+  margin-left: 3%;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .headerTotalArticle > .containerTotales {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0%;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .headerTotalArticle > .containerTotales > .Total {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 48%;
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  font-weight: bold;
+  text-align: center;
+  margin: 2% 1%;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .headerTotalArticle > .containerTotales > .resultTotal {
+  position: relative;
+  text-align: justify;
+  font-size: 1.36rem;
+  font-weight: 400;
+  color: rgb(250, 29, 29);
+  margin: 0% auto;
+  width: 30%;
+  margin: 1%;
+  font-weight: bolder;
+  text-align: center;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .headerTotalArticle > .containerTotales:nth-child(1) > .resultTotal {
+  color: rgba(2, 2, 101, 0.9);
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: transparent;
+  width: 100%;
+  height: 38px;
+  margin: 0% auto;
+  margin-top: 14%;
+  margin-bottom: 7%;
+  margin-left: 2%;
+  transition: all 0.45s ease;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+  margin: 0% auto;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton > i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  right: -35%;
+  color: rgb(250, 29, 29);
+  transform: scale(1);
+  padding: 2%;
+  margin-right: 5%;
+  transition: all 0.35s ease;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:hover, .containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:focus {
+  cursor: pointer;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:hover > i, .containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart > .containerButton:focus > i {
+  z-index: 20;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(250, 29, 29);
+  color: rgb(246, 240, 240);
+  border-radius: 50%;
+  transform: scale(2) translateX(6px) translateY(2px);
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart button {
+  width: 58px;
+  height: 36px;
+  padding: 1% 3%;
+  margin: 0% auto;
+  margin-bottom: 4%;
+  font-size: 0.8rem;
+  transition: all 0.35s ease;
+}
+.containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart button:hover, .containerSC > .containerCart > .containerInfoShoppingCart > .containerButtonsOfShoppingCart button:focus {
+  cursor: pointer;
+  transform: scale(0.88);
+}
+
+.containerSC > .jaIstOpen {
+  transition: all 1s linear;
+  animation: openShoppingCart 1.2s linear forwards;
+}
+
+.containerSC > .neinIstClose {
+  transition: all 1s linear;
+  animation: closeShoppingCart 1.2s linear forwards;
+}
+
+@keyframes openShoppingCart {
+  from {
+    width: 10.1vw;
+    background: rgba(244, 34, 34, 0.3);
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 2px solid rgba(125, 70, 70, 0.68);
+    margin: 0%;
+    padding: 0%;
+  }
+  to {
+    width: 100%;
+    background: rgba(5, 247, 5, 0.3);
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 2px solid rgba(70, 125, 75, 0.68);
+    margin: 0%;
+    padding: 0%;
+  }
+}
+@keyframes closeShoppingCart {
+  from {
+    width: 100%;
+    background: rgba(5, 247, 5, 0.3);
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 2px solid rgba(70, 125, 75, 0.68);
+    margin: 0%;
+    padding: 0%;
+  }
+  to {
+    width: 10.1vw;
+    background: rgba(244, 34, 34, 0.3);
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 2px solid rgba(125, 70, 70, 0.68);
+    margin: 0%;
+    padding: 0%;
+  }
+}
+@keyframes pestShoppingCart {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/*# sourceMappingURL=ShoppingCart.css.map */

@@ -1,0 +1,392 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+.contTableRegistroArticleItem {
+  @include l.layoutFlexboxColumCenter;
+  align-items: flex-start;
+  @include g.GlassMorphismus6;
+  width: 64%;
+  height: auto;
+  // min-height: 100vh;
+  overflow-y: scroll;
+  border-radius: 6px 6px 0px 0px;
+  padding: 1%;
+  margin: 0%;
+
+}
+
+.contTableStripedSongs {
+  @include l.layoutFlexboxColumCenter;
+  width: 99%;
+  justify-content: flex-start;
+  // @include n.neuMorphismus3;
+  @include g.GlassMorphismus6;
+  height: auto;
+  max-height: 74vh;
+  border-radius: 3px 3px 0px 0px;
+  padding: 1% auto;
+  margin: 0% auto;
+  margin-bottom: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &>.tableHeadSongs {
+    @include l.layoutFlexboxRowCenter;
+    @include g.boxShadowGlassMorpCard;
+    box-shadow: v.$boxShadow3;
+    border-radius: 6px 6px 0px 0px;
+    margin: 0%;
+    padding: 1%;
+
+    &>tr {
+      @include l.layoutFlexboxRowCenter;
+      background-color: v.$backgroundColorIni;
+      border-radius: 6px 6px 0px 0px;
+      height: 2.2rem;
+      padding: 0%;
+      margin: 0% auto;
+
+      &>th {
+        @include d.configurationText2 (v.$colorDarkBlueNavy, 0.9rem);
+        margin: 0% auto;
+        text-shadow: g.$textShadowGlassMorphismusText1;
+
+        &>i {
+          width: auto;
+          transform: scale(1.5);
+          color: v.$colorDarkBlueNavy;
+        }
+
+        &>.icoShoppingCart {
+          transform: scale(1.3);
+          color: v.$colorRedNeu;
+          margin-top: 60%;
+        }
+
+        &:nth-child(1) {
+          width: 3%;
+          margin-left: 1%;
+        }
+
+        &:nth-child(2) {
+          width: 16%;
+        }
+
+        &:nth-child(3) {
+          width: 25%;
+        }
+
+        &:nth-child(4) {
+          width: 25%;
+        }
+
+        &:nth-child(5) {
+          width: 6%;
+        }
+
+        &:nth-child(6) {
+          width: 18%;
+        }
+
+        &:nth-child(7) {
+          width: 8%;
+        }
+
+        &:nth-child(8) {
+          width: 8%;
+          text-align: center;
+          margin-left: 2%;
+        }
+
+        &:nth-child(9) {
+          width: 4%;
+          font-size: 0.7rem;
+
+          button {
+            width: 138%;
+            height: 26px;
+            padding: 0%;
+            margin: 0% auto;
+            font-size: 0.6rem;
+            transition: all 0.35s ease;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              transform: scale(0.9);
+            }
+          }
+        }
+
+        &:nth-child(10) {
+          width: 4%;
+          font-size: 0.7rem;
+          transition: all 0.3s ease;
+          margin-left: 1%;
+
+          &>i {
+            transform: scale(1.8) translateY(-3px);
+            color: v.$colorDarkBlueNavy;
+          }
+        }
+      }
+    }
+  }
+
+  &>.tableBodySongs {
+    @include l.layoutFlexboxColumCenter;
+    @include g.boxShadowGlassMorpCard;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: v.$boxShadow3;
+    margin: 0% 1%;
+    padding: 1%;
+
+    &>.containerArticleItem {
+      //  <<==  tr
+      @include l.layoutFlexboxRowCenter;
+      background-color: v.$backgroundColorIni;
+      height: 3rem;
+      border-radius: 0%;
+      padding: 0%;
+      margin: 0% auto;
+      margin-bottom: 0.05%;
+      transition: all 0.35s ease;
+
+      &:nth-child(even) {
+        background-color: v.$backgroundColorHellGray2;
+      }
+
+      &>td {
+        @include l.layoutFlexboxRowCenter;
+        @include d.configurationText2 (v.$colorTextIni, 0.7rem);
+        margin: 0% auto;
+        padding: 0%;
+        background-color: transparent;
+        text-shadow: g.$textShadowGlassMorphismusText1;
+
+        &>.global-class-name {
+          @include l.layoutFlexboxRowCenter;
+          margin: 0% auto;
+          padding: 0%;
+          transition: all ease 0.35s;
+
+          border: 1px solid black;
+
+
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            transform: scale(1.05);
+            border: 1px solid blue;
+          }
+        }
+
+        &>i {
+          transform: scale(1);
+          width: auto;
+          color: v.$colorRedNeu;
+          margin-left: 2%;
+          transition: all 0.45s ease;
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            color: v.$colorRedNeu;
+            border-radius: 50%;
+            transform: scale(2) translateY(-5px);
+          }
+        }
+
+        &:nth-child(1) {
+          width: 3%;
+          margin-left: 1%;
+          font-size: 0.9rem;
+        }
+
+        &:nth-child(2) {
+          width: 16%;
+
+          &>.containerFigureTableResultSearch {
+            @include d.figure;
+            width: 2.6rem;
+            height: 2.6rem;
+            padding: 0%;
+            margin: 0% auto;
+
+            &>.UlImage {
+              @include l.layoutFlexboxRowCenter;
+
+              &>.liImage {
+                @include l.layoutFlexboxRowCenter;
+                list-style-image: none;
+                list-style: none;
+
+                &>.imageTableResultSearch {
+                  @include d.imageGenerall;
+                  width: 2.6rem;
+                  height: 2.6rem;
+                  outline: 1px solid v.$backgroundColorHellGrayT3;
+                  outline-offset: 1px;
+                  transition: all 0.35s ease;
+
+                  &:hover,
+                  &:focus {
+                    cursor: pointer;
+                    transform: scale(1.5);
+                    outline: 1px solid v.$colorHellOrange;
+                    outline-offset: 1px;
+                    z-index: 100;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          width: 25%;
+        }
+
+        &:nth-child(4) {
+          width: 18%;
+          overflow: hidden;
+          font-size: 0.7rem;
+
+          &>.contAccordionAlbums {
+            margin: 0% auto;
+
+            &>.ItemAccordionAlbums {
+              margin: 1% auto;
+
+              &>.headerAccordionAlbums {
+                @include l.layoutFlexboxColumCenter;
+                width: 100%;
+                height: 1rem;
+                background-color: transparent;
+
+                &>.albumsLabel {
+                  @include d.configurationText2 (v.$colorTextIni, 0.6rem);
+                  text-shadow: v.$textShadow0;
+                }
+              }
+
+              &>.accordionBody {
+                @include l.layoutFlexboxRowCenter;
+                overflow-y: scroll;
+
+                &>.dataAlbums {
+                  @include d.configurationText2 (v.$colorTextIni, 0.7rem);
+                  padding: 2% auto;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(5) {
+          width: 6%;
+        }
+
+        &:nth-child(6) {
+          @include l.layoutFlexboxRowCenter;
+          width: 18%;
+          margin: 0% auto;
+          text-align: justify;
+          padding: 0%;
+        }
+
+        &:nth-child(7) {
+          width: 8%;
+        }
+
+        &:nth-child(8) {
+          width: 8%;
+          margin-left: 2%;
+          font-size: 0.9rem;
+          color: v.$colorRed;
+          text-align: center;
+        }
+
+        &:nth-child(9) {
+          width: 4%;
+
+          button {
+            width: 138%;
+            height: 26px;
+            padding: 0%;
+            margin: 0% auto;
+            font-size: 0.6rem;
+            transition: all 0.35s ease;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              transform: scale(0.9);
+            }
+          }
+        }
+
+        &:nth-child(10) {
+          width: 5%;
+          font-size: 0.6rem;
+          transition: all 0.45s ease;
+          margin-left: 1%;
+
+          &>i {
+            transform: scale(1.8);
+            color: v.$colorRedNeu;
+          }
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            color: v.$colorRedNeu;
+            z-index: 100;
+
+            &>i {
+              background-color: v.$colorRedNeu;
+              transform: scale(3.6) translateY(-3px);
+              padding: 2%;
+              color: v.$colorHell;
+              z-index: 100;
+            }
+          }
+        }
+      }
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        @include g.GlassMorphismus6;
+        padding: 0.4%;
+        transform: scale(1.05);
+        z-index: 20;
+      }
+    }
+  }
+}
+
+#contIcoPlay {
+  @include l.layoutFlexboxRowCenter;
+  @include g.boxShadowGlassMorphismus4;
+  width: 1.6rem;
+  height: 1.6rem;
+  color: v.$colorHell;
+  margin: 0% auto;
+  padding: 0.5%;
+  transform: scale(1.05);
+  border-radius: 50%;
+  transition: all ease 0.35s;
+
+  &:hover, &:focus {
+    transform: scale(0.89);
+    background-color: red;
+    color: v.$colorRedNew;
+    box-shadow: v.$boxShadow7;
+
+  }
+}

@@ -1,0 +1,401 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+
+// The sidepanel menu
+.contSidePanel {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 0%;
+  height: auto;
+  // min-height: 69vh;
+  max-height: 90vh;
+  position: fixed;
+  top: 22.2%;
+  left: 0%;
+  @include g.GlassMorphismus6;
+  border: 3px solid v.$backgroundColorIniT2;
+  border-radius: 29px;
+  padding: 1% auto;
+  margin: 0% 0.16%;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+  transition: 0.45s all ease;
+
+  &>.contSPTopAlbum {
+    @include l.layoutFlexboxRowCenter;
+    align-items: flex-start;
+    height: auto;
+    padding: 0.1%;
+    margin: 0% auto;
+    border-radius: 29px 29px 0px 0px;
+    background-color: transparent;
+
+    &>.TopLeftSPArticleBrand {
+      @include l.layoutFlexboxColumCenter;
+      height: 12rem;
+      @include n.neuMorphismus3;
+      overflow: hidden;
+      border-radius: 29px 0px 0px 0px;
+      padding: 1%;
+      margin: 0% auto;
+      margin-bottom: 1%;
+
+      &>.contTopSideSP {
+        @include l.layoutFlexboxRowCenter;
+        height: 6rem;
+        margin: 0% auto;
+
+        &>.figureLogoBeatlesmaniac {
+          @include d.figure;
+          width: 3.9rem;
+          height: 3.9rem;
+          margin: 0% auto;
+          padding: 0%;
+          background-color: transparent;
+
+          &>.imageLogo {
+            @include d.imageGenerall;
+            width: 3.9rem;
+            height: 3.9rem;
+            border-radius: 50%;
+            padding: 0%;
+            margin: 0% auto;
+            margin-left: 38%;
+            margin-top: 39%;
+          }
+        }
+
+        &>.contTopRigth {
+          @include l.layoutFlexboxColumCenter;
+          align-items: flex-end;
+          width: 96%;
+          margin: 2% auto;
+
+          &>.contTopTop {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-end;
+            margin: 0% auto;
+
+            &>.firstPart {
+              @include l.layoutFlexboxRowCenter;
+              width: 46%;
+              margin: 0% auto;
+              padding: 1.6% auto;
+
+              &>.band {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                text-align: left;
+                margin: 1% 4%;
+                @include d.desig_H_element (v.$backgroundColorDunkelGray4, 1rem);
+              }
+
+              &>.theAlbum {
+                @include d.configurationText2 (v.$colorDunkel, 1rem);
+                text-align: left;
+                text-shadow: v.$textShadow3;
+              }
+            }
+
+            &>.contLabel {
+              @include l.layoutFlexboxRowCenter;
+              width: 36%;
+
+              &>.labelLabel {
+                @include d.desig_H_element (v.$backgroundColorDunkelGray4, 0.9rem);
+                text-align: left;
+                margin-right: 2%;
+                text-shadow: none;
+              }
+
+              &>.label {
+                @include d.configurationText2 (v.$colorRedNew, 0.9rem);
+                text-align: left;
+                text-shadow: v.$textShadow3;
+              }
+            }
+          }
+
+          &>.contTopDown {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: space-evenly;
+            margin: 2.8% auto;
+
+            &>.titleAlbum {
+              @include d.desig_H_element (v.$colorNavy, 1.28rem);
+              text-align: left;
+              margin: 0% auto;
+              margin-left: 8%;
+              transition: all 0.35s ease;
+              animation: titleMove 6s 1s linear infinite forward;
+            }
+
+            &>.contTrack {
+              @include l.layoutFlexboxRowCenter;
+              width: auto;
+              margin-right: 2%;
+
+              &>.tracks {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray, 0.8rem);
+                text-align: left;
+                text-shadow: v.$textShadow2;
+                margin-right: 10%;
+              }
+
+              &>.labelTracks {
+                @include d.desig_H_element (v.$backgroundColorDunkelGray5, 0.8rem);
+                text-align: left;
+                margin-right: 2%;
+                text-shadow: none;
+              }
+            }
+          }
+        }
+      }
+
+      &>.contDownSide {
+        @include l.layoutFlexboxColumCenter;
+        height: auto;
+        margin: 0.1% auto;
+        margin-top: 2%;
+
+        &>.contTypeAlbum {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: space-between;
+          margin-bottom: 2.5%;
+
+          &>.contTypeGenre {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-start;
+            width: 59%;
+            margin: 0%;
+            padding: 0%;
+
+            &>.labelTypeAlbum {
+              @include d.desig_H_element (v.$backgroundColorDunkelGray5, 0.8rem);
+              text-align: left;
+              margin: 0%;
+              padding: 0%;
+              margin-right: 4%;
+              text-shadow: none;
+            }
+
+            &>.collectionType {
+              @include d.configurationText2 (v.$backgroundColorDunkelGray, 0.8rem);
+              text-align: left;
+              margin: 0%;
+              margin-right: 18%;
+              padding: 0%;
+              text-shadow: v.$textShadow3;
+            }
+
+            &>.genre {
+              @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.9rem);
+              margin: 0%;
+              padding: 0%;
+              text-align: left;
+              text-shadow: v.$textShadow3;
+            }
+          }
+
+          &>.contReleased {
+            @include l.layoutFlexboxRowCenter;
+            width: 46%;
+
+            &>.labelReleased {
+              @include d.desig_H_element (v.$backgroundColorDunkelGray5, 0.8rem);
+              text-align: left;
+              margin-right: 2%;
+              text-shadow: none;
+            }
+
+            &>.released {
+              @include d.configurationText2 (v.$backgroundColorDunkelGray, 0.8rem);
+              text-align: left;
+              text-shadow: v.$textShadow3;
+            }
+          }
+        }
+
+        &>.contCopyright {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-end;
+          margin-top: 1%;
+          margin-bottom: 0.1rem;
+          height: auto;
+
+          &>.copyright {
+            @include d.desig_H_element (v.$colorTextIni, 0.65rem);
+            margin: 0%;
+            padding: 0%;
+            text-align: left;
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+
+    &>.TopHalftSPAlbum {
+      @include l.layoutFlexboxRowCenter;
+      @include n.neuMorphismus3;
+      border-radius: 0px;
+      width: 18%;
+      height: 12rem;
+      padding: 1%;
+      margin: 0% auto;
+      margin-left: 1%;
+      border-radius: 0px 29px 0px 0px;
+      background-color: v.$backgroundColorIniT;
+
+      &>.contFigureAlbum {
+        @include d.figure;
+        height: 4.2rem;
+        width: 4.2rem;
+        padding: 0%;
+        background-color: transparent;
+
+        &>.imageAlbum {
+          @include d.imageGenerall;
+          height: 4.2rem;
+          width: 4.2rem;
+          border-radius: 50%;
+          padding: 0%;
+          margin: 0% auto;
+          animation: rotateRecord linear 12s infinite forwards;
+        }
+      }
+    }
+  }
+
+  &>.contSPMiddleAlbum {
+    @include l.layoutFlexboxColumCenter;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 0px;
+    background-color: transparent;
+
+    &>.contDescriptionShort {
+      @include l.layoutFlexboxColumCenter;
+      @include n.neuMorphismus3;
+      border-radius: 3px;
+      margin: 0% auto;
+     
+      &>.spanDescriptionShort {
+        @include d.configurationText2 (v.$colorDunkelSecondary, 0.8rem);
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        margin: 0% auto;
+        padding: 1.8%;
+        text-align: justify;
+        text-shadow: v.$textShadow2;
+        font-weight: 400;
+      }
+    }
+
+    &>.contAccordionAlbum {
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      @include n.neuMorphismus3;
+      height: auto;
+      border-radius: 0px;
+      margin: 0.8% auto;
+      margin-bottom: 0%;
+      border-radius: 0px 0px 26px 26px;
+
+      &>.AccordionAlbum {
+        @include l.layoutFlexboxRowCenter;
+        height: auto;
+        margin: 0% auto;
+        
+
+        &>.AccordionItem {
+          background-color: transparent;
+          width: 100%;
+          height: auto;
+          margin: 0%;
+          padding: 0%;
+          border-radius: 3px;
+          border-radius: 0px 0px 26px 26px;
+
+          &>.accordionHeader {
+            @include l.layoutFlexboxRowCenter;
+            margin: 0%;
+            padding: 0%;
+            border: 3px solid v.$backgroundColorHellGrayT;
+            border-radius: 3px;
+            border-radius: 0px 0px 26px 26px;
+
+            &>.textOfImagesAlbums {
+              @include d.configurationLabel(v.$colorTextIni, 0.8rem);
+              margin: 0% auto;
+              padding: 0%;
+              font-size: 700;
+              font-weight: bold;
+            }
+          }
+
+          &>.accordionBody {
+            @include l.layoutFlexboxRowCenter;
+            height: auto;
+            margin: 0% auto;
+            padding: 0%;
+
+            &>.contSongOfAlbum {
+              @include l.layoutFlexboxRowCenter;
+              height: auto;
+              margin: 0% auto;
+              padding: 0%;
+
+              &>.contTableSongsOfAlbum {
+                @include l.layoutFlexboxRowCenter;
+                margin: 0% auto;
+                padding: 0%;
+                transform: scale(0.6);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Style the button that is used to open the sidepanel */
+.contButtonToggle {
+  @include l.layoutFlexboxRowCenter;
+  margin: 0% auto;
+  position: fixed;
+  top: 33%;
+  left: -11.5%;
+  z-index: 100;
+}
+
+@keyframes titleMove {
+  0% {
+    opacity: 0;
+    transform: translateX(-130%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rotateRecord {
+  from {
+    transform: rotate(0deg) scale(1.2);
+    box-shadow: v.$boxShadow6;
+  }
+
+  to {
+    transform: rotate(720deg) scale(1.4);
+    border: 1px solid v.$backgroundColorDunkelGray4;
+    box-shadow: v.$boxShadow4;
+  }
+}

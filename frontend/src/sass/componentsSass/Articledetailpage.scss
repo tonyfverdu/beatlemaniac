@@ -1,0 +1,587 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+@use '../glassMorphismus' as g;
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.containerMainAlbumDetailItem {
+  @include l.layoutFlexboxColumCenter;
+  @include g.GlassMorphismus6;
+  width: 80%;
+  height: auto;
+  padding: 1%;
+  margin: 2% auto;
+
+  &>.containerTopAlbum {
+    @include l.layoutFlexboxRowCenter;
+    align-items: flex-start;
+    height: 10rem;
+    padding: 0.5%;
+    margin: 0% auto;
+    margin-left: -0.5%;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    background-color: transparent;
+
+    &>.TopLeftArticleBrand {
+      @include l.layoutFlexboxColumCenter;
+      width: 60%;
+      height: 10rem;
+      @include n.neuMorphismus3;
+      overflow: hidden;
+      border-radius: 6px;
+      padding: 1%;
+      margin: 0% auto;
+      margin-bottom: 1%;
+      border-radius: 6px 0px 0px 6px;
+
+      &>.contTopSide {
+        @include l.layoutFlexboxRowCenter;
+        height: 6rem;
+        margin-bottom: 2%;
+
+        &>.figureLogoBeatlesmaniac {
+          @include d.figure;
+          width: 3rem;
+          height: 3rem;
+          margin: 0% auto;
+          padding: 0%;
+          background-color: transparent;
+
+          &>.imageLogo {
+            @include d.imageGenerall;
+            width: 3.6rem;
+            height: 3.6rem;
+            border-radius: 50%;
+            padding: 0%;
+            margin: 0% auto;
+          }
+
+        }
+
+        &>.contTopRigth {
+          @include l.layoutFlexboxColumCenter;
+          width: 85%;
+          margin-bottom: 2%;
+
+          &>.contTopTop {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-end;
+            margin: 2% auto;
+
+            &>.firstPart {
+              @include l.layoutFlexboxRowCenter;
+              width: 28%;
+
+              &>.band {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                text-align: left;
+                margin: 1% 0%;
+                @include d.desig_H_element (v.$backgroundColorDunkelGray4, 1.1rem);
+                margin-left: 5%;
+              }
+
+              &>.theAlbum {
+                @include d.configurationText2 (v.$colorDunkel, 1rem);
+                text-align: left;
+                text-shadow: v.$textShadow3;
+              }
+            }
+
+            &>.contLabel {
+              @include l.layoutFlexboxRowCenter;
+              width: 30%;
+
+              &>.labelLabel {
+                @include d.desig_H_element (v.$backgroundColorDunkelGray4, 0.9rem);
+                text-align: left;
+                margin-right: 2%;
+                text-shadow: none;
+              }
+
+              &>.label {
+                @include d.configurationText2 (v.$colorRedNew, 1rem);
+                text-align: left;
+                text-shadow: v.$textShadow3;
+              }
+            }
+          }
+
+          &>.contTopDown {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: space-evenly;
+
+            &>.titleAlbum {
+              @include d.desig_H_element (v.$colorNavy, 1.5rem);
+              text-align: left;
+              margin: 0% auto;
+              margin-left: 0%;
+              animation: titleMove 6s 1s linear infinite forward;
+            }
+
+            &>.contTrack {
+              @include l.layoutFlexboxRowCenter;
+              width: auto;
+              margin-right: 2%;
+
+              &>.tracks {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray, 1rem);
+                text-align: left;
+                text-shadow: v.$textShadow1;
+                margin-right: 10%;
+              }
+
+              &>.labelTracks {
+                @include d.desig_H_element (v.$backgroundColorDunkelGray5, 0.9rem);
+                text-align: left;
+                margin-right: 2%;
+                text-shadow: none;
+              }
+            }
+          }
+        }
+      }
+
+      &>.contDownSide {
+        @include l.layoutFlexboxColumCenter;
+        height: 2.3rem;
+        margin-top: 0.5%;
+
+        &>.contTypeAlbum {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: space-between;
+
+          &>.contTypeGenre {
+            @include l.layoutFlexboxRowCenter;
+            width: 36%;
+
+            &>.labelTypeAlbum {
+              @include d.desig_H_element (v.$backgroundColorDunkelGray5, 0.9rem);
+              text-align: left;
+              margin-right: 2%;
+              text-shadow: none;
+            }
+
+            &>.collectionType {
+              @include d.configurationText2 (v.$backgroundColorDunkelGray, 0.8rem);
+              text-align: left;
+              text-shadow: v.$textShadow3;
+            }
+
+            &>.genre {
+              @include d.configurationText2 (v.$backgroundColorDunkelGray, 0.8rem);
+              text-align: left;
+              text-shadow: v.$textShadow3;
+            }
+          }
+
+          &>.contReleased {
+            @include l.layoutFlexboxRowCenter;
+            width: 29%;
+
+            &>.labelReleased {
+              @include d.desig_H_element (v.$backgroundColorDunkelGray5, 0.9rem);
+              text-align: left;
+              margin-right: 2%;
+              text-shadow: none;
+            }
+
+            &>.released {
+              @include d.configurationText2 (v.$backgroundColorDunkelGray, 0.8rem);
+              text-align: left;
+              text-shadow: v.$textShadow3;
+            }
+          }
+        }
+
+        &>.contCopyright {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-end;
+          margin-bottom: 0.8rem;
+          height: auto;
+
+          &>.copyright {
+            @include d.desig_H_element (v.$colorTextIni, 0.65rem);
+            margin: 0%;
+            padding: 0%;
+            text-align: left;
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+
+    &>.TopHalftAlbum {
+      @include l.layoutFlexboxRowCenter;
+      @include n.neuMorphismus3;
+      border-radius: 0px;
+      width: 18%;
+      height: 10rem;
+      padding: 1%;
+      margin: 0% 1%;
+      background-color: v.$backgroundColorIniT;
+
+      &>.containerFigureAlbum {
+        @include d.figure;
+        height: 6.2rem;
+        padding: 0%;
+        background-color: transparent;
+
+        &>.imageAlbum {
+          @include d.imageGenerall;
+          width: 6.8rem;
+          height: 6.8rem;
+          border-radius: 50%;
+          padding: 0%;
+          margin: 0% auto;
+          animation: rotateRecord linear 12s infinite forwards;
+        }
+      }
+    }
+
+    &>.TopRightAlbum {
+      @include l.layoutFlexboxColumCenter;
+      align-items: stretch;
+      justify-content: space-around;
+      @include n.neuMorphismus3;
+      border-radius: 0px 6px 6px 0px;
+      width: 18%;
+      height: 10rem;
+      margin-bottom: 1%;
+
+      &>.containerIcoButtonBrand {
+        @include l.layoutFlexboxRowCenter;
+        margin: 0% auto;
+        padding: 0%;
+        margin-top: 12.8%;
+        transition: all 0.35s ease;
+
+        &>.textVideo {
+          @include d.desig_H_element (v.$colorTextIni, 1.6rem);
+          text-align: center;
+          margin: 8% auto;
+          margin-bottom: 10%;
+        }
+
+        &>i {
+          position: absolute;
+          top: 78%;
+          right: 16%;
+          color: v.$colorRedNeu2;
+          transform: scale(3.6);
+          padding: 2%;
+          margin-right: 5%;
+          transition: all 0.45s ease;
+        }
+      }
+
+      &>.containerButtonVideo {
+        @include l.layoutFlexboxRowCenter;
+        margin: 15% auto;
+        width: 80%;
+        margin-bottom: 18%;
+        z-index: 20;
+
+        &>button {
+          @include d.buttonTypeNeuMorphismus (v.$colorNavy, 1.3rem);
+          height: 42px;
+          padding: 2% 19%;
+          border-radius: 9px;
+          transition: all 0.45s ease;
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            color: v.$colorRedNeu;
+            box-shadow: v.$boxShadow5;
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+
+  &>.containerMiddleAlbum {
+    @include l.layoutFlexboxColumCenter;
+    width: 98%;
+    padding: 1%;
+    margin: 0% auto;
+    border-radius: 0px 0px 6px 6px;
+    background-color: v.$backgroundColorIni;
+
+    &>.containerDescriptionShort {
+      @include l.layoutFlexboxColumCenter;
+      @include n.neuMorphismus3;
+      border-radius: 3px;
+      margin: 0% auto;
+
+      &>.spanDescriptionShort {
+        @include d.configurationText2 (v.$colorDunkelSecondary, 0.9rem);
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        margin: 0%;
+        text-align: justify;
+        text-shadow: v.$textShadow2;
+        font-weight: 400;
+      }
+    }
+
+    &>.containerAccordionAlbum {
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      @include n.neuMorphismus3;
+      border-radius: 3px;
+      margin: 1% auto;
+
+      &>.AccordionAlbum {
+        @include l.layoutFlexboxRowCenter;
+        margin: 0% auto;
+        border-radius: 3px;
+
+        &>.AccordionItem {
+          background-color: v.$backgroundColorIni;
+          padding: 0%;
+
+          &>.accordionHeader {
+            @include l.layoutFlexboxRowCenter;
+
+            &>.textOfImagesAlbums {
+              @include d.configurationLabel(v.$colorTextIni, 0.8rem);
+              font-weight: 700;
+            }
+          }
+
+          &>.accordionBody {
+            @include l.layoutFlexboxRowCenter;
+
+            &>.contSongOfAlbum {
+              @include l.layoutFlexboxRowCenter;
+              margin: 0% auto;
+              padding: 0%;
+
+              border: 1px solid red;
+
+              &>.figureAlbum {
+                @include d.figure;
+                width: 3rem;
+                height: 3rem;
+                margin: 0% auto;
+                padding: 0%;
+                background-color: transparent;
+
+                &>.imgAlbumDetail {
+                  @include d.imageGenerall;
+                  width: 3.6rem;
+                  height: 3.6rem;
+                  border-radius: 50%;
+                  padding: 0%;
+                  margin: 0% auto;
+                }
+              }
+
+              &>.contTableOfSongs {
+                @include l.layoutFlexboxRowCenter;
+                margin: 0% auto;
+                padding: 0%;
+                transform: scale(0.6);
+
+                border: 1px solid red;
+
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+    &>.bodyAlbumDetail {
+      @include l.layoutFlexboxRowCenter;
+      margin: 0% auto;
+
+      &>.descriptionLange {
+        @include l.layoutFlexboxColumCenter;
+        @include n.neuMorphismus3;
+        border-radius: 3px;
+        margin: 0% auto;
+
+        &>.spanDescriptionLange {
+          @include d.configurationText2 (v.$colorDunkelSecondary, 0.9rem);
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-start;
+          margin: 0%;
+          text-align: justify;
+          text-shadow: v.$textShadow1;
+          font-weight: 400;
+          padding: 0.8%;
+        }
+      }
+
+    }
+  }
+
+  &>.containerBottonAlbum {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    width: 25%;
+    padding: 0.4%;
+    margin: 1%;
+    margin-left: 74.8%;
+    background-color: v.$backgroundColorIni;
+
+    &>.footerRecordDetail {
+      @include l.layoutFlexboxRowCenter;
+      @include n.neuMorphismus4;
+      justify-content: space-around;
+      margin: 0% auto;
+
+      &>.stockOfRecord {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        width: auto;
+        margin: 0% 3%;
+        margin-right: 6%;
+
+        &>i {
+          transform: scale(2.2);
+          font-size: 900;
+          margin-right: 40%;
+        }
+
+        &>.stock {
+          @include l.layoutFlexboxRowCenter;
+          @include d.configurationText1 (v.$colorGreen, 1.1rem);
+          font-size: bolder;
+        }
+      }
+
+      &>.containerPriceTax {
+        @include l.layoutFlexboxColumCenter;
+        width: 42%;
+        @include d.configurationText1 (v.$colorTextIni, 0.9rem);
+
+        &>.containerPT {
+          @include l.layoutFlexboxRowCenter;
+          margin: 0% auto;
+
+          &>.Price {
+            @include d.configurationText1 (v.$colorTextIni, 0.8rem);
+            font-weight: bold;
+            margin-right: 3%;
+          }
+
+          &>.priceValue {
+            @include d.configurationText1 (v.$colorRedNeu, 0.9rem);
+            font-weight: bolder;
+          }
+
+          &>.Tax {
+            @include d.configurationText1 (v.$backgroundColorDunkelGray, 0.6rem);
+            font-weight: bold;
+            margin-right: 8%;
+          }
+
+          &>.taxValue {
+            @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.6rem);
+            font-weight: 600;
+          }
+
+        }
+      }
+
+      &>.gruppeButoms {
+        @include l.layoutFlexboxRowCenter;
+        margin: 0%;
+        transition: all 0.35s ease;
+
+        &>i {
+          position: absolute;
+          top: 6%;
+          right: -46%;
+          color: v.$colorRedNeu;
+          transform: scale(1);
+          padding: 2%;
+          margin-right: 5%;
+          transition: all 0.35s ease;
+          z-index: 20;
+        }
+
+        &>.theButton {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-end;
+          padding: 0%;
+          margin: 0% auto;
+          margin-right: 2%;
+          gap: 0%;
+          font-size: 1rem;
+          transition: all 0.35s ease;
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            transform: scale(1.2);
+          }
+        }
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+
+          &>i {
+            z-index: 20;
+            transform: scale(2.6) translateX(5px) translateY(5px);
+            width: 24px;
+            height: 24px;
+            color: v.$colorHell;
+            background-color: v.$colorRedNeu;
+            border-radius: 50%;
+            top: -120%;
+            left: 100%;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+#imageFigureArticle {
+  @include d.figure;
+  @include l.layoutFlexboxRowCenter;
+  width: 60%;
+  padding: 1%;
+  background: v.$gradientSlice;
+
+  &>.imageAlbumDetail {
+    @include d.imageGenerall;
+    padding: 1%;
+    background-color: v.$backgroundColorDunkelBlack;
+  }
+}
+
+@keyframes titleMove {
+  0% {
+    opacity: 0;
+    transform: translateX(-130%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(130%);
+  }
+}
+
+@keyframes rotateRecord {
+  from {
+    transform: rotate(0deg) scale(1);
+    box-shadow: v.$boxShadow6;
+  }
+
+  to {
+    transform: rotate(720deg) scale(1.4);
+    border: 1px solid v.$backgroundColorDunkelGray4;
+    box-shadow: v.$boxShadow4;
+  }
+}

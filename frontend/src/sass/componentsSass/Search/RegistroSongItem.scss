@@ -1,0 +1,322 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+.contTableRegistroArticleItem {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  @include g.GlassMorphismus4;
+  border-radius: 0px;
+  padding: 0.5%;
+  margin: 0%;
+
+  &>.contTableResultSearch {
+    @include l.layoutFlexboxRowCenter;
+    align-items: flex-start;
+    @include g.boxShadowGlassMorphismus1;
+    height: 100vh;
+    border-radius: 6px 6px 0px 0px;
+    padding: 0%;
+    margin: 0% auto;
+    overflow-y: auto;
+
+    &>.contTableStriped {
+      @include l.layoutFlexboxColumCenter;
+      align-items: flex-start;
+      @include n.neuMorphismus3;
+      border-radius: 6px 6px 0px 0px;
+      padding: 0%;
+      margin: 0% auto;
+
+      &>.tableHead {
+        @include l.layoutFlexboxRowCenter;
+        @include g.boxShadowGlassMorpCard;
+        box-shadow: v.$boxShadow3;
+        border-radius: 6px 6px 0px 0px;
+        margin: 0% 2%;
+        padding: 1%;
+
+        &>tr {
+          @include l.layoutFlexboxRowCenter;
+          background-color: v.$backgroundColorIni;
+          border-radius: 6px 6px 0px 0px;
+          height: 2.6rem;
+          padding: 1%;
+          margin: 0% auto;
+
+          &>th {
+            @include d.configurationText2 (v.$colorDarkBlueNavy, 0.9rem);
+            margin: 0% auto;
+            text-shadow: g.$textShadowGlassMorphismusText1;
+
+            &>i {
+              width: auto;
+              transform: scale(1.5);
+            }
+
+            &>.icoShoppingCart {
+              transform: scale(1.5);
+              background-color: v.$colorHell;
+              margin-top: 24px;
+            }
+
+            &:nth-child(1) {
+              width: 3%;
+              font-size: 1rem;
+            }
+
+            &:nth-child(2) {
+              width: 17%;
+            }
+
+            &:nth-child(3) {
+              width: 20%;
+            }
+
+            &:nth-child(4) {
+              width: 20%;
+            }
+
+            &:nth-child(5) {
+              width: 5%;
+            }
+
+            &:nth-child(6) {
+              width: 15%;
+            }
+
+            &:nth-child(7) {
+              width: 6%;
+            }
+
+            &:nth-child(8) {
+              width: 5%;
+              font-size: 0.8rem;
+            }
+
+            &:nth-child(9) {
+              width: 10%;
+              font-size: 0.7rem;
+
+              button {
+                width: 138%;
+                height: 26px;
+                padding: 0%;
+                margin: 0% auto;
+                font-size: 0.6rem;
+                transition: all 0.35s ease;
+
+                &:hover,
+                &:focus {
+                  cursor: pointer;
+                  transform: scale(0.9);
+                }
+              }
+            }
+
+            &:nth-child(10) {
+              width: 5%;
+              font-size: 0.7rem;
+              transition: all 0.3s ease;
+
+              &>i {
+                transform: scale(2.6) translateY(-5px);
+                color: v.$colorDarkBlueNavy;
+              }
+            }
+          }
+        }
+      }
+
+      &>.tableBody {
+        @include l.layoutFlexboxColumCenter;
+        @include g.boxShadowGlassMorpCard;
+        border-radius: 0px 0px 6px 6px;
+        box-shadow: v.$boxShadow3;
+        margin: 0% 2%;
+        padding: 1%;
+
+        &>.contArticleItem {
+          //  <<==  tr
+          @include l.layoutFlexboxRowCenter;
+          // @include n.neuMorphismus3;
+          background-color: v.$backgroundColorIni;
+          height: 6rem;
+          border-radius: 0px 0px 6px 6px;
+          padding: 0%;
+          margin: 0% auto;
+          margin-bottom: 0.3%;
+          transition: all 0.35s ease;
+
+          &>td {
+            @include l.layoutFlexboxRowCenter;
+            @include d.configurationText2 (v.$colorTextIni, 0.7rem);
+            margin: 0% auto;
+            padding: 0.3%;
+            background-color: transparent;
+            overflow: hidden;
+            text-shadow: g.$textShadowGlassMorphismusText1;
+
+            &>i {
+              transform: scale(1.1);
+              color: v.$colorRedNeu;
+              transition: all 0.45s ease;
+
+              &:hover,
+              &:focus {
+                cursor: pointer;
+                color: v.$colorRedNeu;
+                transform: scale(2.2) translateY(-3px);
+              }
+            }
+
+            &:nth-child(1) {
+              width: 3%;
+              font-size: 1rem;
+            }
+
+            &:nth-child(2) {
+              width: 17%;
+
+              &>.contFigureTableResultSearch {
+                @include d.figure;
+                box-shadow:  v.$boxShadow3;
+                width: 3rem;
+                height: 3rem;
+                padding: 0.5%;
+                margin: 0% auto;
+
+                &>.UlImage {
+                  @include l.layoutFlexboxRowCenter;
+                  padding: 0%;
+                  margin: 0% auto;
+
+                  &>.liImage {
+                    @include l.layoutFlexboxRowCenter;
+                    padding: 0%;
+                    margin: 0% auto;
+                    list-style-image: none;
+                    list-style: none;
+
+                    &>.imagTableResultSearch {
+                      @include d.imageGenerall;
+                      width: 2.8rem;
+                      height: 2.8rem;
+                      transition: all 0.35s ease;
+
+                      &:hover,
+                      &:focus {
+                        cursor: pointer;
+                        transform: scale(1.8);
+                        z-index: 100;
+                      }
+
+                    }
+                  }
+                }
+              }
+            }
+
+            &:nth-child(3) {
+              width: 20%;
+            }
+
+            &:nth-child(4) {
+              width: 20%;
+              overflow-y: scroll;
+              overflow-x: hidden;
+
+              &>.OlAlbum {
+                margin: 2% auto;
+
+                &>.liAlbum {
+
+                  &>.nameAlbum {
+                    @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.7rem);
+                    text-align: start;
+                  }
+                }
+              }
+            }
+
+            &:nth-child(5) {
+              width: 5%;
+            }
+
+            &:nth-child(6) {
+              @include l.layoutFlexboxRowCenter;
+              width: 15%;
+              text-align: justify;
+              padding: 0%;
+            }
+
+            &:nth-child(7) {
+              width: 6%;
+            }
+
+            &:nth-child(8) {
+              width: 5%;
+              font-size: 1rem;
+              color: v.$colorRed;
+            }
+
+            &:nth-child(9) {
+              width: 10%;
+
+              button {
+                width: 138%;
+                height: 26px;
+                padding: 0%;
+                margin: 0% auto;
+                font-size: 0.6rem;
+                transition: all 0.35s ease;
+
+                &:hover,
+                &:focus {
+                  cursor: pointer;
+                  transform: scale(0.9);
+                }
+              }
+            }
+
+            &:nth-child(10) {
+              width: 5%;
+              font-size: 0.7rem;
+              transition: all 0.45s ease;
+
+              &>i {
+                transform: scale(2.6) translateY(2px);
+                color: v.$colorRedNeu;
+              }
+
+              &:hover,
+              &:focus {
+                cursor: pointer;
+                color: v.$colorRedNeu;
+
+                &>i {
+                  background-color: v.$colorRedNeu;
+                  transform: scale(3.6) translateY(-3px);
+                  padding: 2%;
+                  color: v.$colorHell;
+                }
+              }
+            }
+          }
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            @include g.GlassMorphismus3;
+            border-radius: 6px;
+            padding: 0.5%;
+            transform: scale(1.06);
+            z-index: 20;
+          }
+        }
+      }
+    }
+  }
+}

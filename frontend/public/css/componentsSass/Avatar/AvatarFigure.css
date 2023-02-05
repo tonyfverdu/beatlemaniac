@@ -1,0 +1,77 @@
+.contAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  position: absolute;
+  top: 0%;
+  left: 38%;
+  min-height: auto;
+  margin-top: 1%;
+  z-index: 20;
+}
+.contAvatar > .figImgAvatarRegister {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  padding: 0% auto;
+  margin: 1% 0%;
+  background-color: transparent;
+}
+.contAvatar > .figImgAvatarRegister > .imgAvatar {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  padding: 0%;
+  margin: 0%;
+  transition: all 0.95s ease;
+}
+.contAvatar > .figImgAvatarRegister > .imgAvatar:hover, .contAvatar > .figImgAvatarRegister > .imgAvatar:focus {
+  cursor: pointer;
+  transform: scale(2);
+}
+.contAvatar > .nameAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(31, 118, 35, 0.68);
+  border: none;
+  border-radius: 3px;
+  width: 50%;
+  margin: 0% auto;
+  margin-left: 10%;
+  padding: 4% 8%;
+}
+
+/*# sourceMappingURL=AvatarFigure.css.map */

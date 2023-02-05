@@ -1,0 +1,153 @@
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 14vh;
+  padding: 0%;
+  margin: 0%;
+  background-color: rgba(50, 53, 87, 0.707);
+}
+nav > ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 12%;
+  list-style: none;
+  margin: 0%;
+  margin-left: 1%;
+  margin-top: 0.5%;
+}
+nav > ul > li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0% 0.5%;
+  margin: 0% 5%;
+  transition: all 0.35s ease;
+}
+nav > ul > li > a {
+  position: relative;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  padding: 0% 0.5%;
+  text-decoration: none;
+  text-align: center;
+}
+nav > ul > li > a.active {
+  color: rgba(188, 188, 3, 0.9);
+  font-size: 1.6rem;
+}
+nav > ul > li:hover, nav > ul > li:focus {
+  cursor: pointer;
+  padding: 2%;
+  font-weight: bolder;
+  background-color: rgba(4, 32, 52, 0.9);
+  border-radius: 12px 6px 0px 0px;
+  transform: scale(1.2) translateY(-5px);
+}
+nav > ul > li:hover > a, nav > ul > li:focus > a {
+  color: orange;
+}
+nav > ul > .containerShoopingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+nav > .containerRegisterCustormer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  margin: 0% auto;
+  bottom: 0%;
+  right: 21.4%;
+  width: 54px;
+  height: 54px;
+}
+nav > .containerRegisterCustormer > .iconCustomer {
+  padding: 0.5%;
+  transition: all 0.35s ease;
+}
+nav > .containerRegisterCustormer > .iconCustomer:hover, nav > .containerRegisterCustormer > .iconCustomer:focus {
+  cursor: pointer;
+  animation: animationCustomer 0.9s ease-in-out forwards infinite;
+}
+nav > .containerRegisterCustormer > .greenColor {
+  color: rgba(54, 250, 54, 0.9);
+  transform: scale(3);
+}
+nav > .containerRegisterCustormer > .redColor {
+  color: rgb(202, 4, 4);
+  transform: scale(1.8);
+}
+nav > .containerRegisterCustormer > .textRegisterCustomer {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(246, 240, 240);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 280%;
+  padding: 0.2%;
+  margin-top: 24%;
+  margin-bottom: 0%;
+  text-align: center;
+}
+nav > .containerRegisterCustormer > .textRegisterCustomer:hover, nav > .containerRegisterCustormer > .textRegisterCustomer:focus {
+  cursor: pointer;
+}
+nav > .containerShoopingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 6%;
+}
+
+@keyframes animationCustomer {
+  0% {
+    transform: scale(2.5) rotate(0deg);
+  }
+  25% {
+    transform: scale(2.5) rotate(-28deg);
+  }
+  50% {
+    transform: scale(2.5) rotate(38deg);
+  }
+  75% {
+    transform: scale(2.5) rotate(-28deg);
+  }
+  100% {
+    transform: scale(2.5) rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=navApp.css.map */

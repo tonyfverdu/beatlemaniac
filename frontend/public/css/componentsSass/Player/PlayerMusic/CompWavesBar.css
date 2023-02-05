@@ -1,0 +1,140 @@
+/*   ////////////////////////////////////////       */
+.contCompWavesbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  height: 2.4rem;
+  margin: 0% auto;
+  padding: 0.3% auto;
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  border: 2px solid rgba(167, 166, 166, 0.6);
+  border-radius: 6px;
+}
+.contCompWavesbar > .contBoxes {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  --boxSize: 0.34rem;
+  --gutter: 2.4rem;
+  width: calc((var(--boxSize) + var(--gutter)) * 13);
+  height: 2.4rem;
+  border-radius: 6px;
+}
+.contCompWavesbar > .contBoxes > .box {
+  transform: scale(0.6);
+  height: 100%;
+  width: var(--boxSize);
+  background: linear-gradient(to bottom, rgb(253, 161, 253) 3%, rgb(198, 127, 196) 10%, rgb(143, 58, 143) 20%, rgb(94, 46, 88) 30%, rgb(251, 176, 248)) no-repeat;
+  border-radius: 1px;
+}
+.contCompWavesbar > .contBoxes > .active {
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.contCompWavesbar > .contBoxes > .box1 {
+  animation-name: quiet;
+}
+.contCompWavesbar > .contBoxes > .box2 {
+  animation-name: normal;
+}
+.contCompWavesbar > .contBoxes > .box3 {
+  animation-name: normal;
+}
+.contCompWavesbar > .contBoxes > .box4 {
+  animation-name: loud;
+}
+.contCompWavesbar > .contBoxes > .box5 {
+  animation-name: normal;
+}
+.contCompWavesbar > .contBoxes > .box6 {
+  animation-name: loud;
+}
+.contCompWavesbar > .contBoxes > .box7 {
+  animation-name: normal;
+}
+.contCompWavesbar > .contBoxes > .box8 {
+  animation-name: quiet;
+}
+
+.isActive {
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+}
+
+@keyframes quiet {
+  0% {
+    transform: scale(0.2);
+    background: rgb(103, 255, 2);
+  }
+  25% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(0.3);
+  }
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}
+@keyframes normal {
+  0% {
+    transform: scale(0.6);
+    background: linear-gradient(to top, rgb(15, 15, 228) 3%, rgb(3, 3, 204) 10%, rgb(1, 1, 151) 20%, rgb(1, 1, 63) 30%, rgb(0, 0, 0)) no-repeat;
+  }
+  25% {
+    transform: scale(1);
+    background: rgb(100, 250, 255);
+  }
+  50% {
+    transform: scale(0.6);
+    background: rgb(252, 218, 156);
+  }
+  75% {
+    transform: scale(1.1);
+    background: rgb(100, 250, 255);
+  }
+  100% {
+    transform: scale(0.4);
+    background: rgb(252, 218, 156);
+  }
+}
+@keyframes loud {
+  0% {
+    transform: scale(1.2);
+    background: rgba(98, 8, 8, 0.65);
+  }
+  25% {
+    transform: scale(1.5);
+    background: #dd4b39;
+  }
+  50% {
+    transform: scale(0.8);
+    background: rgba(98, 8, 8, 0.65);
+  }
+  75% {
+    transform: scale(1.2);
+    background: #dd4b39;
+  }
+  100% {
+    transform: scale(0.7);
+    background: rgba(98, 8, 8, 0.65);
+  }
+}
+
+/*# sourceMappingURL=CompWavesBar.css.map */

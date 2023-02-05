@@ -1,0 +1,208 @@
+/*   ////////////////////////////////////////       */
+.contCategoryDataEdited {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  align-items: flex-start;
+  margin: 1% auto;
+  border-radius: 3px;
+}
+.contCategoryDataEdited > .headerDataGeneral {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 50%;
+  height: auto;
+  padding: 1% auto;
+  margin: 2%;
+  margin-bottom: 1%;
+}
+.contCategoryDataEdited > .headerDataGeneral > .titleDataGeneral {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 0%;
+  margin-bottom: 2.5%;
+  padding: 0%;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.contCategoryDataEdited > .contRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contCategoryDataEdited > .contRow > .contLIData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100%;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 0.8%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .LI_OfDataRegister, .contCategoryDataEdited > .contRow > .contLIData > .treament {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0% auto;
+  margin-left: 4%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .LI_OfDataRegister > .titleOfLi, .contCategoryDataEdited > .contRow > .contLIData > .treament > .titleOfLi {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  width: auto;
+  font-weight: 700;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 4%;
+  border-radius: 0%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .LI_OfDataRegister > .dataOfLi, .contCategoryDataEdited > .contRow > .contLIData > .treament > .dataOfLi {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  justify-content: flex-start;
+  background-color: rgb(246, 240, 240);
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  width: auto;
+  font-weight: normal;
+  padding: 1%;
+  margin: 0%;
+  border: none;
+  border-radius: 0%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .treament {
+  margin-left: 4%;
+  margin-right: 2.5%;
+  width: 10%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .anyName {
+  width: 30%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .age {
+  width: 8%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .phoneEmail {
+  width: 40%;
+  margin-right: 5%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .phoneEmail:nth-child(2) {
+  margin-left: 7%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .street {
+  width: 81%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .numStreet {
+  width: 8%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .city {
+  width: 24%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .stateProv {
+  width: 34%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .zipCode {
+  width: 19%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .country {
+  width: 25%;
+  margin-right: 2%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .card {
+  width: 28%;
+  border-radius: 0%;
+  margin-right: 1%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .holder {
+  width: 34%;
+  margin-right: 1%;
+  margin-left: 0%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .cardNumber {
+  width: 21%;
+  margin-right: 1%;
+  margin-left: 0%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .cardNumber > .titleOfLi {
+  width: 4.8rem;
+  font-size: 0.7rem;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .cardNumber > .dataOfLi {
+  width: 100%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .expData {
+  width: 24%;
+  margin-right: 1%;
+  margin-left: 0%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .expData > .titleOfLi {
+  width: 4.8rem;
+  font-size: 0.7rem;
+  margin-left: 2%;
+}
+.contCategoryDataEdited > .contRow > .contLIData > .expData > .dataOfLi {
+  width: 100%;
+}
+
+/*# sourceMappingURL=CategoryDataEdited.css.map */

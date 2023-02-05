@@ -1,0 +1,198 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+
+.containerDataOfRegister_1 {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.5% auto;
+  margin-bottom: 1%;
+
+  &>.headerOfCreateAccount {
+    @include d.desigHeader (transparent);
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    width: 15%;
+    height: 80%;
+    padding: 1%;
+    margin: 0%;
+    text-shadow: v.$textShadow1;
+
+    &>.titelOfCreateAccount {
+      @include d.desig_H_element (v.$colorTextIni, 1rem);
+      font-weight: bold;
+      margin: 0%;
+    }
+  }
+
+  &>.containerNameOfCustomer {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0.2%;
+    width: 88%;
+    margin: 0%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+
+    &>.selectTratament {
+      @include l.layoutFlexboxRowCenter;
+
+      @include d.configurationText1 (v.$colorDunkel, 0.8rem);
+      width: 15%;
+      padding: 0.5%;
+      margin-right: 2%;
+
+      &>option {
+        @include d.configurationText1 (v.$colorDunkel, 0.7rem);
+      }
+    }
+
+    &>.containerInputLabel {
+      @include l.layoutFlexboxRowCenter;
+
+      &>.labelInput {
+        @include d.configurationText2 (v.$colorDunkelSecondary, 1.02rem);
+        font-weight: bolder;
+        margin-bottom: 2%;
+      }
+
+      &>.inputText {
+        @include l.layoutFlexboxRowCenter;
+        width: 60%;
+        @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.86rem);
+
+      }
+    }
+  }
+}
+
+.containerDataOfRegister_2 {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0.5%;
+  margin-bottom: 0.2%;
+
+  &>.containerInputLabel {
+    @include l.layoutFlexboxRowCenter;
+
+    &>.labelInput {
+      @include d.configurationText2 (v.$colorDunkelSecondary, 1.02rem);
+      font-weight: bolder;
+      margin-bottom: 2%;
+    }
+
+    &>.inputText {
+      @include l.layoutFlexboxRowCenter;
+      width: 60%;
+      @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.86rem);
+
+    }
+  }
+
+  &>.containerEmail_Password {
+    @include l.layoutFlexboxColumCenter;
+    align-items: flex-start;
+    margin-left: 10%;
+
+    &>.containerInputLabel {
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      margin-bottom: 2%;
+
+      &>.labelInput {
+        @include d.configurationText2 (v.$colorDunkelSecondary, 1.02rem);
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-end;
+        width: 25%;
+        font-weight: bolder;
+        margin: 0%;
+        padding: 0.2% 0%;
+      }
+
+      &>.inputText {
+        @include l.layoutFlexboxRowCenter;
+        width: 40%;
+        @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.86rem);
+      }
+
+      &:first-child {
+        margin-bottom: 8%;
+      }
+    }
+  }
+
+  &>.regelOfPassword {
+    @include l.layoutFlexboxColumCenter;
+    align-items: flex-end;
+    display: none;
+    width: 32%;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 0.5%;
+
+    @include d.configurationText2 (v.$colorTextIni, 0.9rem);
+
+    &>.messageOfRegelOfPassword {
+      @include d.configurationText2 (v.$colorDarkBlueNavy, 0.9em);
+    }
+
+    &>.valid {
+      @include d.configurationText2 (v.$colorGreen, 0.8em);
+
+      &:before {
+        position: relative;
+        background-color: v.$colorGreenHell;
+        transform: scale(1.4);
+        left: -1%;
+        content: "✔";
+      }
+    }
+
+    &>.invalid {
+      @include d.configurationText2 (v.$colorRed, 0.8em);
+
+      &:before {
+        position: relative;
+        transform: scale(1.4);
+        background-color: v.$colorRed;
+        left: -1%;
+        content: "✖";
+      }
+    }
+
+    &>p>span {
+      font-weight: bolder;
+    }
+  }
+}
+
+.containerButtons {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-around;
+  bottom: -18%;
+  right: 6%;
+  position: absolute;
+  width: 30%;
+
+  &>button {
+    width: 16vw;
+
+    &:first-child {
+      margin-left: 5%;
+    }
+  }
+
+}
+
+i {
+  @include l.layoutFlexboxRowCenter;
+  width: auto;
+  transform: scale(1.3);
+  color: v.$colorDarkBlue1;
+  margin: 0% 5%;
+}

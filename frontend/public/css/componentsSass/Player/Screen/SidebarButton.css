@@ -1,0 +1,62 @@
+/*   ////////////////////////////////////////       */
+.contSidebarButton {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 3.9rem;
+  height: 3.4rem;
+  margin: 6% auto;
+  border-radius: 12px;
+  background-color: rgb(224, 229, 236);
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  transition: all ease 0.45s;
+}
+.contSidebarButton > .icoReact {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.contSidebarButton > .icoReact > .contIcon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5%;
+}
+.contSidebarButton > .nameIcon {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(92, 92, 95);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 2% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.45s;
+}
+.contSidebarButton:hover, .contSidebarButton:focus {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(128, 131, 134);
+  box-shadow: rgba(72, 77, 87, 0.5) 6px 6px 8px 3px, rgb(180, 180, 180) -6px -6px 8px 3px;
+  transform: scale(0.92);
+}
+.contSidebarButton:hover > .nameIcon, .contSidebarButton:focus > .nameIcon {
+  color: rgb(250, 29, 29);
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-shadow: -4px -3px 4px rgba(253, 39, 39, 0.3), 2px 3px 4px rgba(246, 39, 39, 0.3);
+}
+
+.active {
+  border-radius: 12px;
+  background-color: rgb(226, 250, 226);
+  box-shadow: rgba(145, 198, 149, 0.5) 2px 2px 3px 0px, rgba(159, 255, 137, 0.861) -3px -3px 4px 0px;
+}
+
+/*# sourceMappingURL=SidebarButton.css.map */

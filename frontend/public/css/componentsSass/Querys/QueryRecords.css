@@ -1,0 +1,360 @@
+/*   ////////////////////////////////////////       */
+.contQueryBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(244, 34, 34, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(125, 70, 70, 0.68);
+  width: 54.85%;
+  height: 6rem;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  transition: all 0.45s ease;
+}
+.contQueryBox:hover, .contQueryBox:focus {
+  cursor: pointer;
+  background: rgba(247, 5, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 6px 8px 12px 2px rgba(251, 123, 123, 0.8), inset 7px 7px 18px 3px #f42411, 6px 6px 12px 9px #750202;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(118, 31, 31, 0.68);
+  transform: scale(0.97);
+}
+.contQueryBox > .headerAccordion {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: rgb(231, 230, 230);
+  width: 54%;
+  padding: 0%;
+  margin: 0% auto;
+  background-color: transparent;
+}
+.contQueryBox > .headerAccordion > .titleAccordion {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0% auto;
+  transition: all 0.45s ease;
+}
+
+.panelAccordion {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 54.8%;
+  height: 6rem;
+  padding: 0%;
+  margin: 0%;
+  border: 0px 0px 9px 9px;
+  margin-bottom: 1%;
+}
+.panelAccordion > .contBodyQuerys {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0% auto;
+  border: 0px 0px 9px 9px;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border: 0px 0px 9px 9px;
+  padding: 0%;
+  margin: 0%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine:nth-child(1) > .contInput {
+  width: 100%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine:nth-child(2) > .contInput {
+  width: auto;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine:nth-child(3) > .contInput {
+  width: 22rem;
+  margin-left: 5.8%;
+  margin-right: -5.6%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .headerTitleQuerys {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  padding: 0.5%;
+  margin: 0%;
+  margin-left: 2%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .headerTitleQuerys > .titleQuerys {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  margin: 0%;
+  padding: 0%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .headerPrice {
+  margin-right: 1.4%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  padding: 0.5%;
+  margin: 0%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0%;
+  padding: 0%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .labelName {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 0% 2%;
+  padding: 1%;
+  width: 32rem;
+  font-weight: bold;
+  padding: 0%;
+  margin-right: 2%;
+  margin-left: 8%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .labelDate {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 0% 2%;
+  padding: 1%;
+  width: 5.5rem;
+  font-weight: bold;
+  padding: 0%;
+  margin-right: 2%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .labelPrice {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 0% 2%;
+  padding: 1%;
+  width: 6rem;
+  font-weight: bold;
+  padding: 0%;
+  margin-right: 2%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .nameOfAlbum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  width: 16.2rem;
+  padding: 0%;
+  margin-bottom: 0%;
+  margin-right: 40%;
+  transition: all 0.45s ease;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .nameOfAlbum:hover, .panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .nameOfAlbum:focus {
+  cursor: pointer;
+  border: 2px solid rgb(252, 212, 140);
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .rangeInput {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  width: 14rem;
+  padding: 0%;
+  margin-bottom: 0%;
+  margin-right: 4%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .rangeInput:hover, .panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .rangeInput:focus {
+  cursor: pointer;
+  border: 2px solid rgb(252, 212, 140);
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > .textDate {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% 2%;
+  margin-right: 4%;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .contInput > .container2Fields > #listYears {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+}
+.panelAccordion > .contBodyQuerys > .formQuerys > .contLine > .containerButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16rem;
+  justify-content: space-between;
+  margin-left: 8%;
+  gap: 10%;
+}
+
+input[type=range] ~ datalist option:after {
+  content: attr(value);
+}
+
+.colorRed {
+  background: rgba(244, 34, 34, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(125, 70, 70, 0.68);
+}
+.colorRed:hover, .colorRed:focus {
+  background: rgba(247, 5, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 6px 8px 12px 2px rgba(251, 123, 123, 0.8), inset 7px 7px 18px 3px #f42411, 6px 6px 12px 9px #750202;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(118, 31, 31, 0.68);
+}
+
+.colorGreen {
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+}
+.colorGreen:hover, .colorGreen:focus {
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(31, 118, 35, 0.68);
+}
+
+/*# sourceMappingURL=QueryRecords.css.map */

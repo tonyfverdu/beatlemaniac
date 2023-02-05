@@ -1,0 +1,177 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+
+.containerForm {
+  @include l.layoutFlexboxRowCenter;
+  @include n.neuMorphismus5;
+  margin: 2% auto;
+  padding: 2%;
+
+  &>.formRegister {
+    @include l.layoutFlexboxColumCenter;
+    justify-content: flex-start;
+
+    &>.titleOfRegisterForm {
+      @include d.desig_H_element (v.$colorDunkelSecondary, 2.1rem);
+    }
+
+    &>.containerData {
+      @include l.layoutFlexboxColumCenter;
+      align-items: flex-start;
+      @include n.neuMorphismus4;
+
+      &>.containerFullName {
+        @include l.layoutFlexboxRowCenter;
+        margin: 2%;
+        padding: 1%;
+      }
+
+      &>.containerNameOfUser {
+        @include l.layoutFlexboxRowCenter;
+        width: fit-content;
+        justify-content: flex-start;
+        border: 1px solid red;
+        margin: 2%;
+        padding: 1%;
+
+        &>.pNameOfuser {
+          @include d.configurationText2 (v.$backgroundColorDunkelGray3, 1.1rem);
+          margin-left: 3%;
+  
+          &>.nameOfUserData {
+            @include d.configurationText2 (v.$colorRedNeu2, 1.6rem);
+            width: 150%;
+            margin-left: 2%;
+            font-weight: bolder;
+            
+            animation: changeColor 8s alternate infinite;
+  
+          }
+        }
+      }
+
+    }
+
+    &>.containerData2 {
+      @include l.layoutFlexboxRowCenter;
+      align-items: flex-start;
+      @include n.neuMorphismus4;
+      width: 96%;
+      margin: 2%;
+      padding: 2%;
+
+      &>.containerOflabel_Input:nth-child(1) {
+        margin-left: 3%;
+      }
+
+      &>fieldset {
+        @include l.layoutFlexboxRowCenter;
+        width: 80%;
+        margin-right: 8%;
+
+        &>legend {
+          @include d.configurationText1 (v.$colorTextIni, 1.1rem);
+          text-align: justify;
+          font-weight: bold;
+        }
+
+        &>.containerRadioButtons {
+          @include l.layoutFlexboxRowCenter;
+          margin: 1%;
+
+          &>label {
+            @include d.configurationLabel (v.$colorTextIni, 0.9rem);
+            margin-right: 1%;
+          }
+
+          &>input {
+            transition: all 0.45s ease;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              border: 2px solid v.$colorbackgroudneuOrange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.containerOflabel_Input {
+  @include l.layoutFlexboxRowCenter;
+
+  &>label {
+    @include d.configurationLabel (v.$colorTextIni, 1.1rem);
+    margin-right: 1%;
+  }
+
+  &>input {
+    @include d.configurationText2 (v.$colorTextIni, 0.9rem);
+    text-align: left;
+    transition: all 0.45s ease;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      border: 1px solid v.$colorbackgroudneuOrange;
+    }
+  }
+
+  #theAge {
+    @extend input;
+    width: 16%;
+
+    color: v.$colorNavy;
+  }
+}
+
+@keyframes changeColor {
+
+  0% {
+    color: v.$colorHell;
+  }
+
+  10% {
+    color: v.$colorHell0;
+  }
+
+  20% {
+    color: v.$colorHell1;
+  }
+
+  30% {
+    color: v.$colorHell2;
+  }
+
+  40% {
+    color: v.$colorHell3;
+  }
+
+  50% {
+    color: v.$colorHell4;
+  }
+
+  60% {
+    color: v.$colorHell5;
+  }
+
+  70% {
+    color: v.$colorHell6;
+  }
+
+  80% {
+    color: v.$colorHell7;
+  }
+
+  90% {
+    color: v.$colorHell8;
+  }
+
+  100% {
+    color: v.$colorHell9;
+  }
+}

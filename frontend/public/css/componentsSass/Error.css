@@ -1,0 +1,229 @@
+/*   ////////////////////////////////////////       */
+.containerErrorGlobal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../src/images/theBeatles/404/laufen6.jpg"), url("../../src/images/theBeatles/404/laufen5.jpeg");
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+}
+.containerErrorGlobal > .containerMessage {
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 34%;
+  height: auto;
+  margin: 1% auto;
+  padding: 1.5%;
+}
+.containerErrorGlobal > .containerMessage > span {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(10, 10, 10);
+  margin: 0% auto;
+  text-align: left;
+}
+.containerErrorGlobal > .containerError {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100vw;
+  height: 60vh;
+  padding: 0%;
+  margin: 0% auto;
+}
+.containerErrorGlobal > .containerError .containerErrorPage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 86vw;
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: backgroundImageAnimation 26s ease-in-out infinite alternate;
+}
+.containerErrorGlobal > .containerError .containerErrorPage > .containerHeaderError {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: rgb(205, 204, 204);
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  align-items: flex-start;
+  width: 36%;
+  height: auto;
+  padding: 1%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+}
+.containerErrorGlobal > .containerError .containerErrorPage > .containerHeaderError > .containerName {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0% auto;
+  text-align: center;
+}
+.containerErrorGlobal > .containerError .containerErrorPage > .containerLink {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 12%;
+  margin-top: 1%;
+}
+.containerErrorGlobal > .containerError .containerErrorPage > .containerLink > a {
+  display: block;
+  float: right;
+  padding: 4% 9%;
+  background-color: rgb(167, 166, 166);
+  border: none;
+  border-radius: 9px;
+  margin: 0% auto;
+  color: rgb(10, 10, 10);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 1px solid rgba(202, 202, 220, 0.7);
+  position: relative;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  padding: 2% 4%;
+  text-decoration: none;
+  transition: all 0.45s ease;
+}
+.containerErrorGlobal > .containerError .containerErrorPage > .containerLink > a:hover, .containerErrorGlobal > .containerError .containerErrorPage > .containerLink > a:focus {
+  cursor: pointer;
+  transform: scale(0.92);
+  background: linear-gradient(315deg, #8f8f8f, #414141);
+  box-shadow: -2px -2px 5px #545454, 1px 1px 4px #bababa;
+  color: rgb(56, 1, 1);
+  font-weight: bolder;
+}
+
+@keyframes backgroundImageAnimation {
+  0% {
+    background: url("../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+  }
+  10% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.98;
+  }
+  20% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.96;
+  }
+  30% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.94;
+  }
+  40% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.92;
+  }
+  50% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+  }
+  60% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.92;
+  }
+  70% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.94;
+  }
+  80% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.96;
+  }
+  90% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.98;
+  }
+  100% {
+    background: url("../../src/images/theBeatles/Error-404-Not-Found.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=Error.css.map */

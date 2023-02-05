@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// VARIABLES
+$languages: (
+  html: (
+    #00ff43,
+    90,
+  ),
+  css: (
+    #00a1ff,
+    85,
+  ),
+  javascript: (
+    #ff04f7,
+    60,
+  ),
+);
+$stroke-dashoffset: 440;
+
+//  PLACEHOLDERS
+%absolute-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// MAPS
+@function calc-stroke-dashoffset($percent) {
+  @return $stroke-dashoffset - ($stroke-dashoffset * $percent) / 100;
+}
+
+// GLOBAL STYLES
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+}

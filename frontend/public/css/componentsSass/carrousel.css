@@ -1,0 +1,51 @@
+/*   ////////////////////////////////////////       */
+.dasCarrousel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 32vw;
+  height: 450px;
+}
+.dasCarrousel > .carrouselItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 32vw;
+  height: 24vh;
+}
+.dasCarrousel > .carrouselItem > .image {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 32vw;
+  height: 24vh;
+}
+
+.titleOfSlide {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=carrousel.css.map */

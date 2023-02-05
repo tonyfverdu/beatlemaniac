@@ -1,0 +1,96 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../glassMorphismus' as g;
+
+
+.activeClassMenu {
+  @include l.layoutFlexboxRowCenter;
+  @include g.GlassMorphismus3;
+  width: 4rem;
+  height: 5.2rem;
+  padding: 1% auto;
+  margin: 0% auto;
+  box-shadow: v.$boxShadow9;
+  background-color: v.$colorGreenHellT2;
+  border: 1px solid v.$colorGreen;
+  border-radius: 6px 3px 0px 0px;
+  text-decoration: none;
+  transition: all ease 0.35s;
+
+  &>.textItem {
+    @include l.layoutFlexboxRowCenter;
+    @include d.configurationText1 (v.$colorHell, 0.9rem);
+    transform: scale(1.16) translateY(-10px);
+    padding: 0% auto;
+    margin: 0% auto;
+    margin-top: 12%;
+    font-weight: 700;
+    transition: all ease 0.45s;
+  }
+
+  &:hover,
+  &:focus {
+    @include g.GlassMorphismus6T;
+    cursor: pointer;
+    bottom: 0%;
+    height: 89px;
+    animation: moveUpGreen 0.35s ease forwards;
+
+    &>.textItem {
+      @include d.configurationText2 (v.$colorHell, 0.9rem);
+    }
+  }
+}
+
+.inactiveClassMenu {
+  @include l.layoutFlexboxRowCenter;
+  @include g.GlassMorphismus3;
+  width: 3.2rem;
+  height: 4rem;
+  padding: 1% auto;
+  margin: 0% auto;
+  box-shadow: v.$boxShadow7;
+  background-color: v.$colorRedNeuT;
+  border: 1px solid v.$colorRedNeuT;
+  border-radius: 6px 3px 0px 0px;
+  text-decoration: none;
+  transition: all ease 0.35s;
+
+  &>.textItem {
+    @include l.layoutFlexboxRowCenter;
+    @include d.configurationText1 (v.$colorHell, 0.8rem);
+    transform: scale(1) translateY(-4px);
+    padding: 0% auto;
+    margin: 0% auto;
+    margin-top: 12%;
+    font-weight: 700;
+    transition: all ease 0.35s;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    animation: moveUpRed 0.35s ease forwards;
+
+    &>.textItem {
+      @include d.configurationText2 (v.$colorHell, 0.9rem);
+    }
+  }
+}
+
+@keyframes moveUpGreen {
+  to {
+    box-shadow: v.$boxShadow10;
+    background-color: v.$colorGreenHellT;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes moveUpRed {
+  to {
+    box-shadow: v.$boxShadow11;
+    background-color: v.$colorRedNeuT;
+    transform: translateY(-4px);
+  }
+}

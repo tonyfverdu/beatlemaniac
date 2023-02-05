@@ -1,0 +1,229 @@
+/*   ////////////////////////////////////////       */
+.containerForm {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  margin: 2% auto;
+  padding: 2%;
+}
+.containerForm > .formRegister {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.containerForm > .formRegister > .titleOfRegisterForm {
+  color: rgba(4, 32, 52, 0.9);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.containerForm > .formRegister > .containerData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+}
+.containerForm > .formRegister > .containerData > .containerFullName {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2%;
+  padding: 1%;
+}
+.containerForm > .formRegister > .containerData > .containerNameOfUser {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: fit-content;
+  justify-content: flex-start;
+  border: 1px solid red;
+  margin: 2%;
+  padding: 1%;
+}
+.containerForm > .formRegister > .containerData > .containerNameOfUser > .pNameOfuser {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  margin-left: 3%;
+}
+.containerForm > .formRegister > .containerData > .containerNameOfUser > .pNameOfuser > .nameOfUserData {
+  position: relative;
+  text-align: justify;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(56, 1, 1);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 150%;
+  margin-left: 2%;
+  font-weight: bolder;
+  animation: changeColor 8s alternate infinite;
+}
+.containerForm > .formRegister > .containerData2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 96%;
+  margin: 2%;
+  padding: 2%;
+}
+.containerForm > .formRegister > .containerData2 > .containerOflabel_Input:nth-child(1) {
+  margin-left: 3%;
+}
+.containerForm > .formRegister > .containerData2 > fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 80%;
+  margin-right: 8%;
+}
+.containerForm > .formRegister > .containerData2 > fieldset > legend {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  text-align: justify;
+  font-weight: bold;
+}
+.containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1%;
+}
+.containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons > label {
+  position: relative;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin-right: 1%;
+}
+.containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons > input, .containerOflabel_Input .containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons > #theAge {
+  transition: all 0.45s ease;
+}
+.containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons > input:hover, .containerOflabel_Input .containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons > #theAge:hover, .containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons > input:focus, .containerOflabel_Input .containerForm > .formRegister > .containerData2 > fieldset > .containerRadioButtons > #theAge:focus {
+  cursor: pointer;
+  border: 2px solid rgb(213, 140, 4);
+}
+
+.containerOflabel_Input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerOflabel_Input > label {
+  position: relative;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin-right: 1%;
+}
+.containerOflabel_Input > input, .containerOflabel_Input > #theAge {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: left;
+  transition: all 0.45s ease;
+}
+.containerOflabel_Input > input:hover, .containerOflabel_Input > #theAge:hover, .containerOflabel_Input > input:focus, .containerOflabel_Input > #theAge:focus {
+  cursor: pointer;
+  border: 1px solid rgb(213, 140, 4);
+}
+.containerOflabel_Input #theAge {
+  width: 16%;
+  color: rgba(2, 2, 101, 0.9);
+}
+
+@keyframes changeColor {
+  0% {
+    color: rgb(246, 240, 240);
+  }
+  10% {
+    color: rgb(246, 240, 240);
+  }
+  20% {
+    color: rgb(228, 227, 227);
+  }
+  30% {
+    color: rgb(252, 248, 2);
+  }
+  40% {
+    color: rgb(252, 249, 112);
+  }
+  50% {
+    color: rgb(103, 255, 2);
+  }
+  60% {
+    color: rgb(159, 250, 98);
+  }
+  70% {
+    color: rgb(4, 243, 252);
+  }
+  80% {
+    color: rgb(100, 250, 255);
+  }
+  90% {
+    color: rgb(248, 164, 8);
+  }
+  100% {
+    color: rgb(252, 218, 156);
+  }
+}
+
+/*# sourceMappingURL=Register.css.map */

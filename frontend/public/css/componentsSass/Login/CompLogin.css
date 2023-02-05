@@ -1,0 +1,265 @@
+/*   ////////////////////////////////////////       */
+.contLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: 100%;
+  margin: 0% auto;
+}
+.contLogin > .containerLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  justify-content: flex-start;
+  height: 100%;
+  margin: 0% auto;
+  padding: 2%;
+  border-radius: 0px 29px 29px 0px;
+}
+.contLogin > .containerLogin > .headerLoggin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 32%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  margin-bottom: 2%;
+}
+.contLogin > .containerLogin > .headerLoggin > .titleLogin {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 1%;
+  margin: 0% auto;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+}
+.contLogin > .containerLogin > .colorRed {
+  background: rgba(244, 34, 34, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(125, 70, 70, 0.68);
+  padding: 0.5% 2%;
+  margin: 4% auto;
+}
+.contLogin > .containerLogin > .colorRed > .titelFormularLoginCustomer {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 1%;
+  margin: 0% auto;
+  text-shadow: 0.8rem 0.3rem 0.5rem rgb(151, 68, 68);
+}
+.contLogin > .containerLogin > .colorGreen {
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  padding: 0.5% 2%;
+  margin: 4% auto;
+}
+.contLogin > .containerLogin > .colorGreen > .titleLogin {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 1%;
+  margin: 0% auto;
+  text-shadow: 0.8rem 0.3rem 0.5rem rgb(68, 151, 71);
+}
+.contLogin > .containerLogin > .contFormLoginPlay, .contLogin > .contLogin.containerLogin > .containerLogout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 24rem;
+  height: auto;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -15px -15px 29px #aaaaaa, 15px 15px 29px #ffffff;
+  border-radius: 9px;
+  height: auto;
+  margin: 1% auto;
+  margin-bottom: 0%;
+  padding: 1%;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > label, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin-right: 4%;
+  width: auto;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > label > .ico, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > label > .ico {
+  transform: scale(1.4);
+  color: rgb(1, 14, 131);
+  padding: 1%;
+  margin: 0% 1%;
+  margin-left: 12%;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > input, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > input {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  max-width: 50%;
+  text-align: left;
+  font-weight: 400;
+  transition: all 0.45s ease;
+  border: 2px solid rgb(63, 63, 63);
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > input:hover, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > input:hover, .contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > input:focus, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > input:focus {
+  cursor: pointer;
+  border: 2px solid rgb(213, 140, 4);
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > #emailUserLogin, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > #emailUserLogin {
+  margin-left: 10%;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > #passwordUserLogin, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > #passwordUserLogin {
+  width: 57.8%;
+  margin-bottom: 1%;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contDataLogIn > .contLabel_Input > .contCheckBox, .contLogin > .contLogin.containerLogin > .containerLogout > .contDataLogIn > .contLabel_Input > .contCheckBox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 15%;
+  right: 6%;
+  transform: scale(2.5);
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .contButtonsPlay, .contLogin > .contLogin.containerLogin > .containerLogout > .contButtonsPlay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16rem;
+  justify-content: space-evenly;
+  padding: 0%;
+  margin: 0%;
+  margin-top: 4%;
+  margin-left: 40%;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .ulOfErrors, .contLogin > .contLogin.containerLogin > .containerLogout > .ulOfErrors {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.contLogin > .containerLogin > .contFormLoginPlay > .ulOfErrors > .liError, .contLogin > .contLogin.containerLogin > .containerLogout > .ulOfErrors > .liError {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 0% auto;
+}
+.contLogin > .containerLogout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  max-width: 32%;
+  min-height: 12vh;
+  margin-top: 0%;
+}
+.contLogin > .containerLogout > .contButtonsLogout {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16rem;
+  justify-content: space-evenly;
+  padding: 0%;
+  margin-top: 1%;
+  margin-left: 55%;
+  gap: 10%;
+}
+
+/*# sourceMappingURL=CompLogin.css.map */

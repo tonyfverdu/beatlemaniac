@@ -1,0 +1,305 @@
+/*   ////////////////////////////////////////       */
+.contAllAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background: #e0e0e0;
+  box-shadow: -8px -9px 12px #acacac, 8px 9px 12px #ffffff;
+  width: 26rem;
+  height: 11rem;
+  padding: 1% 2%;
+  margin: 0%;
+}
+.contAllAvatar > .containerSelectAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 6px;
+  padding: 0%;
+  margin: 0%;
+}
+.contAllAvatar > .containerSelectAvatar > .headerTitleBoxAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1% 2%;
+  margin: 1% 0%;
+  margin-bottom: 3%;
+}
+.contAllAvatar > .containerSelectAvatar > .headerTitleBoxAvatar > .titleBoxAvatar {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  margin: 0%;
+  margin-left: 2%;
+  padding: 0%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contAllAvatar > .containerSelectAvatar > .headerTitleBoxAvatar > .titleBoxAvatar > .resultAvatar {
+  color: rgb(250, 29, 29);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin-left: 5%;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 100%;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 24rem;
+  margin: 0%;
+  padding: 0%;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  margin: 0% 3%;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar:first-child {
+  margin-left: 0%;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .rbutton_Img {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-end;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .rbutton_Img > .containerRButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  margin: 0% 3%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .rbutton_Img > .containerRButton > label > .rbuttonBeatle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 1rem;
+  height: 1rem;
+  margin: 0% auto;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .rbutton_Img > .figImgAvatar {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0.1%;
+  background-color: transparent;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .rbutton_Img > .figImgAvatar > .imgAvatar {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 50%;
+  padding: 0%;
+  margin: 0%;
+  transition: all 0.95s ease;
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .rbutton_Img > .figImgAvatar > .imgAvatar:hover, .contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .rbutton_Img > .figImgAvatar > .imgAvatar:focus {
+  cursor: pointer;
+  transform: scale(2);
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .txtAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.2%;
+  margin: 0% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contAllAvatar > .containerSelectAvatar > .contOfDefaultAvatars > .UlAvatar > .liAvatar > .txtAvatar > .nameBeatle {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.2%;
+  margin: 1% 0%;
+}
+.contAllAvatar > .contTextPersonAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.2%;
+  margin: 0% auto;
+}
+.contAllAvatar > .contTextPersonAvatar > .txtPersonAvatar {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  width: 100%;
+  margin: 0%;
+  margin-right: 5%;
+  padding: 0%;
+}
+.contAllAvatar > .contTextPersonAvatar > .personAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 120%;
+  margin: 0%;
+  padding: 0%;
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contAllAvatar > .contTextPersonAvatar > .figImgAvatar {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: -18%;
+  right: -12%;
+  border-radius: 50%;
+  padding: 0.1%;
+  background-color: transparent;
+  z-index: 20;
+}
+.contAllAvatar > .contTextPersonAvatar > .figImgAvatar > .imgAvatar {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  padding: 0%;
+  margin: 0%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.95s ease;
+}
+.contAllAvatar > .contTextPersonAvatar > .figImgAvatar > .imgAvatar:hover, .contAllAvatar > .contTextPersonAvatar > .figImgAvatar > .imgAvatar:focus {
+  cursor: pointer;
+  transform: scale(2);
+}
+
+/*# sourceMappingURL=BoxSelectAvatar.css.map */

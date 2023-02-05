@@ -1,0 +1,295 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+
+.containerSC {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: flex-start;
+  @include g.GlassMorphismus1;
+  background-color: transparent;
+  max-width: 59.7rem;
+  height: 100%;
+  margin: 0% auto;
+  margin-left: -10%;
+  border: transparent;
+
+  &>.containerCart {
+    @include l.layoutFlexboxRowCenter;
+    align-items: center;
+    border-radius: 16px;
+    background-color: transparent;
+
+    &>.headerShoppingCart {
+      @include g.displayGlassmorphismus;
+      @include d.desigHeader (transparent);
+      @include l.layoutFlexboxColumCenter;
+      width: 18%;
+      height: inherit;
+      padding: 0% auto;
+      margin: 0% auto;
+      border: 1px solid v.$backgroundColorIniT;
+      border-radius: 16px 0 0 16px;
+      z-index: 20;
+      transition: all 0.45s ease;
+
+      &>.titleShoppingCart {
+        @include d.desig_H_element2 (v.$colorHell, 1rem);
+        font-weight: bolder;
+        margin: 16.5% auto;
+        padding: 0% auto;
+        text-align: center;
+        text-shadow: v.$textShadow2;
+      }
+
+      &>.figureShoppingCartPest {
+        @include d.figure;
+        padding: 0% auto;
+        margin: 10% auto;
+        margin-bottom: 13.2%;
+
+        &>.imageShoppingCartPest {
+          @include d.imageGenerall;
+          object-fit: cover;
+          width: 89px;
+          height: 90px;
+          padding: 2%;
+          border-radius: 50%;
+          z-index: 20;
+        }
+      }
+
+      &:hover .titleShoppingCart,
+      &:focus .titleShoppingCart {
+        cursor: pointer;
+        color: v.$colorRedNeu;
+      }
+
+      &:hover .imageShoppingCartPest,
+      &:focus .imageShoppingCartPest {
+        cursor: pointer;
+        animation: pestShoppingCart 2s ease forwards;
+      }
+    }
+
+    &>.containerOfArticles {
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      height: inherit;
+      padding: 0%;
+      margin: 0% auto;
+      border-radius: 0%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      background-color: transparent;
+
+      &>ul {
+        @include l.layoutFlexboxRowCenter;
+        padding: 0%;
+        margin: 0% auto;
+        list-style: none;
+
+        &>li {
+          @include l.layoutFlexboxColumCenter;
+          padding: 0%;
+          margin: 0% auto;
+          transform: scale(0.90);
+
+          &>.containerAmountArticle {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-end;
+            @include n.neuMorphismus3;
+            width: 150px;
+            padding: 0%;
+            margin: 0% auto;
+            margin-top: 0%;
+            border-radius: 3px 3px 9px 9px;
+            background: v.$gradientSlice2;
+
+            border: 2px solid v.$backgroundColorHellGray;
+
+            &>.amountTitle {
+              @include d.configurationText2 (v.$backgroundColorDunkelGray5, 1.1rem);
+            }
+
+            &>.amountArticle {
+              @include d.configurationText2 (v.$colorNavy, 1.2rem);
+            }
+          }
+        }
+      }
+    }
+
+    &>.containerInfoShoppingCart {
+      @include l.layoutFlexboxColumCenter;
+      @include g.displayGlassmorphismus;
+      background-color: v.$colorHellTransparent2;
+      justify-content: space-between;
+      width: 180px;
+      height: inherit;
+      padding: 0% auto;
+      margin: 0% auto;
+      padding-right: 1%;
+      border: 1px solid v.$backgroundColorIniT;
+      border-radius: 0 9px 9px 0;
+
+      &>.headerTotalArticle {
+        @include d.desigHeader (v.$backgroundColorIni);
+        @include l.layoutFlexboxColumCenter;
+        justify-content: space-evenly;
+        height: 100%;
+        padding: 1%;
+        margin: 14% auto;
+        margin-bottom: 20%;
+        margin-left: 3%;
+
+        &>.containerTotales {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: space-around;
+          margin: 0%;
+
+          &>.Total {
+            @include l.layoutFlexboxRowCenter;
+            width: 48%;
+            @include d.configurationText1 (v.$colorTextIni, 1rem);
+            font-weight: bold;
+            text-align: center;
+            margin: 2% 1%;
+          }
+
+          &>.resultTotal {
+            @include d.configurationText1 (v.$colorRedNeu, 1.36rem);
+            width: 30%;
+            margin: 1%;
+            font-weight: bolder;
+            text-align: center;
+          }
+
+          &:nth-child(1) {
+
+            &>.resultTotal {
+              color: v.$colorNavy;
+            }
+          }
+        }
+      }
+
+      &>.containerButtonsOfShoppingCart {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: space-around;
+        background-color: transparent;
+        width: 100%;
+        height: 38px;
+        margin: 0% auto;
+        margin-top: 14%;
+        margin-bottom: 7%;
+        margin-left: 2%;
+        transition: all 0.45s ease;
+
+        &>.containerButton {
+          @include l.layoutFlexboxRowCenter;
+          padding: 2%;
+          margin: 0% auto;
+
+          &>i {
+            @include l.layoutFlexboxRowCenter;
+            position: absolute;
+            top: 15%;
+            right: -35%;
+            color: v.$colorRedNeu;
+            transform: scale(1);
+            padding: 2%;
+            margin-right: 5%;
+            transition: all 0.35s ease;
+          }
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+
+            &>i {
+              z-index: 20;
+              width: 20px;
+              height: 20px;
+              background-color: v.$colorRedNeu;
+              color: v.$colorHell;
+              border-radius: 50%;
+              transform: scale(2) translateX(6px) translateY(2px);
+            }
+          }
+        }
+
+        button {
+          width: 58px;
+          height: 36px;
+          padding: 1% 3%;
+          margin: 0% auto;
+          margin-bottom: 4%;
+          font-size: 0.8rem;
+          transition: all 0.35s ease;
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            transform: scale(0.88);
+          }
+        }
+      }
+    }
+  }
+}
+
+//  Control of width of Shopping Cart
+.containerSC>.jaIstOpen {
+  transition: all 1s linear;
+  animation: openShoppingCart 1.2s linear forwards;
+}
+
+.containerSC>.neinIstClose {
+  transition: all 1s linear;
+  animation: closeShoppingCart 1.2s linear forwards;
+}
+
+@keyframes openShoppingCart {
+  from {
+    width: 10.1vw;
+    @include g.GlassMorphismus5;
+    margin:0%;
+    padding:0%;
+  }
+
+  to {
+    width: 100%;
+    @include g.GlassMorphismus6;
+    margin:0%;
+    padding:0%;
+  }
+}
+
+@keyframes closeShoppingCart {
+  from {
+    width: 100%;
+    @include g.GlassMorphismus6;
+    margin:0%;
+    padding:0%;
+  }
+
+  to {
+    width: 10.1vw;
+    @include g.GlassMorphismus5;
+    margin:0%;
+    padding:0%;
+  }
+}
+
+@keyframes pestShoppingCart {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}

@@ -1,0 +1,91 @@
+/*   ////////////////////////////////////////       */
+.contIconComponent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: rgba(231, 230, 230, 0.6);
+  border-radius: 50%;
+  padding: 0.5%;
+  margin: 0% 1%;
+  transition: all 0.45s ease-in-out;
+}
+.contIconComponent > .linkIcons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.1%;
+  margin: 0% auto;
+}
+.contIconComponent > .linkIcons > .icon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  transform: scale(1.45);
+}
+.contIconComponent > .linkIcons > .TbBrandMeta {
+  color: #3b5998;
+}
+.contIconComponent > .linkIcons > .FaTwitter {
+  color: #55acee;
+}
+.contIconComponent > .linkIcons > .FaGoogle {
+  color: #dd4b39;
+}
+.contIconComponent > .linkIcons > .FaInstagramSquare {
+  color: #ac2bac;
+}
+.contIconComponent > .linkIcons > .FaLinkedin {
+  color: #0082ca;
+}
+.contIconComponent > .linkIcons > .FaGithub {
+  color: rgb(224, 224, 236);
+}
+.contIconComponent > .textIcon {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(246, 240, 240);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  margin-top: 15%;
+  opacity: 0.8;
+  transition: all 0.45s ease-in-out;
+}
+.contIconComponent:hover, .contIconComponent:focus {
+  cursor: pointer;
+  background-color: rgba(63, 63, 63, 0.6);
+}
+.contIconComponent:hover > .linkIcons, .contIconComponent:focus > .linkIcons {
+  animation: iconoHover 0.45s ease forwards;
+}
+.contIconComponent:hover > .textIcon, .contIconComponent:focus > .textIcon {
+  opacity: 1;
+  transform: translateY(12px);
+  font-size: 1.1rem;
+}
+
+@keyframes iconoHover {
+  from {
+    transform: scale(1.45) translateY(0px);
+  }
+  to {
+    transform: scale(2.8) translateY(-8px);
+    color: rgb(250, 29, 29);
+  }
+}
+
+/*# sourceMappingURL=IconoComponent.css.map */

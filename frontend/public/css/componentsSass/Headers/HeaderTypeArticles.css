@@ -1,0 +1,159 @@
+.headerTypeArticle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  width: 54.85%;
+  height: 6.8rem;
+  padding: 2%;
+  margin: 1% auto;
+  transition: all 0.45s ease;
+}
+.headerTypeArticle:hover, .headerTypeArticle:focus {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+.headerTypeArticle:hover > .headerTypeArticle > .titleTypeArticle > span, .headerTypeArticle:focus > .headerTypeArticle > .titleTypeArticle > span {
+  color: rgb(228, 227, 227);
+}
+.headerTypeArticle > .figuresArticles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 34%;
+  height: 5rem;
+  padding: 0%;
+  overflow: hidden;
+}
+.headerTypeArticle > .figuresArticles > .ulImgs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: 5rem;
+  list-style: none;
+}
+.headerTypeArticle > .figuresArticles > .ulImgs > .liImgs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50%;
+  margin: 0% 4%;
+  padding: 0%;
+  transition: all 0.7s ease;
+}
+.headerTypeArticle > .figuresArticles > .ulImgs > .liImgs > .image {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+.headerTypeArticle > .figuresArticles > .ulImgs > .liImgs > .imgColorRed {
+  box-shadow: 0px 1px 2px 2px #ff9898, inset 6px 6px 12px 0px #fb1803, 0px 1px 3px 3px #feb699;
+}
+.headerTypeArticle > .figuresArticles > .ulImgs > .liImgs > .imgColorGreen {
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+}
+.headerTypeArticle > .figuresArticles > .ulImgs > .liAnimated:nth-child(1) {
+  animation: transitionImage 6s ease-in-out forwards;
+}
+.headerTypeArticle > .titleTypeArticle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: rgb(231, 230, 230);
+  width: 50%;
+  height: auto;
+  padding: 1%;
+  margin: 0% auto;
+  background-color: transparent;
+}
+.headerTypeArticle > .titleTypeArticle > span {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0% auto;
+  transition: all 0.45s ease;
+}
+.headerTypeArticle > .titleTypeArticle > span:first-child {
+  width: 25rem;
+}
+
+.colorRed {
+  background: rgba(244, 34, 34, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(125, 70, 70, 0.68);
+}
+.colorRed:hover, .colorRed:focus {
+  background: rgba(247, 5, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 6px 8px 12px 2px rgba(251, 123, 123, 0.8), inset 7px 7px 18px 3px #f42411, 6px 6px 12px 9px #750202;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(118, 31, 31, 0.68);
+}
+
+.colorGreen {
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+}
+.colorGreen:hover, .colorGreen:focus {
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(31, 118, 35, 0.68);
+}
+
+#ico {
+  color: rgba(231, 230, 230, 0.6);
+  transform: scale(1.6);
+  transition: all 0.45s ease;
+  margin: 0% auto;
+}
+#ico:hover, #ico:focus {
+  cursor: pointer;
+  color: rgb(246, 240, 240);
+  z-index: 20;
+  transform: scale(4);
+}
+
+@keyframes transitionImage {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=HeaderTypeArticles.css.map */

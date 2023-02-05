@@ -1,0 +1,26 @@
+
+.Register {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.Register input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.Register .error {
+  color: red;
+}
+
+.Register .login-switch {
+  color: blue;
+  margin-top: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,600 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+
+
+.containerMainViewSC {
+  @include l.layoutFlexboxRowCenter;
+  width: 100vw;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  background-image: linear-gradient(to top, v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 36%, v.$backgroundColorDunkelBlack), url(../src/images/theBeatles/beatlescentral.png);
+  background-repeat: no-repeat;
+  background-position: 14rem 0rem;
+  background-size: 72% 72%;
+  background-color: v.$backgroundColorDunkelBlack;
+
+  &>.containerResultSC {
+    @include l.layoutFlexboxColumCenter;
+    justify-content: flex-start;
+    @include n.neuMorphismus4;
+    width: 40vw;
+    padding: 1%;
+    margin: 8% auto;
+    margin-bottom: 30%;
+
+    &>.headerViewShoppingCart {
+      @include d.desigHeader ('transparent');
+      @include l.layoutFlexboxColumCenter;
+      align-items: flex-start;
+      padding: 0.5%;
+      margin: 0% auto;
+
+      &>.containerIconShoppingCart {
+        @include l.layoutFlexboxRowCenter;
+        position: absolute;
+        top: -50%;
+        left: 10%;
+        width: 10%;
+        padding: 5%;
+        margin-left: 20%;
+        transition: all 0.45s ease;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          animation: shoppingMove 2s ease forwards;
+        }
+
+        &>.iconShoppingCart {
+          @include l.layoutFlexboxRowCenter;
+          transform: scale(3);
+          width: 24px;
+          height: 24px;
+          color: v.$colorRedNeuDunkel3;
+        }
+      }
+
+      &>.titleViewShoppingCart {
+        @include d.desig_H_element (v.$colorTextIni, 1.8rem);
+        text-align: center;
+        margin: 0% 5%;
+      }
+
+      &>.subtitleViewShoppingCart {
+        @include d.configurationText1 (v.$backgroundColorDunkelGray3, 1rem);
+        text-align: center;
+        margin: 0% 1%;
+
+        &>b {
+          font-size: 1.1rem;
+          font-weight: bolder;
+          margin-right: 22%;
+          margin-left: 40%;
+        }
+      }
+    }
+
+    &>.bodyViewShoppingCart {
+      @include l.layoutFlexboxRowCenter;
+      height: auto;
+      padding: 1%;
+      margin: 0.5% auto;
+
+      &>.containerRegistersOfArticles {
+        @include l.layoutFlexboxColumCenter;
+        @include n.neuMorphismus5;
+        padding: 2%;
+        margin: 0% auto;
+        margin-right: 2%;
+
+        &>.bodyLeftViewShoppingCart {
+          @include l.layoutFlexboxColumCenter;
+          height: 30vh;
+          padding: 2%;
+          margin: 2 auto;
+
+          &>.containerLeftUpViewShoppingCart {
+            @include l.layoutFlexboxRowCenter;
+            align-items: flex-start;
+            padding: 1%;
+            margin-bottom: 5%;
+
+            &>.containerImageLeftUpViewShoppingCart {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              height: auto;
+              margin: 0% auto;
+
+              &>.figureImageOfProduct {
+                @include d.figure;
+                @include n.teclaNeumorphismus1;
+                border-radius: 6px;
+                width: 100%;
+                height: auto;
+                padding: 0.5%;
+                margin: 0% auto;
+
+                &>.imagefigureImageOfProduct {
+                  @include d.imageGenerall;
+                  padding: 1%;
+                  width: 100%;
+                  height: auto;
+                  padding: 2%;
+                  border: 1px solid v.$backgroundColorIni2;
+                }
+              }
+            }
+
+            &>.containerInfoLeftUpViewShoppingCart {
+              @include l.layoutFlexboxColumCenter;
+              justify-content: flex-start;
+              height: 20vh;
+              margin-left: 1%;
+
+              &>.headerTitelProductViewShoppingCart {
+                @include d.desigHeader ('transparent');
+                @include l.layoutFlexboxColumCenter;
+                align-items: flex-start;
+                padding: 1%;
+                margin-bottom: 8%;
+
+                &>.titleProductViewShoppingCart {
+                  @include d.desig_H_element (v.$colorNavy, 1.2rem);
+                  text-align: left;
+                  margin: 0% 5%;
+                  margin-bottom: 2%;
+                }
+              }
+
+              &>.price_stock {
+                @include l.layoutFlexboxColumCenter;
+
+                &>.containerPrice {
+                  @include l.layoutFlexboxRowCenter;
+
+                  &>.titelPrice {
+                    @include d.configurationText2 (v.$backgroundColorDunkelGray3, 1rem);
+                    text-align: justify;
+                    margin: 0% 5%;
+                  }
+
+                  &>.price {
+                    @include d.configurationText2 (v.$colorTextIni, 1.1rem);
+                    text-align: center;
+                    margin: 0% 2%;
+                  }
+                }
+
+                &>.containerStock {
+                  @include l.layoutFlexboxRowCenter;
+                  margin-top: 3%;
+
+                  &>.containerIconStock {
+                    @include l.layoutFlexboxRowCenter;
+                    width: 32%;
+
+                    &>i {
+                      @include l.layoutFlexboxRowCenter;
+                      color: v.$colorRedNeu;
+                      transform: scale(2);
+                    }
+                  }
+
+                  &>.stock {
+                    @include d.configurationText2 (v.$colorRedNeu2, 1.1rem);
+                    text-align: center;
+                    margin: 0% 1%;
+                  }
+                }
+              }
+            }
+          }
+
+          &>.containerLeftDownViewShoppingCart {
+            @include l.layoutFlexboxRowCenter;
+            height: 10vh;
+
+            &>.containerImageBrand {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: space-between;
+
+              &>.figureImageBrand {
+                @include d.figure;
+                padding: 1%;
+                margin-left: 0%;
+                background-color: v.$backgroundColorIni;
+
+                &>.imageBrand {
+                  @include d.imageGenerall;
+                  border-radius: 50%;
+                  width: 6vh;
+                  height: 6vh;
+                  padding: 1%;
+                }
+              }
+            }
+
+            &>.containerIconShoppingCartOut {
+              @include l.layoutFlexboxRowCenter;
+              width: 48%;
+              transition: all 0.25s ease;
+
+              &>i {
+                @include l.layoutFlexboxRowCenter;
+                position: absolute;
+                width: 48%;
+                bottom: 20px;
+                left: -16px;
+                color: v.$colorRedNeuDunkel3;
+                transform: scale(1.6);
+                transition: all 0.45s ease;
+              }
+
+              &:hover>i,
+              &:focus>i {
+                cursor: pointer;
+                animation: animationIconShoppingCartOut 0.45s ease-in-out forwards;
+              }
+            }
+
+            &>.gropuButtonsMoreLess {
+              @include l.layoutFlexboxRowCenter;
+              margin-right: 0%;
+
+              &>.isButton {
+                @include d.buttonTypeNeuMorphismus (v.$colorTextIni, 1.8rem);
+                padding: 0% 12%;
+                margin: 0% auto;
+                transition: all 0.45s ease;
+
+                &:hover,
+                &:focus {
+                  cursor: pointer;
+                  animation: pulseButton 0.45s linear forwards;
+                }
+              }
+
+              &>.less {
+                @extend .isButton;
+                color: v.$colorRedNew;
+                border-radius: 9px 0px 0px 9px;
+              }
+
+              &>.more {
+                @extend .isButton;
+                color: v.$colorNavy;
+                margin-left: 0.2%;
+                border-radius: 0px 9px 9px 0px;
+              }
+
+              &>.separator {
+                @include l.layoutFlexboxRowCenter;
+                width: 45px;
+                height: 45px;
+                margin: 0% 1%;
+                background-color: v.$backgroundColorHellGray;
+                box-shadow: v.$boxShadow3;
+                border: 1px solid v.$backgroundColorDunkelGray4;
+
+                &>.textNumberOfArticle {
+                  @include d.configurationText2 (v.$colorTextIni, 1.3rem);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &>.bodyRigthViewShoppingCart {
+        @include l.layoutFlexboxColumCenter;
+        @include n.neuMorphismus4;
+        height: auto;
+        @include n.neuMorphismus5;
+        padding: 2%;
+        margin: 0% auto;
+
+        &>.headerSummaryViewShoppingCart {
+          @include d.desigHeader ('transparent');
+          @include l.layoutFlexboxColumCenter;
+          align-items: flex-start;
+          padding: 2%;
+
+          &>.titleSummaryViewShoppingCart {
+            @include d.desig_H_element (v.$colorTextIni, 1rem);
+            text-align: center;
+            padding: 1%;
+            margin: 0% 5%;
+            margin-bottom: 0.2%;
+          }
+
+          &>.paragraphSummaryViewShoppingCart {
+            @include d.configurationText1 (v.$backgroundColorDunkelGray3, 0.7rem);
+            text-align: center;
+            margin: 0% 5%;
+          }
+        }
+
+        &>.containerRigthUpViewShoppingCart {
+          @include l.layoutFlexboxColumCenter;
+          margin-bottom: 1.5%;
+          padding: 1%;
+
+          &>.containerSubtotal_Delibery {
+            @include l.layoutFlexboxColumCenter;
+            margin-bottom: 3%;
+
+            &>.containerSubtotalUp {
+              @include l.layoutFlexboxRowCenter;
+
+              &>.titleSubtotal {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray3, 1rem);
+                text-align: justify;
+                margin: 0% 15%;
+                padding: 0%;
+              }
+
+              &>.subtotal {
+                @include d.configurationText2 (v.$colorTextIni, 1.1rem);
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+              }
+            }
+
+            &>.containerDeliveryCost {
+              @include l.layoutFlexboxRowCenter;
+
+              &>.titleDeliveryCost {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.7rem);
+                text-align: justify;
+                margin: 0% 18.5%;
+                padding: 0%;
+              }
+
+              &>.DeliveryCost {
+                @include d.configurationText2 (v.$colorTextIni, 0.8rem);
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+              }
+            }
+          }
+
+          &>.containerTotal_Tax {
+            @include l.layoutFlexboxColumCenter;
+            margin-bottom: 2%;
+
+            &>.containerTotal {
+              @include l.layoutFlexboxRowCenter;
+
+              &>.titleTotal {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray3, 1.1rem);
+                text-align: justify;
+                margin: 0% 22%;
+                padding: 0%;
+              }
+
+              &>.total {
+                @include d.configurationText2 (v.$colorRedNew, 1.2rem);
+                text-align: center;
+                margin: 0%;
+              }
+            }
+
+            &>.containerTax {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-end;
+              padding: 0%;
+              margin: 0%;
+
+              &>.titleVAT {
+                @include d.configurationText2 (v.$backgroundColorDunkelGray3, 0.7rem);
+                text-align: justify;
+                margin: 0%;
+                margin-right: 10%;
+                padding: 0%;
+              }
+            }
+          }
+
+          &>.containerButtonCheckOut {
+            @include l.layoutFlexboxRowCenter;
+            margin-bottom: 1%;
+
+            &>.buttonCheckOut {
+              @include d.buttonTypeNeuMorphismus (v.$colorNavy, 1.1rem);
+              width: 92%;
+              transition: all 0.35s ease;
+
+              &>.iconShoppingCartCheckOut {
+                position: absolute;
+                top: 5%;
+                right: -40%;
+                border-radius: 50%;
+                color: v.$colorRedNeuDunkel3;
+                transform: scale(1);
+                transition: all 0.45s ease;
+
+              }
+
+              &:hover,
+              &:focus {
+                cursor: pointer;
+                animation: pulseButton 0.45s linear forwards;
+
+                &>.iconShoppingCartCheckOut {
+                  color: v.$backgroundColorIni;
+                  background-color: v.$colorRedNew;
+                  animation: animationIconCheckOut 0.45s linear forwards;
+                }
+              }
+            }
+          }
+
+        }
+
+        &>.textWarnigLogin {
+          @include d.configurationLabel (v.$colorRedNeuDunkel3, 0.8rem);
+          overflow: hidden;
+          transform: translateX(0%);
+          animation: pulseText 0.45s lineal infinte;
+        }
+
+        &>.containerRigthDownViewShoppingCart {
+          @include l.layoutFlexboxColumCenter;
+          padding: 1%;
+          margin-bottom: 2%;
+
+          &>.containerContinueShopping {
+            @include l.layoutFlexboxRowCenter;
+            margin: 0% auto;
+            transition: all 0.45s ease;
+            cursor: pointer;
+
+            &>.textContinueShopping {
+              @include d.configurationText1 (v.$colorNavy, 0.9rem);
+              font-weight: 500;
+              margin: 0% 5%;
+              padding: 0%;
+            }
+
+            &>.iconShoppingCartCheckOut {
+              @include l.layoutFlexboxRowCenter;
+              position: absolute;
+              bottom: 6px;
+              left: 76px;
+              color: v.$colorGreen;
+              transform: scale(1.2);
+              transition: all 0.3s ease;
+            }
+
+            &:hover,
+            &:focus {
+
+              &>.textContinueShopping {
+                @include d.configurationText1 (v.$colorRedNeu, 1rem);
+                font-weight: bold;
+              }
+
+              &>i {
+                animation: animationIconContinueShopping 0.35s ease-in-out forwards;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@keyframes shoppingMove {
+  from {
+    transform: translateX(10px);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  to {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    // background-color: v.$colorRedNeu2;
+    color: v.$colorHell;
+    transform: translateX(150px);
+  }
+
+}
+
+@keyframes pulseButton {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    background: linear-gradient(315deg, #8f8f8f, #414141);
+    box-shadow: -2px -2px 5px #545454,
+      1px 1px 4px #bababa;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: v.$colorbackgroudMy;
+    transform: scale(0.93);
+  }
+
+}
+
+@keyframes animationIconCheckOut {
+  from {}
+
+  to {
+    width: 30px;
+    height: 30px;
+    background-color: v.$colorRedNeu;
+    color: v.$colorHell;
+    transform: scale(1.8) translateX(-22px) translateY(4px);
+  }
+}
+
+@keyframes animationIconShoppingCartOut {
+  from {
+    background-color: v.$colorGreen;
+  }
+
+  to {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: v.$colorRedNeu;
+    color: v.$colorHell;
+    transform: scale(2.2) translateX(4px) translateY(-6px);
+  }
+}
+
+@keyframes animationIconContinueShopping {
+  from {
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
+    right: 0px;
+    transform: scale(1.5) translateX(100px);
+  }
+
+  to {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: v.$colorGreenHell2;
+    color: v.$colorHell;
+    transform: scale(1.8) translateX(110px) translateY(8px);
+  }
+}
+
+@keyframes pulseText {
+  0% {
+    transform: scale(0.8) translateX(-100%);
+    color: v.$colorRedNeuDunkel3;
+  }
+
+  5% {
+    transform: scale(1) translateX(-98%);
+    color: v.$colorRedNeuDunkel3;
+  }
+  50% {
+    transform: scale(1) translateX(0%);
+    color: v.$colorRedNew;
+  }
+
+  95% {
+    transform: scale(1) translateX(98%);
+    color: v.$colorRedNeuDunkel3;
+  }
+
+  100% {
+    transform: scale(0.8) translateX(100%);
+    color: v.$colorRedNeuDunkel3;
+  }
+}

@@ -1,0 +1,57 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+
+.menuNavegation {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: flex-start;
+  margin: 0%;
+  z-index: 100;
+
+  .ulNavBar {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0%;
+    list-style: none;
+
+    &>.linksNavbar {
+      width: auto;
+      height: 4.2rem;
+      padding: 0.5% 1%;
+      margin-right: 0.3%;
+      border-radius: 6px 18px 0px 0px;
+      background-color: transparent;
+      transition: all 0.45s ease;
+
+      &:hover,
+      &:focus,
+      &:active {
+        cursor: pointer;
+        bottom: -10%;
+        padding: 0.5%;
+        transform: translateY(-8px);
+        border: 1px solid v.$backgroundColorDunkelGray;
+        background-color: v.$colorbackgroudneuOrange;
+        transition: all 0,45 s ease;
+        animation: moveTop 0.45s linear forwards;
+      }
+
+      &>.contItemMenu {
+        @include l.layoutFlexboxRowCenter;
+        padding: 0%;
+        margin: 0% auto;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+
+@keyframes moveTop {
+  from {
+transform: translateY(0%)
+  }
+  to {
+    transform: translateY(-0.8rem)
+  }
+}

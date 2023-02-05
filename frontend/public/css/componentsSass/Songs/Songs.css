@@ -1,0 +1,353 @@
+/*   ////////////////////////////////////////       */
+.contShowSongs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  min-width: 100vw;
+  height: 120vh;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0.93) 16%, rgba(3, 3, 3, 0.2) 36%, rgba(3, 3, 3, 0.93)), url("../../src/images/theBeatles/carousel2.jpg");
+  background-repeat: no-repeat;
+  background-position: -16rem 8rem;
+  background-size: 74% 78%;
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.contShowSongs > .contOfTable {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 100vw;
+  height: auto;
+  margin: 0%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  background: rgba(1, 109, 10, 0.3);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(0, 7, 2, 0.2);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 70, 0.68);
+  position: fixed;
+  top: 58%;
+  left: 6%;
+  width: 18vw;
+  min-height: 40vh;
+  border-radius: 6px;
+  padding: 0% auto;
+  margin: 0% auto;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4% auto;
+  padding: 0%;
+  transform: scale(0.9);
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contImagenResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 60%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  padding: 0%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contImagenResultSearch > .contFigureResultSearch {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  border-radius: 60%;
+  width: 60%;
+  padding: 0.5%;
+  margin-bottom: 1%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contImagenResultSearch > .contFigureResultSearch > .imgResultSearch {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 58%;
+  padding: 0.3%;
+  background-color: linear-gradient(to bottom, rgb(167, 166, 166) 55%, rgb(231, 230, 230));
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  animation: moveRecord 24s linear infinite;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 84%;
+  min-height: 17vh;
+  padding: 0% auto;
+  margin: 1% auto;
+  margin-bottom: 0%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .headerTitleSong {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2% auto;
+  margin-bottom: 3%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .headerTitleSong > .titleSong {
+  color: rgb(1, 14, 131);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  padding: 0% auto;
+  margin: 0% auto;
+  background-color: transparent;
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+  font-weight: bolder;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .contLabelText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 96%;
+  margin: 0% 4%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .contLabelText > .label {
+  position: relative;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin: 0%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .contLabelText > .textInfo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  margin: 0%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .duration {
+  width: 30%;
+  margin-left: 50%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .duration > .label {
+  font-size: 0.7rem;
+  margin-right: 4%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contAlbumDuration > .duration > .textInfo {
+  font-size: 0.7rem;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contPriceTax {
+  display: block;
+  float: right;
+  align-items: flex-end;
+  width: 42%;
+  margin: 0%;
+  margin-left: 56%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .Price {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  font-weight: bold;
+  padding: 0% 2%;
+  margin: 0% 2%;
+  margin-right: 0%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .valuePrice {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(250, 29, 29);
+  margin: 0% auto;
+  font-weight: bolder;
+  padding: 0%;
+  margin-left: 4%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .Tax {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(92, 92, 95);
+  margin: 0% auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  margin: 0% 2%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contInfoResultSearch > .contPriceTax > .Tax > .valueTax {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(66, 66, 71);
+  margin: 0% auto;
+  margin-left: 10%;
+  font-weight: bold;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contShoppingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 8%;
+  right: 12%;
+  width: 25px;
+  height: 25px;
+  color: rgba(250, 29, 29, 0.3);
+  padding: 0%;
+  margin: 0% auto;
+  animation: pulseShoppingCart 1s linear infinite alternate;
+  transition: all 0.45s ease;
+  border-radius: 50%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contShoppingCart > .iconAddToShoopingCart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: scale(1);
+  width: 25px;
+  height: 25px;
+  color: rgb(246, 240, 240);
+  font-weight: bold;
+  padding: 0%;
+  margin: 0% auto;
+  border-radius: 50%;
+}
+.contShowSongs > .contOfTable > .contMainResultLeft > .contShoppingCart:hover, .contShowSongs > .contOfTable > .contMainResultLeft > .contShoppingCart:focus {
+  cursor: pointer;
+  animation: hoverShoppingCart 0.85s ease-in-out forwards;
+}
+.contShowSongs > .contOfTable > .contMainResultRigth {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 64%;
+  margin: 0% auto;
+  margin-left: 30%;
+}
+
+#icoSong {
+  color: rgb(246, 240, 240);
+  width: 2rem;
+  height: 2rem;
+  transform: scale(1.8);
+  transition: all 0.45s ease;
+  margin: 0% auto;
+  padding: 0%;
+  border-radius: 50%;
+}
+#icoSong:hover, #icoSong:focus {
+  cursor: pointer;
+  z-index: 20;
+  transform: scale(2);
+}
+
+.containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorRed {
+  background-color: rgb(246, 240, 240);
+  color: rgb(250, 29, 29);
+}
+.containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorRed:hover, .containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorRed:active, .containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorRed:focus {
+  color: rgb(250, 29, 29);
+}
+
+.containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorGreen {
+  background-color: rgba(43, 211, 43, 0.9);
+  color: rgba(43, 211, 43, 0.9);
+}
+.containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorGreen:hover, .containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorGreen:active, .containerShowProducts > .headerTypeArticle > .TitleTypeArticle > .text > .icoColorGreen:focus {
+  color: rgba(43, 211, 43, 0.9);
+}
+
+@keyframes transitionImage {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=Songs.css.map */

@@ -1,0 +1,107 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+
+.contSong {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-between;
+  margin: 1.6% auto;
+  transform-style: preserve-3d;
+  transition: all ease 0.45s;
+
+  &>.figureSong {
+    @include d.figure;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin: 0.6% 4%;
+    padding: 0%;
+    background-color: transparent;
+
+    &>.imgSong {
+      @include d.imageGenerall;
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+      padding: 0%;
+      margin: 0% auto;
+    }
+  }
+
+  &>.contInfoSong {
+    @include l.layoutFlexboxColumCenter;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0.6% 2%;
+    padding: 0%;
+
+    &>.titleSong {
+      @include d.configurationText2 (v.$backgroundColorIni, 0.7rem);
+      margin: 0% 1%;
+      padding: 0%;
+      text-align: left;
+      text-shadow: v.$textShadow3;
+    }
+
+    &>.contInfo2Song {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0%;
+      padding: 0.3%;
+
+      &>.titleOfSong {
+        @include d.configurationText2 (v.$colorRedNew, 0.65rem);
+        text-shadow: v.$textShadow3;
+        margin: 0% 0.5%;
+        padding: 0%;
+      }
+
+      &>.contRealeased {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        margin: 0%;
+        padding: 0%;
+
+        &>.labelReleased {
+          @include d.configurationText2 (v.$backgroundColorHellGray, 0.6rem);
+          width: auto;
+          margin: 0% 1%;
+          margin-right: 6%;
+          padding: 0%;
+          text-align: left;
+          text-shadow: v.$textShadow3;
+        }
+
+        &>.realeased {
+          @include d.configurationText2 (v.$backgroundColorHellGrayT, 0.6rem);
+          width: auto;
+          margin: 0%;
+          padding: 0%;
+          text-align: left;
+          text-shadow: v.$textShadow3;
+        }
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: v.$colorNavy;
+    border-radius: 9px;
+    transform: scale(1.04);
+
+    &>.figureSong {
+      width: 3.2rem;
+      height: 3.2rem;
+
+      &>.imgSong {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+  }
+}

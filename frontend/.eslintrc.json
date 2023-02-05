@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-multiple-empty-lines":"off",
+        "no-multi-spaces":"off",
+        "space-before-function-paren": "off",
+        "quotes":"off",
+        "eol-last": "off",
+        "react/no-unescaped-entities": "off",
+        "react/prop-types":"off",
+        "camelcase": "off",
+        "object-property-newline": "off",
+        "quote-props": "off",
+        "indent": "off",
+        "no-lone-blocks": "off",
+        "object-curly-newline": "off",
+        "multiline-ternary": "off",
+        "react/no-unknown-property": "off"
+    }
+}

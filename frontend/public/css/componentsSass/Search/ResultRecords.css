@@ -1,0 +1,424 @@
+/*   ////////////////////////////////////////       */
+.contMainResultSearchRecords {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  min-width: 100vw;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0.93) 16%, rgba(3, 3, 3, 0.2) 69%, rgba(3, 3, 3, 0.93)), url(../src/images/theBeatles/TopLeft.jpg);
+  background-position: -67rem -9rem;
+  background-repeat: no-repeat;
+  background-size: 96% 96%;
+  background-color: rgba(3, 3, 3, 0.93);
+  filter: contrast(90%);
+}
+.contMainResultSearchRecords > .contMainResultLeft {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 26%;
+  height: 100vh;
+  padding: 0%;
+  margin: 2% 2%;
+  background-color: transparent;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  background: rgba(1, 109, 10, 0.3);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(0, 7, 2, 0.2);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 70, 0.68);
+  position: fixed;
+  top: 22%;
+  left: 4%;
+  width: 18vw;
+  min-height: 42vh;
+  border-radius: 6px;
+  padding: 0% auto;
+  margin: 0% auto;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4% auto;
+  padding: 0%;
+  transform: scale(0.9);
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contImageResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 60%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  padding: 0%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contImageResultSearch > .contFigureResultSearch {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  border-radius: 60%;
+  width: 60%;
+  padding: 0.5%;
+  margin-bottom: 1%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contImageResultSearch > .contFigureResultSearch > .imageResultSearch {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 58%;
+  padding: 0.3%;
+  background-color: linear-gradient(to bottom, rgb(167, 166, 166) 55%, rgb(231, 230, 230));
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  animation: moveRecord 24s linear infinite;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 84%;
+  height: 17vh;
+  max-height: 17vh;
+  padding: 0% auto;
+  margin: 2% auto;
+  margin-bottom: 0%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .headerTitleAlbum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 6% auto;
+  margin-bottom: 7%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .headerTitleAlbum > .titleAlbum {
+  color: rgb(1, 14, 131);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  padding: 0% auto;
+  margin: 0% auto;
+  background-color: transparent;
+  text-align: center;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+  font-weight: bolder;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contLabelInfoAlbum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0.3% 0%;
+  margin-bottom: 4%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contLabelInfoAlbum > .contLabelText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 98%;
+  margin: 0% 4%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contLabelInfoAlbum > .contLabelText > .label {
+  position: relative;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin: 0%;
+  margin-right: 2%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contLabelInfoAlbum > .contLabelText > .textInfo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 6.5rem;
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  margin: 0%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contLabelInfoAlbum > .released {
+  margin-left: 4%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contLabelInfoAlbum > .released > .label {
+  margin-right: 4%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0%;
+  margin: 0.3% 0%;
+  margin-bottom: 2%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .stockArticle {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 60px;
+  margin: 0% 2%;
+  margin-right: 24%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .stockArticle > .stockSpan {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(2, 110, 2, 0.9);
+  margin: 0% auto;
+  font-weight: bold;
+  margin: 0% 2%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .stockArticle > .stockSpan > i {
+  transform: scale(2);
+  background-color: transparent;
+  color: rgb(246, 240, 240);
+  margin: 0% 1%;
+  margin-right: 4%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .containerPriceTax {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  width: 95px;
+  margin-right: 3%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .containerPriceTax > .Price {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  font-weight: bold;
+  padding: 0.5% 2%;
+  margin: 0% 2%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .containerPriceTax > .Price > .valuePrice {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(220, 21, 21);
+  margin: 0% auto;
+  font-weight: bolder;
+  margin-left: 8%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .containerPriceTax > .Tax {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(92, 92, 95);
+  margin: 0% auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  margin: 0% 2%;
+  margin-left: 39%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contInfoResultSearch > .contStockPrice > .containerPriceTax > .Tax > .valueTax {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgb(66, 66, 71);
+  margin: 0% auto;
+  margin-left: 16%;
+  font-weight: bold;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contShoppingCart {
+  position: absolute;
+  top: 8%;
+  right: 12%;
+  width: 25px;
+  height: 25px;
+  color: rgba(250, 29, 29, 0.3);
+  padding: 0%;
+  animation: pulseShoppingCart 1s linear infinite alternate;
+  transition: all 0.45s ease;
+  border-radius: 50%;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contShoppingCart > .iconAddToShoopingCart {
+  transform: scale(1);
+  width: 25px;
+  height: 25px;
+  color: rgb(246, 240, 240);
+  font-weight: bold;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainResultSearchRecords > .contMainResultLeft > .contCard > .contShoppingCart:hover, .contMainResultSearchRecords > .contMainResultLeft > .contCard > .contShoppingCart:focus {
+  cursor: pointer;
+  animation: hoverShoppingCart 0.85s ease-in-out forwards;
+}
+.contMainResultSearchRecords > .contMainResultRigth {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(1, 109, 10, 0.3);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(0, 7, 2, 0.2);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 70, 0.68);
+  align-items: flex-start;
+  width: 78%;
+  max-height: auto;
+  padding: 1%;
+  margin: 2% auto;
+  margin-right: 3%;
+}
+.contMainResultSearchRecords > .contMainResultRigth > .headerResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  border-radius: 6px;
+  padding: 1%;
+  margin: 1% auto;
+  background-color: transparent;
+}
+.contMainResultSearchRecords > .contMainResultRigth > .headerResultSearch > .titleResultSearch {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0% auto;
+}
+
+@keyframes pulseShoppingCart {
+  0% {
+    transform: scale(1.9) translateX(-8px);
+    color: rgb(56, 1, 1);
+    background-color: rgb(250, 29, 29);
+  }
+  50% {
+    transform: scale(1.6) translateX(0px);
+    color: rgba(249, 19, 19, 0.4);
+    background-color: rgba(249, 19, 19, 0.4);
+  }
+  100% {
+    transform: scale(1.9) translateX(8px);
+    color: rgb(56, 1, 1);
+    background-color: rgb(250, 29, 29);
+  }
+}
+@keyframes hoverShoppingCart {
+  0% {
+    transform: scale(2.1) translateY(0px);
+    background-color: rgba(249, 19, 19, 0.4);
+  }
+  100% {
+    transform: scale(2.8) translateY(-8px);
+    color: rgb(246, 240, 240);
+    background-color: rgb(250, 29, 29);
+  }
+}
+@keyframes moveRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=ResultRecords.css.map */

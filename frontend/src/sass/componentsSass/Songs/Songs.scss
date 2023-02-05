@@ -1,0 +1,272 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+
+.contShowSongs {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  min-width: 100vw;
+  height: 120vh;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  background-image: linear-gradient(to top, v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 36%, v.$backgroundColorDunkelBlack), url("../../src/images/theBeatles/carousel2.jpg");
+  background-repeat: no-repeat;
+  background-position: -16rem 8rem;
+  background-size: 74% 78%;
+  // background-size:contain;
+  background-color: v.$backgroundColorDunkelBlack;
+
+
+  &>.contOfTable {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+    margin: 0%;
+
+    &>.contMainResultLeft {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      @include g.GlassMorphismus3;
+      position: fixed;
+      top: 58%;
+      left: 6%;
+      width: 18vw;
+      min-height: 40vh;
+      border-radius: 6px;
+      padding: 0% auto;
+      margin: 0% auto;
+
+      &>.contButton {
+        @include l.layoutFlexboxRowCenter;
+        margin: 4% auto;
+        padding: 0%;
+        transform: scale(0.9);
+      }
+
+      &>.contImagenResultSearch {
+        @include l.layoutFlexboxRowCenter;
+        width: 60%;
+        margin: 0% auto;
+        margin-bottom: 1%;
+        padding: 0%;
+
+        &>.contFigureResultSearch {
+          @include d.figure;
+          border-radius: 60%;
+          width: 60%;
+          padding: 0.5%;
+          margin-bottom: 1%;
+
+          &>.imgResultSearch {
+            @include d.imageGenerall;
+            border-radius: 58%;
+            padding: 0.3%;
+            background-color: v.$gradientSlice;
+            box-shadow: v.$boxShadow12;
+            animation: moveRecord 24s linear infinite;
+          }
+        }
+      }
+
+      &>.contInfoResultSearch {
+        @include l.layoutFlexboxColumCenter;
+        @include n.neuMorphismus4;
+        width: 84%;
+        min-height: 17vh;
+        padding: 0% auto;
+        margin: 1% auto;
+        margin-bottom: 0%;
+
+        &>.headerTitleSong {
+          @include l.layoutFlexboxRowCenter;
+          margin: 2% auto;
+          margin-bottom: 3%;
+
+          &>.titleSong {
+            @include d.desig_H_element (v.$colorDarkBlue1, 0.9rem);
+            padding: 0% auto;
+            margin: 0% auto;
+            background-color: transparent;
+            text-align: center;
+            text-shadow: v.$textShadow3;
+            font-weight: bolder;
+          }
+        }
+
+        &>.contAlbumDuration {
+          @include l.layoutFlexboxColumCenter;
+          justify-content: flex-start;
+          margin: 0%;
+
+          &>.contLabelText {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-start;
+            width: 96%;
+            margin: 0% 4%;
+
+            &>.label {
+              @include d.configurationLabel (v.$colorTextIni, 0.8rem);
+              margin: 0%;
+            }
+
+            &>.textInfo {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.75rem);
+              margin: 0%;
+            }
+          }
+
+          &>.duration {
+            width: 30%;
+            margin-left: 50%;
+
+            &>.label {
+              font-size: 0.7rem;
+              margin-right: 4%;
+            }
+
+            &>.textInfo {
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        &>.contPriceTax {
+          display: block;
+          float: right;
+          align-items: flex-end;
+          width: 42%;
+          margin: 0%;
+          margin-left: 56%;
+
+          &>.Price {
+            @include d.configurationText1 (v.$colorTextIni, 0.8rem);
+            font-weight: bold;
+            padding: 0% 2%;
+            margin: 0% 2%;
+            margin-right: 0%;
+          }
+
+          &>.valuePrice {
+            @include d.configurationText1 (v.$colorRedNeu, 0.9rem);
+            font-weight: bolder;
+            padding: 0%;
+            margin-left: 4%;
+          }
+
+          &>.Tax {
+            @include d.configurationText1 (v.$backgroundColorDunkelGray2, 0.7rem);
+            @include l.layoutFlexboxRowCenter;
+            font-weight: bold;
+            margin: 0% 2%;
+
+            &>.valueTax {
+              @include d.configurationText1 (v.$backgroundColorDunkelGray, 0.7rem);
+              margin-left: 10%;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      &>.contShoppingCart {
+        @include l.layoutFlexboxRowCenter;
+        position: absolute;
+        top: 8%;
+        right: 12%;
+        width: 25px;
+        height: 25px;
+        color: v.$colorRedNeu3;
+        padding: 0%;
+        margin: 0% auto;
+        animation: pulseShoppingCart 1s linear infinite alternate;
+        transition: all 0.45s ease;
+        border-radius: 50%;
+
+        &>.iconAddToShoopingCart {
+          @include l.layoutFlexboxRowCenter;
+          transform: scale(1);
+          width: 25px;
+          height: 25px;
+          color: v.$colorHell;
+          font-weight: bold;
+          padding: 0%;
+          margin: 0% auto;
+          border-radius: 50%;
+        }
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          animation: hoverShoppingCart 0.85s ease-in-out forwards;
+        }
+      }
+    }
+
+    &>.contMainResultRigth {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 64%;
+      margin: 0% auto;
+      margin-left: 30%;
+    }
+  }
+}
+
+#icoSong {
+  color: v.$colorHell;
+  width: 2rem;
+  height: 2rem;
+  transform: scale(1.8);
+  transition: all 0.45s ease;
+  margin: 0% auto;
+  padding:0%;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    z-index: 20;
+    transform: scale(2);
+  }
+}
+
+.containerShowProducts>.headerTypeArticle>.TitleTypeArticle>.text>.icoColorRed {
+  background-color: v.$colorHell;
+  color: v.$colorRedNeu;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: v.$colorRedNeu;
+  }
+
+}
+
+.containerShowProducts>.headerTypeArticle>.TitleTypeArticle>.text>.icoColorGreen {
+  background-color: v.$colorGreenHell2;
+  color: v.$colorGreenHell2;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: v.$colorGreenHell2;
+  }
+}
+
+@keyframes transitionImage {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,176 @@
+/*   ////////////////////////////////////////       */
+.contCompAudioPlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contCompAudioPlay > .headerTitleSong {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  border-radius: 6px;
+  width: 80%;
+  padding: 2% auto;
+  margin: 8% auto;
+  margin-bottom: 6%;
+}
+.contCompAudioPlay > .headerTitleSong > .titleSong {
+  color: rgb(1, 66, 1);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 1% auto;
+  margin: 0% auto;
+  text-shadow: -4px -3px 4px rgba(39, 253, 39, 0.3), 2px 3px 4px rgba(39, 246, 39, 0.3);
+}
+.contCompAudioPlay > .contSongAlbum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0% auto;
+}
+.contCompAudioPlay > .contSongAlbum > .labelSongAlbum {
+  color: rgb(63, 63, 63);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0% auto;
+  margin-right: 2%;
+  text-shadow: none;
+}
+.contCompAudioPlay > .contSongAlbum > .Song {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.contCompAudioPlay > .contSongAlbum > .Album {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(92, 92, 95);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.contCompAudioPlay > .contInfoDuration {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 74%;
+  margin: 2% auto;
+  padding: 1%;
+}
+.contCompAudioPlay > .contInfoDuration > .contCounters {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  width: 110%;
+}
+.contCompAudioPlay > .contInfoDuration > .contCounters > .contCounters {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
+}
+.contCompAudioPlay > .contInfoDuration > .contCounters > .contCounters > .counter {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(66, 66, 71);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  padding: 0%;
+  text-align: left;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.contCompAudioPlay > .contInfoDuration > .contCounters > .contCounters > .textInfoCounter {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+.contCompAudioPlay > .contInfoDuration > .contCounters > .contCounters > .ini {
+  color: rgb(140, 140, 140);
+}
+.contCompAudioPlay > .contInfoDuration > .contCounters > .contProgressBar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 98%;
+  height: 1rem;
+  margin: 0.1% auto;
+  margin-bottom: 0.6%;
+  padding: 0.1%;
+}
+.contCompAudioPlay > .contControls {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-end;
+  width: 96%;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*# sourceMappingURL=CompAudioPlay.css.map */

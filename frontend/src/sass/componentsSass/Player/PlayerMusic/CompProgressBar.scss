@@ -1,0 +1,71 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../neumorphismus' as n;
+@use '../../../glassMorphismus' as g;
+
+
+.contCompProgressBar {
+  @include l.layoutFlexboxColumCenter;
+  align-items: flex-start;
+  height: 100%;
+  margin: 0% auto;
+  margin-left: 8%;
+
+  &>.progressCircle {
+    @include l.layoutFlexboxRowCenter;
+    align-items: flex-start;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+
+    &>.figureRecordSong {
+      @include d.figure;
+      background-color: transparent;
+      width: 11.8rem;
+      height: 11.8rem;
+      border-radius: 50%;
+      margin: 0% auto;
+      padding: 1%;
+
+      &>.imgRecordSong {
+        @include d.imageGenerall;
+        @include g.GlassMorphismus1;
+        box-shadow: v.$boxShadow9;
+        border-radius: 50%;
+        width: 10.8rem;
+        height: 10.8rem;
+        padding: 2%;
+        margin: 0% auto;
+
+      }
+
+      &>.imgActive {
+        animation: rotation 30s infinite linear;
+        // transform-origin: 50% 50%;
+      }
+    }
+
+
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(358deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+

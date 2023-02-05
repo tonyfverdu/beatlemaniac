@@ -1,0 +1,37 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+
+.contShowRecords {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 0%;
+  margin: 0% auto;
+  background-image: linear-gradient(to top, v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 36%, v.$backgroundColorDunkelBlack), url(../../images/theBeatles/imageBeatles3.jpg);
+  background-repeat: no-repeat;
+  background-position: -3rem 10rem;
+  background-size:60% 64%;
+  background-color: v.$backgroundColorDunkelBlack;
+
+  &>.containerMainArticles {
+    @include l.layoutFlexboxRowCenter;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 86%;
+    height: auto;
+    overflow-y: scroll;
+    margin: 0% auto;
+    background-color: v.$backgroundColorDunkelBlack;
+
+    &>.containerArticleItem {
+      @include l.layoutFlexboxRowCenter;
+      width: 70%;
+      min-height: auto;
+      margin: 0 auto;
+      width: 19.8%;
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.footerModul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 24rem;
+  transform: translateY(6rem);
+  text-align: center;
+  padding: 0%;
+  margin: 0% auto;
+  background-color: rgb(9, 9, 9);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url("./src/images/theBeatles/chulaTheBeatles.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: rgba(3, 3, 3, 0.93);
+  transition: all ease 0.45s;
+}
+.footerModul:hover, .footerModul:focus {
+  transform: translateY(-0.2rem);
+}
+.footerModul:hover > .classCopyright, .footerModul:focus > .classCopyright {
+  transform: translateY(8rem);
+}
+.footerModul:hover > .logoFire, .footerModul:focus > .logoFire {
+  top: -3rem;
+  width: 12rem;
+  height: 12rem;
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.footerModul:hover > .classCopyright, .footerModul:focus > .classCopyright {
+  transform: translateY(10rem);
+}
+.footerModul > .logoFire {
+  position: absolute;
+  top: -1.4rem;
+  left: -25%;
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 6rem;
+  height: 6rem;
+  padding: 1%;
+  z-index: 10;
+  border: 1px solid rgb(248, 164, 8);
+  border-radius: 50%;
+  transition: all ease 0.45s;
+  box-shadow: 2px -2px 11px 0px #FF1F1F, 6px -4px 4px 0px #FF9376, 10px -5px 7px 0px #FFE264, 10px 4px 5px 0px #F6FF33, 8px 7px 9px 0px #FF9527, 2px 10px 10px 0px #FF0000, -6px 11px 19px 0px #FFF212, -7px 4px 8px 0px #FF0808, -8px -6px 8px 0px #FFFA17, -8px -6px 8px 0px #FFFA17, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+  animation: anim_fire 16s ease alternate infinite;
+}
+.footerModul > .previousFooter {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 29%;
+  padding: 0%;
+  margin: 0%;
+  margin-top: 0%;
+}
+.footerModul > .previousFooter > .socialMedia {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+}
+.footerModul > .classCopyright {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  transform: translateY(80%);
+  height: 4.2rem;
+  padding: 0%;
+  text-align: center;
+  background-color: rgb(66, 66, 71);
+  transition: all ease 0.45s;
+}
+.footerModul > .classCopyright > #idmy {
+  background-color: rgb(227, 154, 19);
+  padding: 0.3% 0.5%;
+  margin: 0% 0.7%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.45s ease;
+}
+.footerModul > .classCopyright > #idmy:hover {
+  color: rgb(246, 240, 240);
+  animation: iconoHover 0.45s ease forwards;
+  border: 1px solid transparent;
+}
+.footerModul > .classCopyright > #idmy > i {
+  --fa-animation-duration: 6s;
+}
+
+@keyframes anim_fire {
+  0% {
+    box-shadow: 4px -2px 10px 0px #fd7777, 3px -4px 4px 0px #fe8d6e, 11px -5px 7px 0px #fbd011, 9px 5px 5px 0px #f6ff52, 8px 5px 9px 0px #fd8301, 2px 10px 10px 0px #520000, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(0deg) rotateX(-1deg) scale(1);
+  }
+  10% {
+    box-shadow: 4.5px -2px 12px 0px #f93f3f, 3.4px -4px 4px 0px #fe683e, 14px -5px 7px 0px #fbd011, 14px 10px 5px 0px #f1fb2b, 9px 9px 9px 0px #fd8301, 2px 10px 10px 0px #820101, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 4.5px 4.5px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(6deg) rotateX(3deg);
+  }
+  20% {
+    box-shadow: 5px -3px 14px 0px #fa0d0d, 3.8px -4px 4px 0px #fa5224, 8px -5px 7px 0px #fbd011, 9.8px -5px 5px 0px #f1fc17, 7px 3px 9px 0px #fd8301, 2px 10px 10px 0px #9c0101, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 4px 4px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(-6deg) rotateX(-4deg) scale(1.03);
+  }
+  30% {
+    box-shadow: 5.5px -2px 15px 0px #fd0202, 4.2px -4px 4px 0px #fc410d, 14px -5px 7px 0px #fbd011, 16px 12px 5px 0px #f1fd02, 12px -3px 9px 0px #fd8301, 2px 10px 10px 0px #820101, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 3.5px 3.5px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(12deg) rotateX(5deg);
+  }
+  40% {
+    box-shadow: 12px -2px 17px 0px #fc0101, 4.8px -4px 4px 0px #ff3e08, 10px -5px 7px 0px #fbd011, 19px 10px 5px 0px #d5e003, 14px 7px 9px 0px #fd8301, 2px 10px 10px 0px #b40202, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 3px 3px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(-12deg) rotateX(-6deg) scale(1.06);
+  }
+  50% {
+    box-shadow: 6.5px -3px 18px 0px #f00505, 6px -4px 4px 0px #fb3802, 10px -5px 7px 0px #fbd011, 12px 6px 5px 0px #b1ba02, 10px 2px 9px 0px #fd8301, 2px 10px 10px 0px #d40202, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 2.8px 2.8px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(18deg) rotateX(8deg) scale(1.09);
+  }
+  60% {
+    box-shadow: 16px -2px 17px 0px #ee0a0a, 5.4px -4px 4px 0px #fe4917, 12px -5px 7px 0px #fbd011, 10.4px -4px 5px 0px #d5e003, 12px 0px 9px 0px #fd8301, 2px 10px 10px 0px #b40202, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 3px 3px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(-18deg) rotateX(-8deg) scale(1.06);
+  }
+  70% {
+    box-shadow: 5.5px -2px 15px 0px #ea1010, 4.8px -4px 4px 0px #f96238, 6px -5px 7px 0px #fbd011, -10px -4px 5px 0px #f1fd02, 8px -7px 9px 0px #fd8301, 2px 10px 10px 0px #820101, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 3.5px 3.5px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(14deg) rotateX(6deg);
+  }
+  80% {
+    box-shadow: 5px -2px 14px 0px #e71616, 4.2px -4px 4px 0px #fa744f, 10px -5px 7px 0px #fbd011, 12px 10px 5px 0px #f1fc17, 10px -9px 9px 0px #fd8301, 2px 10px 10px 0px #9c0101, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 4px 4px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(-14deg) rotateX(-6deg) scale(1.03);
+  }
+  90% {
+    box-shadow: 4.5px -3px 12px 0px #e62a2a, 4px -4px 4px 0px #fc896a, 12px -5px 7px 0px #fbd011, 9.6px 6px 5px 0px #f1fc17, 8px -4px 9px 0px #fd8301, 2px 10px 10px 0px #820101, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 4.5px 4.5px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(10deg) rotateX(4deg);
+  }
+  100% {
+    box-shadow: 3.8px -2px 10px 0px #eb4b4b, 6px -4px 4px 0px #fe683e, 10px -5px 7px 0px #fbd011, 8.3px -5px 5px 0px #f1fd02, 7px 2px 9px 0px #fd8301, 2px 10px 10px 0px #a40101, -6px 11px 19px 0px #d1c602, -7px 4px 8px 0px #df0202, -8px -6px 8px 0px #ece801, -8px -6px 8px 0px #fffb00, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+    transform: rotateY(-10deg) rotateX(-3deg) scale(1);
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

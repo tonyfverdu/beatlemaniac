@@ -1,0 +1,62 @@
+/*   ////////////////////////////////////////       */
+.containerdataCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1% auto;
+  margin: 0%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.containerdataCustomer > .contLabelData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+.containerdataCustomer > .contLabelData > .label {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: auto;
+  font-weight: bolder;
+  padding: 1% auto;
+  margin: 0%;
+  margin-right: 3%;
+  text-align: right;
+}
+.containerdataCustomer > .contLabelData > .data {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+  margin: 1% 2%;
+  padding: 1%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: auto;
+  border-radius: 3px;
+  font-weight: normal;
+  padding: 1% 2%;
+  margin: 0%;
+  text-align: left;
+}
+
+/*# sourceMappingURL=LabelData.css.map */

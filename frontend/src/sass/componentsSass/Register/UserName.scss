@@ -1,0 +1,38 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+
+.containerdataCustomer {
+  @include l.layoutFlexboxRowCenter;
+  padding: 0% auto;
+  margin: 0%;
+  margin-bottom: 0%;
+
+  background-color:aqua ;
+
+  &>.contLabelData {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    margin: 0%;
+    padding: 0%;
+
+    &>.label {
+      @include d.configurationText2 (v.$colorTextIni, 0.95rem);
+      font-weight: bolder;
+      padding: 0%;
+      margin: 0%;
+      text-align: left;
+
+    }
+
+    &>.data {
+      @include d.configurationText2 (v.$backgroundColorDunkelGray5, 0.95rem);
+      font-weight: 700;
+      padding: 0%;
+      margin: 0%;
+      text-align: left;
+    }
+  }
+
+}

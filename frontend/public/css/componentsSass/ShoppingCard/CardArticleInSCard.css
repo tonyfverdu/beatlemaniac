@@ -1,0 +1,270 @@
+/*   ////////////////////////////////////////       */
+.containerCardArticleSC {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 150px;
+  height: 140px;
+  margin: 0% auto;
+  padding: 1%;
+  overflow: hidden;
+  background: linear-gradient(to top, rgb(167, 166, 166) 8%, rgba(231, 230, 230, 0.6) 22%, rgba(231, 230, 230, 0.6) 50%, rgba(231, 230, 230, 0.3));
+  border: 1px solid rgb(167, 166, 166);
+}
+.containerCardArticleSC > .containerTopCard {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 1%;
+}
+.containerCardArticleSC > .containerTopCard > .headerNameArticleInCard {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 75%;
+  margin: 0% auto;
+  margin-right: 25%;
+  margin-top: 5%;
+}
+.containerCardArticleSC > .containerTopCard > .headerNameArticleInCard > .NameArticleInCard {
+  color: rgb(1, 1, 68);
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 1% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.containerCardArticleSC > .containerDownCard {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5% auto;
+  padding: 1%;
+}
+.containerCardArticleSC > .containerDownCard > .containerLeftCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  width: 96%;
+  height: 96%;
+  margin: 1% auto;
+}
+.containerCardArticleSC > .containerDownCard > .containerLeftCard > .containerFigureArticleSC {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0% auto;
+  margin-left: 5%;
+  background-color: transparent;
+}
+.containerCardArticleSC > .containerDownCard > .containerLeftCard > .containerFigureArticleSC > .imageArticleSC {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  height: 100%;
+  margin: 0% auto;
+  padding: 0.5%;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 96%;
+  height: 100%;
+  margin: 0% auto;
+  background-color: transparent;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerIconShoppingCartOut {
+  position: absolute;
+  top: -48%;
+  right: 8%;
+  padding: 10%;
+  border-radius: 50%;
+  transform: scale(1);
+  background-color: rgb(246, 240, 240);
+  transition: all 0.35s ease;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerIconShoppingCartOut > .iconRemoveSC {
+  transform: scale(1.3);
+  color: rgb(220, 21, 21);
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerIconShoppingCartOut:hover > .iconRemoveSC, .containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerIconShoppingCartOut:focus > .iconRemoveSC {
+  animation: pulseCart2 1s ease-in-out infinite alternate;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .stockArticle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .stockArticle > .Stock {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  text-align: right;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .stockArticle > .contIcovalue {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .stockArticle > .contIcovalue > i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: rgb(250, 29, 29);
+  transform: scale(1.2);
+  margin: auto 1%;
+  animation: pulseCart1 1.5s ease infinite alternate;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .stockArticle > .contIcovalue > .valueStock {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(2, 110, 2, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin-right: 10%;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerPrice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  margin-top: 8%;
+  padding: 1%;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerPrice > .Price {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  padding: 0.5%;
+  text-align: center;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerPrice > .Price > .valuePrice {
+  color: rgb(250, 29, 29);
+  font-size: 0.8rem;
+  margin: 0% auto;
+  margin-left: 6%;
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerPrice > .Tax {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  padding: 0.5%;
+  text-align: center;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.containerCardArticleSC > .containerDownCard > .containerRigthCard > .containerPrice > .Tax > .valueTax {
+  margin: 0% auto;
+  font-size: 0.7rem;
+  margin: 0% auto;
+  margin-left: 6%;
+}
+
+@keyframes pulseCart1 {
+  0% {
+    transform: scale(1.2) rotate(-45deg);
+    background-color: transparent;
+    border-radius: 0%;
+  }
+  15% {
+    transform: scale(1.6) rotate(0deg);
+    color: rgb(246, 240, 240);
+    border-radius: 50%;
+  }
+  85% {
+    transform: scale(1.6) rotate(0deg);
+    color: rgb(246, 240, 240);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1.2) rotate(45deg);
+    background-color: transparent;
+    border-radius: 0%;
+  }
+}
+@keyframes pulseCart2 {
+  from {
+    transform: scale(1.2);
+    color: rgb(250, 29, 29);
+    background-color: rgb(246, 240, 240);
+    border-radius: 50%;
+  }
+  to {
+    transform: scale(1.6) translateY(-2px);
+    color: rgb(246, 240, 240);
+    background-color: rgb(250, 29, 29);
+    border-radius: 50%;
+  }
+}
+
+/*# sourceMappingURL=CardArticleInSCard.css.map */

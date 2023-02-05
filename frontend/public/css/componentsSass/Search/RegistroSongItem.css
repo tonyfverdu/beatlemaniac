@@ -1,0 +1,366 @@
+/*   ////////////////////////////////////////       */
+.contTableRegistroArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  background: rgba(1, 108, 112, 0.2);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(1, 18, 18, 0.15);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(134, 163, 255, 0.58);
+  border-radius: 0px;
+  padding: 0.5%;
+  margin: 0%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  box-shadow: inset 0.3rem 0.2rem 2rem 0 rgba(80, 64, 64, 0.849);
+  backdrop-filter: blur(10px);
+  border: 0.08rem solid lightgrey;
+  border-left: 0.14rem solid rgb(161, 161, 161);
+  border-bottom: 0.16rem solid rgb(97, 97, 97);
+  border-radius: 6%;
+  height: 100vh;
+  border-radius: 6px 6px 0px 0px;
+  padding: 0%;
+  margin: 0% auto;
+  overflow-y: auto;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  border-radius: 6px 6px 0px 0px;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  border-radius: 6px 6px 0px 0px;
+  margin: 0% 2%;
+  padding: 1%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(231, 230, 230);
+  border-radius: 6px 6px 0px 0px;
+  height: 2.6rem;
+  padding: 1%;
+  margin: 0% auto;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(1, 1, 68);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th > i {
+  width: auto;
+  transform: scale(1.5);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th > .icoShoppingCart {
+  transform: scale(1.5);
+  background-color: rgb(246, 240, 240);
+  margin-top: 24px;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(1) {
+  width: 3%;
+  font-size: 1rem;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(2) {
+  width: 17%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(3) {
+  width: 20%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(4) {
+  width: 20%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(5) {
+  width: 5%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(6) {
+  width: 15%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(7) {
+  width: 6%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(8) {
+  width: 5%;
+  font-size: 0.8rem;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(9) {
+  width: 10%;
+  font-size: 0.7rem;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(9) button {
+  width: 138%;
+  height: 26px;
+  padding: 0%;
+  margin: 0% auto;
+  font-size: 0.6rem;
+  transition: all 0.35s ease;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(9) button:hover, .contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(9) button:focus {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(10) {
+  width: 5%;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableHead > tr > th:nth-child(10) > i {
+  transform: scale(2.6) translateY(-5px);
+  color: rgb(1, 1, 68);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  border-radius: 0px 0px 6px 6px;
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  margin: 0% 2%;
+  padding: 1%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(231, 230, 230);
+  height: 6rem;
+  border-radius: 0px 0px 6px 6px;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 0.3%;
+  transition: all 0.35s ease;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  padding: 0.3%;
+  background-color: transparent;
+  overflow: hidden;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td > i {
+  transform: scale(1.1);
+  color: rgb(250, 29, 29);
+  transition: all 0.45s ease;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td > i:hover, .contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td > i:focus {
+  cursor: pointer;
+  color: rgb(250, 29, 29);
+  transform: scale(2.2) translateY(-3px);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(1) {
+  width: 3%;
+  font-size: 1rem;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(2) {
+  width: 17%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(2) > .contFigureTableResultSearch {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5%;
+  margin: 0% auto;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(2) > .contFigureTableResultSearch > .UlImage {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(2) > .contFigureTableResultSearch > .UlImage > .liImage {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 0% auto;
+  list-style-image: none;
+  list-style: none;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(2) > .contFigureTableResultSearch > .UlImage > .liImage > .imagTableResultSearch {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 2.8rem;
+  height: 2.8rem;
+  transition: all 0.35s ease;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(2) > .contFigureTableResultSearch > .UlImage > .liImage > .imagTableResultSearch:hover, .contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(2) > .contFigureTableResultSearch > .UlImage > .liImage > .imagTableResultSearch:focus {
+  cursor: pointer;
+  transform: scale(1.8);
+  z-index: 100;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(3) {
+  width: 20%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(4) {
+  width: 20%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(4) > .OlAlbum {
+  margin: 2% auto;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(4) > .OlAlbum > .liAlbum > .nameAlbum {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  text-align: start;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(5) {
+  width: 5%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(6) {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 15%;
+  text-align: justify;
+  padding: 0%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(7) {
+  width: 6%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(8) {
+  width: 5%;
+  font-size: 1rem;
+  color: rgba(207, 35, 35, 0.9);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(9) {
+  width: 10%;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(9) button {
+  width: 138%;
+  height: 26px;
+  padding: 0%;
+  margin: 0% auto;
+  font-size: 0.6rem;
+  transition: all 0.35s ease;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(9) button:hover, .contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(9) button:focus {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(10) {
+  width: 5%;
+  font-size: 0.7rem;
+  transition: all 0.45s ease;
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(10) > i {
+  transform: scale(2.6) translateY(2px);
+  color: rgb(250, 29, 29);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(10):hover, .contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(10):focus {
+  cursor: pointer;
+  color: rgb(250, 29, 29);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(10):hover > i, .contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem > td:nth-child(10):focus > i {
+  background-color: rgb(250, 29, 29);
+  transform: scale(3.6) translateY(-3px);
+  padding: 2%;
+  color: rgb(246, 240, 240);
+}
+.contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem:hover, .contTableRegistroArticleItem > .contTableResultSearch > .contTableStriped > .tableBody > .contArticleItem:focus {
+  cursor: pointer;
+  background: rgba(1, 109, 10, 0.3);
+  border-radius: 9px;
+  box-shadow: 1px 6px 36px rgba(0, 7, 2, 0.2);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 70, 0.68);
+  border-radius: 6px;
+  padding: 0.5%;
+  transform: scale(1.06);
+  z-index: 20;
+}
+
+/*# sourceMappingURL=RegistroSongItem.css.map */

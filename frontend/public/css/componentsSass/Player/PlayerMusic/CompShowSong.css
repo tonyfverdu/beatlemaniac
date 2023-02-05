@@ -1,0 +1,227 @@
+/*   ////////////////////////////////////////       */
+.contCompShowSong {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  height: 100%;
+  margin: 0%;
+}
+.contCompShowSong > .figureAlbum {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  background-color: transparent;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 6px;
+  margin: 8% auto;
+  padding: 1%;
+}
+.contCompShowSong > .figureAlbum > .imgAlbum {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 10.8rem;
+  height: 10.8rem;
+  border-radius: 3px;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contCompShowSong > .contInfoAlbum {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  margin: 0% auto;
+  gap: 2%;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16rem;
+  align-items: flex-start;
+  margin-bottom: 0%;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contHidden {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  width: 11rem;
+  border-radius: 0%;
+  overflow: hidden;
+  margin: 0% auto;
+  margin-left: 12%;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contHidden > .infoMov {
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 150%;
+  text-align: center;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: transparent;
+  animation: movText 6s linear infinite;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 2.4rem;
+  margin: 0% 1%;
+  margin-right: 0%;
+  padding: 0%;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIco {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0% auto;
+  padding: 0%;
+  border-radius: 50%;
+  color: rgb(220, 21, 21);
+  transition: all ease 0.25s;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIco:hover, .contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIco:focus {
+  cursor: pointer;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIcoActive {
+  color: rgb(246, 240, 240);
+  background-color: rgb(250, 29, 29);
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIcoActive:hover, .contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIcoActive:focus {
+  color: rgb(250, 29, 29);
+  background-color: rgb(246, 240, 240);
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIcoInactive {
+  color: rgb(250, 29, 29);
+  background-color: rgb(246, 240, 240);
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIcoInactive:hover, .contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .contIcoInactive:focus {
+  background-color: rgb(246, 240, 240);
+  color: rgb(250, 29, 29);
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .AreDoYouLikeIt {
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 8.9rem;
+  margin: 0%;
+  margin-top: 14%;
+}
+.contCompShowSong > .contInfoAlbum > .firstLine > .contIcoFrage > .yesItIsLike {
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 4.6rem;
+  margin: 0%;
+  margin-top: 14%;
+}
+.contCompShowSong > .contInfoAlbum > .contRealeased {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 90%;
+  justify-content: flex-start;
+  margin: 0%;
+  margin-left: 8%;
+}
+.contCompShowSong > .contInfoAlbum > .contRealeased > .secondLine {
+  position: relative;
+  text-align: justify;
+  font-size: 0.72rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: left;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+  margin: 0%;
+  margin-right: 2%;
+  padding: 0%;
+}
+.contCompShowSong > .contInfoAlbum > .contRealeased > .thirdLine {
+  position: relative;
+  text-align: justify;
+  font-size: 0.62rem;
+  font-weight: bold;
+  color: rgb(92, 92, 95);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: left;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+  margin: 0%;
+  margin-right: 18%;
+  padding: 0%;
+}
+
+@keyframes movText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*# sourceMappingURL=CompShowSong.css.map */

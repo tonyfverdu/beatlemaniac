@@ -1,0 +1,173 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+@use '../glassMorphismus' as g;
+
+.containerErrorGlobal {
+  @include l.layoutFlexboxColumCenter;
+  margin: 0% auto;
+  @include d.backgroundImage;
+  background-image: url('../../src/images/theBeatles/404/laufen6.jpg'), url('../../src/images/theBeatles/404/laufen5.jpeg');
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+
+  &>.containerMessage {
+    @include g.boxShadowGlassMorpCard;
+    @include l.layoutFlexboxColumCenter;
+    align-items: center;
+    justify-content: center;
+    width: 34%;
+    height: auto;
+    margin: 1% auto;
+    padding: 1.5%;
+
+    &>span {
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      @include d.configurationText1 (v.$colorDunkel, 1.1rem);
+      text-align: left;
+    }
+  }
+
+  &>.containerError {
+    @include l.layoutFlexboxRowCenter;
+    width: 100vw;
+    height: 60vh;
+    padding: 0%;
+    margin: 0% auto;
+
+    .containerErrorPage {
+      @include l.layoutFlexboxColumCenter;
+      width: 86vw;
+      height: 40vh;
+      @include d.backgroundImage;
+      animation: backgroundImageAnimation 26s ease-in-out infinite alternate;
+
+      &>.containerHeaderError {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        @include d.desigHeader (v.$backgroundColorIni2);
+        @include g.boxShadowGlassMorpCard;
+        align-items: flex-start;
+        width: 36%;
+        height: auto;
+        padding: 1%;
+        margin: 0% auto;
+        margin-bottom: 1%;
+
+        &>.containerName {
+          @include d.desig_H_element (v.$colorHell, 2.1rem);
+          margin: 0% auto;
+          text-align: center;
+        }
+      }
+
+      &>.containerLink {
+        @include l.layoutFlexboxRowCenter;
+        width: 12%;
+        margin-top: 1%;
+
+        &>a {
+          @include d.buttonType1;
+          border: 1px solid v.$backgroundColorRowTable;
+          @include d.configurationText2 (v.$colorNavy, 1.3rem);
+          padding: 2% 4%;
+          text-decoration: none;
+          transition: all 0.45s ease;
+
+          &:hover,
+          &:focus {
+            cursor: pointer;
+            transform: scale(0.92);
+            background: linear-gradient(315deg, #8f8f8f, #414141);
+            box-shadow: -2px -2px 5px #545454,
+              1px 1px 4px #bababa;
+            color: v.$colorRedNeu2;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes backgroundImageAnimation {
+  0% {
+    background: url('../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+  }
+
+  10% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.98;
+  }
+
+  20% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.96;
+  }
+
+  30% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.94;
+  }
+
+  40% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.92;
+  }
+
+  50% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.90;
+  }
+
+  60% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.92;
+  }
+
+  70% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.94;
+  }
+
+  80% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.96;
+  }
+
+  90% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.98;
+  }
+
+  100% {
+    background: url('../../src/images/theBeatles/Error-404-Not-Found.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+  }
+}

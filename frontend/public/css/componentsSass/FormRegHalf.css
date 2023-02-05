@@ -1,0 +1,584 @@
+/*   ////////////////////////////////////////       */
+.containerRegDataHalf {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: #e0e0e0;
+  box-shadow: inset 11px 11px 24px #c1c1c1, inset -11px -11px 24px #ffffff;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.1% auto;
+  margin: 0% auto;
+  margin-bottom: 1%;
+}
+.containerRegDataHalf > .headerOfCreateAccount {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  padding: 1%;
+  margin: 0% auto;
+  margin-left: 2%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.containerRegDataHalf > .headerOfCreateAccount > .titelOfCreateAccount {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 0%;
+  padding: 0%;
+}
+.containerRegDataHalf > .dataOfAddress {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 90%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0% auto;
+  margin: 0% auto;
+  margin-left: 8%;
+  margin-bottom: 1%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 94%;
+  margin: 0.2% auto;
+  padding: 0%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields:nth-child(1) {
+  margin-left: 1.55%;
+  width: 82%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields:nth-child(2) {
+  margin-left: 1.55%;
+  width: 92%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields:nth-child(3) {
+  width: 64%;
+  margin-right: 50%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 5rem;
+  font-weight: bold;
+  padding: 0%;
+  margin-bottom: 0%;
+  margin-right: 4%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .postCode {
+  width: 10rem;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  padding: 0%;
+  margin-bottom: 0%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .inputStreet {
+  width: 34rem;
+  margin-right: 5%;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .inputNumberStreet {
+  width: 3rem;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .inputCity {
+  width: 8rem;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .inputState {
+  width: 8rem;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .inputZip {
+  width: 4rem;
+}
+.containerRegDataHalf > .dataOfAddress > .container2Fields > .containerInputLabel > .inputCountry {
+  width: 8rem;
+}
+
+.dataOfPay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 6px;
+  background: #e0e0e0;
+  box-shadow: inset 11px 11px 24px #c1c1c1, inset -11px -11px 24px #ffffff;
+  padding: 0% auto;
+  margin: 0% auto;
+  margin-bottom: 0.5%;
+}
+.dataOfPay > .headerSubtitelFormPay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 15%;
+  height: 80%;
+  padding: 1%;
+  margin: 0%;
+  margin-top: 1%;
+  margin-left: 2%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.dataOfPay > .headerSubtitelFormPay > .titelSubtitelFormPay {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  margin: 0%;
+  padding: 0%;
+}
+.dataOfPay > .containerCreditDebitCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 90%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0% auto;
+  margin: 0% auto;
+  margin-left: 8%;
+  margin-bottom: 0.3%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .labelHolder {
+  position: relative;
+  text-align: justify;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 6.6rem;
+  font-weight: bolder;
+  padding: 0%;
+  margin: 0%;
+  text-align: left;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .fullname {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 66%;
+  margin-right: 2%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .fullname > .container2Fields {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .fullname > .container2Fields > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0.1%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .fullname > .container2Fields > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  margin-bottom: 0%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .fullname > .container2Fields > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 180px;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .containerTypePay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 28%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .containerTypePay > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  margin-bottom: 0%;
+  padding: 0.1%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .containerTypePay > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  margin-bottom: 0%;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .containerTypePay > .containerInputLabel > .selectTypePay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+  margin: 0% auto;
+  width: 8.8rem;
+  transition: all ease 0.25s;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .containerTypePay > .containerInputLabel > .selectTypePay > option {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+}
+.dataOfPay > .containerCreditDebitCard > .container3Fields > .containerTypePay > .containerInputLabel > .selectTypePay:hover, .dataOfPay > .containerCreditDebitCard > .container3Fields > .containerTypePay > .containerInputLabel > .selectTypePay:focus {
+  cursor: pointer;
+  border: 2px solid rgb(213, 140, 4);
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel > .labelInput {
+  width: 125px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel:nth-child(1) > label {
+  margin-right: 2%;
+  margin-left: 0%;
+  width: 6rem;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel:nth-child(1) > input {
+  width: 16rem;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel:nth-child(2) {
+  margin-left: 2%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel:nth-child(2) > label {
+  width: 7rem;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 8rem;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .containerInputLabel > #expirationData {
+  width: 6.8rem;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .securityCode {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  margin-left: 2%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .securityCode > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .securityCode > .containerInputLabel > .labelInput {
+  width: 7rem;
+  font-size: 0.9rem;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .securityCode > .containerInputLabel > .inputText {
+  font-size: 1rem;
+  width: 3rem;
+  font-size: 0.9rem;
+  margin-left: 1%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .acceptConditions {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0%;
+  margin-left: 3%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .acceptConditions > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0%;
+  margin: 0%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .acceptConditions > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(1, 1, 68);
+  margin: 0% auto;
+  width: 110px;
+  font-weight: 700;
+  margin-left: 10%;
+}
+.dataOfPay > .containerCreditDebitCard > .container1Field > .acceptConditions > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  transform: scale(2);
+  width: 12%;
+  margin: 0%;
+}
+
+.figureImageCreditCard {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  position: absolute;
+  bottom: 16.8%;
+  right: -13%;
+  width: 60%;
+  height: 1rem;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 0%;
+}
+.figureImageCreditCard > .textAccept {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+  margin: 1% 2%;
+  padding: 1%;
+  margin-right: 2%;
+}
+.figureImageCreditCard > .imageCardCreditst {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 24%;
+  padding: 0%;
+}
+
+.labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bold;
+  padding: 0%;
+  text-align: left;
+}
+
+.inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 60%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  padding: 0%;
+  text-align: left;
+  transition: all 0.25s ease;
+  border: 1px solid rgb(63, 63, 63);
+}
+.inputText:hover:hover, .inputText:hover:focus, .inputText:focus:hover, .inputText:focus:focus {
+  cursor: pointer;
+  border: 2px solid rgb(213, 140, 4);
+}
+
+/*# sourceMappingURL=FormRegHalf.css.map */

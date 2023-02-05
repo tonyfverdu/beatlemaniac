@@ -1,0 +1,348 @@
+/*   ////////////////////////////////////////       */
+.contHome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  width: 100vw;
+  height: 222vh;
+  margin: 0%;
+  background-image: url(../../images/theBeatles/BeatlesPortada.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 40px 620px;
+  background-color: rgb(253, 253, 253);
+}
+.contHome > .contCarrousel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  background-color: rgb(9, 9, 9);
+}
+.contHome > .contHeaderHome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  background-color: rgba(3, 3, 3, 0.2);
+  width: 11vw;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  padding: 0.5%;
+  margin: 1% auto;
+  margin-left: 2%;
+  z-index: 20;
+  transition: all 0.45s ease;
+}
+.contHome > .contHeaderHome > .contName {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.contHome > .contHeaderHome > .contName > span {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0% auto;
+  text-align: center;
+  padding: 2%;
+  transform: rotate(-15deg) translateY(-0.3rem) translateX(0.3rem);
+  animation: changeColorTitle infinite 16s linear alternate;
+}
+.contHome > .contHeaderHome > .contName > .figureLogo {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 50%;
+  width: 3.4rem;
+  height: 3.4rem;
+  padding: 1%;
+  margin: 1%;
+  background: linear-gradient(to bottom, rgb(167, 166, 166) 55%, rgb(231, 230, 230));
+  transform: translateY(0.3rem) translateX(0.2rem);
+}
+.contHome > .contHeaderHome > .contName > .figureLogo > .imgLogo {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  padding: 1%;
+  background-color: rgba(3, 3, 3, 0.93);
+  transition: all 0.45s ease;
+}
+.contHome > .contHeaderHome > .contName > .figureLogo > .imgLogo:hover, .contHome > .contHeaderHome > .contName > .figureLogo > .imgLogo:active {
+  cursor: pointer;
+  animation: rotateLogo 3s infinite linear;
+}
+.contHome > .contLeftOptions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 22vw;
+  height: 150vh;
+  margin: 0%;
+  margin-top: 67vh;
+  background-color: transparent;
+}
+.contHome > .contLeftOptions > .contAlbumOfDay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16vw;
+  height: 39vh;
+  margin: 0% auto;
+  background-color: transparent;
+}
+.contHome > .contLeftOptions > .contCustomRecord {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16vw;
+  height: 79vh;
+  margin: 0% auto;
+  background-color: transparent;
+  margin-top: 32vh;
+  border: 1px solid red;
+}
+.contHome > .contLeftOptions > figure {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  position: absolute;
+  top: 45vh;
+  left: 32vw;
+  width: 12rem;
+  height: 12rem;
+  margin-left: 10%;
+}
+.contHome > .contLeftOptions > figure > #contFondo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12rem;
+  height: 12rem;
+  margin: 0% auto;
+  opacity: 0.3;
+  border-radius: 50%;
+  background-image: url(../../images/theBeatles/SgtPepper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: moveFigure 3s ease-in-out infinite;
+}
+.contHome > .contLeftOptions > figure > #contFondo:hover, .contHome > .contLeftOptions > figure > #contFondo:focus {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  animation: changeBackgroundImg 8s ease-in-out infinite forwards;
+}
+
+#icon2 {
+  display: block;
+  transform: scale(2);
+  margin-left: 6%;
+  padding: 0%;
+  color: rgba(43, 211, 43, 0.9);
+  transition: all 0.45s ease;
+}
+#icon2:hover, #icon2:focus {
+  cursor: pointer;
+  transform: scale(2);
+  color: rgba(207, 35, 35, 0.9);
+}
+
+@keyframes changeBackgroundImg {
+  0% {
+    background-image: url(../../images/theBeatles/SgtPepper.jpg);
+  }
+  10% {
+    background-image: url(../../images/theBeatles/logoBeatles1.webp);
+    transform: rotate(72deg);
+  }
+  20% {
+    background-image: url(../../images/theBeatles/dow.jpg);
+    transform: rotate(144deg);
+  }
+  30% {
+    background-image: url(../../images/theBeatles/B&WBeatles2.webp);
+    transform: rotate(216deg);
+  }
+  40% {
+    background-image: url(../../images/theBeatles/psicoBeatles5.webp);
+    transform: rotate(288deg);
+  }
+  50% {
+    background-image: url(../../images/theBeatles/756863.jpg);
+    transform: rotate(360deg);
+  }
+  60% {
+    background-image: url(../../images/theBeatles/TopRigth.jpg);
+    transform: rotate(288deg);
+  }
+  70% {
+    background-image: url(../../images/theBeatles/chula3Thebeatles.jpg);
+    transform: rotate(216deg);
+  }
+  80% {
+    background-image: url(../../images/theBeatles/psicoBeatles3.webp);
+    transform: rotate(144deg);
+  }
+  90% {
+    background-image: url(../../images/theBeatles/psicoBeatles2.webp);
+    transform: rotate(72deg);
+  }
+  100% {
+    background-image: url(../../images/theBeatles/TopLeft.jpg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes changeColorTitle {
+  0% {
+    color: rgb(248, 164, 8);
+    text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+    text-emphasis-color: 130%;
+  }
+  10% {
+    color: rgb(250, 29, 29);
+    text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+  }
+  20% {
+    color: rgb(159, 250, 98);
+    textShadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+    text-emphasis-color: 130%;
+  }
+  30% {
+    color: rgb(5, 84, 253);
+    textShadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+    text-emphasis-color: 130%;
+  }
+  40% {
+    color: rgb(252, 218, 156);
+    textShadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    color: rgb(103, 255, 2);
+    textShadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+    text-emphasis-color: 130%;
+  }
+  60% {
+    color: #fa6ffa;
+    textShadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  }
+  70% {
+    color: rgb(4, 243, 252);
+    textShadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+    text-emphasis-color: 130%;
+  }
+  80% {
+    color: rgb(227, 154, 19);
+    textShadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  }
+  90% {
+    color: rgb(252, 218, 156);
+    textShadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+    text-emphasis-color: 130%;
+  }
+  100% {
+    color: orange;
+    textShadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes moveFigure {
+  0% {
+    transform: scale(1) rotate(-0.5deg);
+  }
+  25% {
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: scale(1.01) rotate(-0.5deg);
+  }
+  75% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: scale(1) rotate(-0.5deg);
+  }
+}
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg) scale(1.1);
+    box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  }
+  to {
+    transform: rotate(720deg) scale(1.1);
+    border: 1px solid rgb(63, 63, 63);
+    box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

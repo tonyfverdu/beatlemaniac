@@ -1,0 +1,257 @@
+/*   ////////////////////////////////////////       */
+.containerOutRegister {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 22px;
+  background: #e0e0e0;
+  box-shadow: -11px -11px 17px #acacac, 11px 11px 17px #ffffff;
+  width: 46vw;
+  height: auto;
+  padding: 3%;
+  margin: 2% auto;
+}
+.containerOutRegister > .headerTitelRegister {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.5% 1%;
+  margin: 0.5% 0%;
+  margin-left: 5%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.containerOutRegister > .headerTitelRegister > .textTitelRegister {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  margin: 0%;
+}
+.containerOutRegister > .containerShowRegisterData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.containerOutRegister > .containerShowRegisterData > .UlDataOfCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.containerOutRegister > .containerShowRegisterData > .UlDataOfCustomer > .containerDataGeneral {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.2% auto;
+  margin: 1% auto;
+}
+.containerOutRegister > .containerShowRegisterData > .UlDataOfCustomer > .containerDataGeneral > .containerSectionData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  align-items: flex-start;
+  margin-bottom: 2%;
+  border-radius: 6px;
+}
+.containerOutRegister > .containerShowRegisterData > .UlDataOfCustomer > .containerDataGeneral > .containerSectionData > .headerDataGeneral {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 50%;
+  height: auto;
+  padding: 0.3% 1%;
+  margin: 0.3% 2%;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.containerOutRegister > .containerShowRegisterData > .UlDataOfCustomer > .containerDataGeneral > .containerSectionData > .headerDataGeneral > .titelDataGeneral {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  margin: 0%;
+  padding: 1.5%;
+}
+.containerOutRegister > .containerShowRegisterData > .UlDataOfCustomer > .containerDataGeneral > .containerSectionData > .containerRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0% auto;
+}
+.containerOutRegister > .containerShowRegisterData > .UlDataOfCustomer > .containerDataGeneral > .containerSectionData > .containerRow > .containerLIData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 96%;
+  padding: 0.2% auto;
+  margin: 0% auto;
+  margin-bottom: 1%;
+}
+
+.LI_OfDataRegister, .country, .post_zipCode, .state_province, .city, .street_number, .treament {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0% auto;
+}
+.LI_OfDataRegister > .titelOfLi, .country > .titelOfLi, .post_zipCode > .titelOfLi, .state_province > .titelOfLi, .city > .titelOfLi, .street_number > .titelOfLi, .treament > .titelOfLi {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 1.04rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0%;
+  padding: 0.6%;
+  width: auto;
+  font-weight: bold;
+  padding: 1.6% 3%;
+  padding-right: 2.4%;
+  margin: 0% 2%;
+  border-radius: 0%;
+}
+.LI_OfDataRegister > .dataOfLi, .country > .dataOfLi, .post_zipCode > .dataOfLi, .state_province > .dataOfLi, .city > .dataOfLi, .street_number > .dataOfLi, .treament > .dataOfLi {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: rgb(83, 83, 84);
+  margin: 0%;
+  padding: 0.6%;
+  width: auto;
+  font-weight: normal;
+  padding: 1.4% 2.4%;
+  margin: 0% 2%;
+  border-radius: 0%;
+}
+
+.treament {
+  margin-left: 1%;
+  margin-right: 2.5%;
+  width: 42%;
+}
+
+.street_number {
+  width: 24%;
+}
+
+.city {
+  width: 54%;
+  margin-left: 1%;
+}
+
+.state_province {
+  width: 80%;
+}
+
+.post_zipCode {
+  justify-content: end;
+  width: 60%;
+}
+.post_zipCode > .titelOfLi {
+  font-size: 0.8rem;
+}
+
+.country {
+  justify-content: end;
+  width: 60%;
+}
+
+.containerGruppeButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  width: 36%;
+  position: absolute;
+  bottom: -4.2%;
+  right: 4%;
+  padding: 0%;
+}
+
+/*# sourceMappingURL=customerRegistered.css.map */

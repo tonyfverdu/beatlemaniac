@@ -1,0 +1,144 @@
+/*   ////////////////////////////////////////       */
+.contSong {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1.6% auto;
+  transform-style: preserve-3d;
+  transition: all ease 0.45s;
+}
+.contSong > .figureSong {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin: 0.6% 4%;
+  padding: 0%;
+  background-color: transparent;
+}
+.contSong > .figureSong > .imgSong {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contSong > .contInfoSong {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0.6% 2%;
+  padding: 0%;
+}
+.contSong > .contInfoSong > .titleSong {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(231, 230, 230);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% 1%;
+  padding: 0%;
+  text-align: left;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+}
+.contSong > .contInfoSong > .contInfo2Song {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0%;
+  padding: 0.3%;
+}
+.contSong > .contInfoSong > .contInfo2Song > .titleOfSong {
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgb(220, 21, 21);
+  margin: 1% 2%;
+  padding: 1%;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+  margin: 0% 0.5%;
+  padding: 0%;
+}
+.contSong > .contInfoSong > .contInfo2Song > .contRealeased {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+.contSong > .contInfoSong > .contInfo2Song > .contRealeased > .labelReleased {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgb(167, 166, 166);
+  margin: 1% 2%;
+  padding: 1%;
+  width: auto;
+  margin: 0% 1%;
+  margin-right: 6%;
+  padding: 0%;
+  text-align: left;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+}
+.contSong > .contInfoSong > .contInfo2Song > .contRealeased > .realeased {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgba(167, 166, 166, 0.6);
+  margin: 1% 2%;
+  padding: 1%;
+  width: auto;
+  margin: 0%;
+  padding: 0%;
+  text-align: left;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.39), 1px 1px 3px #5d5d63;
+}
+.contSong:hover, .contSong:focus {
+  cursor: pointer;
+  background-color: rgba(2, 2, 101, 0.9);
+  border-radius: 9px;
+  transform: scale(1.04);
+}
+.contSong:hover > .figureSong, .contSong:focus > .figureSong {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.contSong:hover > .figureSong > .imgSong, .contSong:focus > .figureSong > .imgSong {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/*# sourceMappingURL=CompAnotherSongs.css.map */

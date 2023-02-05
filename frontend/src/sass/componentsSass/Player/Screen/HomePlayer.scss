@@ -1,0 +1,67 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+.contMainPlayer {
+  @include l.layoutFlexboxRowCenter;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 0%;
+  margin: 0% auto;
+  background-image: linear-gradient(to top, v.$backgroundColorDunkelBlack 16%,
+      v.$backgroundColorDunkelBlackT 36%, v.$backgroundColorDunkelBlack), url(../src/images/theBeatles/B&W1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0.2rem 6rem;
+  background-size: 36% 42%;
+  background-color: v.$backgroundColorDunkelBlack;
+
+  &>.contSideBarAlbums {
+    @include l.layoutFlexboxRowCenter;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    margin: 0% auto;
+    padding: 0%;
+  }
+
+  &>.contPlayerMusic {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    @include g.boxShadowGlassMorphismus1;
+    width: 58%;
+    height: 70vh;
+    margin: 0%;
+    margin-top: 2%;
+    margin-left: 28%;
+    border-radius: 29px;
+    background-color: transparent;
+    z-index: 20;
+
+    &>.contSidebar {
+      width: 8.4rem;
+      height: 100%;
+      border: 2.8px solid v.$colorHellCardGlassBorder;
+      border-radius: 29px 0px 0px 29px;
+      box-shadow: v.$boxShadow4;
+      background-color: v.$backgroundColorDunkelGray5;
+    }
+
+    &>.contFunctionPlayer {
+      @include l.layoutFlexboxRowCenter;
+      width: calc(100% - 8rem);
+      height: 100%;
+      @include g.GlassMorphismus1;
+      border-radius: 0px 29px 29px 0px;
+      border: 1px solid v.$colorHellCardGlassBorder;
+      box-shadow: v.$boxShadow3;
+
+      &>.contLogin {
+        @include l.layoutFlexboxRowCenter;
+        margin: 0% auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/*   ////////////////////////////////////////       */
+.containerRegDataTop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: #e0e0e0;
+  box-shadow: inset 11px 11px 24px #c1c1c1, inset -11px -11px 24px #ffffff;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.1% auto;
+  margin: 0% auto;
+  margin-bottom: 1%;
+}
+.containerRegDataTop > .headerOfCreateAccount {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  padding: 0%;
+  margin: 0%;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+.containerRegDataTop > .headerOfCreateAccount > .titelOfCreateAccount {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0%;
+  padding: 0%;
+}
+.containerRegDataTop > .containerNameOfCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.3%;
+  width: 90%;
+  margin: 0% auto;
+  margin-left: 8%;
+  margin-bottom: 0.6%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .selectTratament {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(10, 10, 10);
+  margin: 0% auto;
+  width: auto;
+  padding: 0%;
+  margin-right: 1%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .selectTratament > option {
+  position: relative;
+  text-align: justify;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgb(10, 10, 10);
+  margin: 0% auto;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 5%;
+  padding: 0%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel > label {
+  font-size: 0.9rem;
+  width: auto;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel > input {
+  font-size: 0.89rem;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(2) {
+  width: 120%;
+  margin-right: 3%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(2) > label {
+  width: 50%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(2) > input {
+  width: 110%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(3) {
+  width: 120%;
+  margin-right: 5%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(3) > label {
+  width: 50%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(3) > input {
+  width: 110%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(4) {
+  width: 24%;
+}
+.containerRegDataTop > .containerNameOfCustomer > .containerInputLabel:nth-child(4) > input {
+  width: 2.4rem;
+}
+
+.containerDataOfRegister_2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: #e0e0e0;
+  box-shadow: inset 11px 11px 24px #c1c1c1, inset -11px -11px 24px #ffffff;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1% auto;
+  margin: 0% auto;
+  margin-bottom: 1%;
+}
+.containerDataOfRegister_2 > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 38%;
+  margin-left: 8%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.containerDataOfRegister_2 > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 7rem;
+  font-weight: bold;
+  padding: 0%;
+  margin-bottom: 2%;
+}
+.containerDataOfRegister_2 > .containerInputLabel > i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  transform: scale(1.3);
+  color: rgb(1, 14, 131);
+  margin: 2% 4%;
+}
+.containerDataOfRegister_2 > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 14rem;
+  position: relative;
+  text-align: justify;
+  font-size: 0.89rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  padding: 0%;
+  margin-bottom: 2%;
+}
+.containerDataOfRegister_2 > .containerEmail_Password {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  width: 38%;
+  margin-left: 8%;
+  margin-bottom: 3%;
+}
+.containerDataOfRegister_2 > .containerEmail_Password > .containerInputLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 0.5%;
+}
+.containerDataOfRegister_2 > .containerEmail_Password > .containerInputLabel > .labelInput {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 7rem;
+  font-weight: bold;
+  padding: 0%;
+  margin-bottom: 0.5%;
+}
+.containerDataOfRegister_2 > .containerEmail_Password > .containerInputLabel > i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  transform: scale(1.3);
+  color: rgb(1, 14, 131);
+  margin: 0% 4%;
+  margin-bottom: 0.5%;
+}
+.containerDataOfRegister_2 > .containerEmail_Password > .containerInputLabel > .inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 20rem;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  padding: 0%;
+  margin-bottom: 0.5%;
+}
+.containerDataOfRegister_2 > .regelOfPassword {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: -6%;
+  left: 7%;
+  align-items: flex-end;
+  display: none;
+  width: 30%;
+  background: rgb(231, 230, 230);
+  color: rgb(9, 9, 9);
+  padding: 0.8%;
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.containerDataOfRegister_2 > .regelOfPassword > .messageOfRegelOfPassword {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgb(1, 1, 68);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.containerDataOfRegister_2 > .regelOfPassword > .valid {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgba(2, 110, 2, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.containerDataOfRegister_2 > .regelOfPassword > .valid:before {
+  position: relative;
+  background-color: rgba(54, 250, 54, 0.9);
+  margin-right: 2%;
+  transform: scale(2);
+  left: -1%;
+  content: "✔";
+}
+.containerDataOfRegister_2 > .regelOfPassword > .invalid {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgba(207, 35, 35, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.containerDataOfRegister_2 > .regelOfPassword > .invalid:before {
+  position: relative;
+  transform: scale(2);
+  margin-right: 2%;
+  background-color: rgb(246, 240, 240);
+  left: -1%;
+  content: "✖";
+}
+.containerDataOfRegister_2 > .regelOfPassword > p > span {
+  font-weight: bolder;
+}
+.containerDataOfRegister_2 > .containerOfSelectAvatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 8%;
+  right: 2.5%;
+  border-radius: 6px;
+}
+
+.containerCheckbox {
+  position: relative;
+  display: block;
+  width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 14%;
+  right: -6%;
+  transform: scale(1.8);
+}
+
+.labelInput {
+  position: relative;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 0% 2%;
+  padding: 1%;
+  text-align: left;
+  padding: 0%;
+  margin-bottom: 0%;
+}
+
+.inputText {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 60%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.89rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  padding: 0%;
+  margin: 0%;
+  text-align: left;
+  transition: all 0.25s ease;
+  border: 1px solid rgb(63, 63, 63);
+}
+.inputText:hover, .inputText:focus {
+  cursor: pointer;
+  border: 2px solid rgb(213, 140, 4);
+}
+
+/*# sourceMappingURL=FormRegTop.css.map */

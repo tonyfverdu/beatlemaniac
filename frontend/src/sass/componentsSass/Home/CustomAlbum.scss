@@ -1,0 +1,242 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+
+.contCustomRecord {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  width: 16vw;
+  height: 79vh;
+  @include n.neuMorphismus2;
+  border-radius: 6px;
+
+  &:hover,
+  &:focus {
+
+    .contTextCustom {
+      &>.iconHeart {
+        animation: heartPulse 1.4s linear infinite;
+      }
+    }
+  }
+
+  &>.contCustomUp {
+    @include d.desigHeader (transparent);
+    @include l.layoutFlexboxColumCenter;
+    padding: 1%;
+    margin: 3% auto;
+    margin-bottom: 8%;
+
+    &>.headerTitleComp {
+      @include d.desigHeader (transparent);
+      @include l.layoutFlexboxRowCenter;
+      padding: 1%;
+      margin: 3% auto;
+      margin-bottom: 8%;
+
+      &>.textTitleComp {
+        @include d.desig_H_element (v.$colorTextIni, 1.4rem);
+        text-align: center;
+        margin: 0% auto;
+      }
+    }
+
+    &>.contOfButton {
+      @include l.layoutFlexboxRowCenter;
+      margin: 2% auto;
+      padding: 0%;
+    }
+
+    &>.contTextCustom {
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      width: 100%;
+      margin: 0% auto;
+
+      &>.textCustom {
+        @include d.configurationLabel (v.$colorTextIni, 0.85rem);
+        margin-right: 1%;
+        width: 90%;
+        text-align: left;
+      }
+
+      &>.iconHeart {
+        transform: scale(1.6);
+        width: 0.9rem;
+        height: 0.9rem;
+        font-weight: bold;
+        padding: 0%;
+        margin: 0%;
+        color: v.$colorRedNeu;
+      }
+    }
+  }
+
+  &>.contHalfInfo {
+    @include l.layoutFlexboxColumCenter;
+    justify-content: flex-start;
+    width: 16vw;
+    height: 30vh;
+    margin: 0% auto;
+    // background-image: linear-gradient(to top, v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 36%, 
+    // v.$backgroundColorDunkelBlack), url(../src/images/theBeatles/Fans/fanGritando.jpg);
+    background-image: url(../src/images/theBeatles/Fans/fanGritando.jpg);
+    background-repeat: no-repeat;
+    background-position: 3rem 0%;
+    background-size: 100% 100%;
+    overflow: hidden;
+
+    &>.sandwichQuadrat {
+      position: absolute;
+      top: 4.2%;
+      left: 3.2%;
+      height: 13vh;
+      width: 50%;
+      background-color: v.$backgroundColorDunkelGray5;
+      box-shadow: v.$boxShadow3;
+      transform: rotate(10deg);
+
+      &>.textSandwich {
+        @include d.configurationLabel (v.$colorHell, 0.78rem);
+        padding: 2%;
+        margin: 2%;
+        
+      }
+
+      &:before {
+        border: 2px solid v.$backgroundColorHellGray2;
+        content: '';
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        bottom: 6%;
+        left: 5%;
+      }
+
+    }
+
+  }
+
+  &>.contImgMovement {
+    @include l.layoutFlexboxRowCenter;
+
+    &>.figureImgMovement {
+      @include d.figure;
+      margin: 1% auto;
+      padding: 0%;
+      background-color: v.$backgroundColorIni;
+
+      &>.imgMovement {
+        @include d.imageGenerall;
+      }
+    }
+  }
+
+  &>.contPricesInfo {
+    @include l.layoutFlexboxColumCenter;
+    width: inherit;
+
+    &>.headerPricesInfo {
+      @include d.desigHeader (transparent);
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      width: inherit;
+      padding: 1%;
+      margin: 1%;
+
+      &>.titlePricesInfo {
+        @include d.desig_H_element (v.$colorTextIni, 1rem);
+        justify-content: flex-start;
+        width: inherit;
+        text-align: left;
+        margin: 0%;
+        margin-left: 4%;
+        padding: 0%;
+      }
+    }
+
+    &>.contPriceByRecord {
+      @include l.layoutFlexboxRowCenter;
+      justify-content: flex-start;
+      width: 80%;
+      margin: 2% 0%;
+      margin-bottom: 1%;
+
+      &>.priceByRecord {
+        @include d.configurationLabel (v.$colorRedNeu, 1.2rem);
+      }
+
+      &>.explanationPrice {
+        @include d.configurationText2 (v.$colorTextIni, 1rem);
+      }
+    }
+
+    &>.ulFormatPrices {
+      @include l.layoutFlexboxColumCenter;
+      width: 78%;
+      margin: 0%;
+
+      &>.liFormatPrices {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        list-style-type: circle;
+
+        &>.format {
+          @include d.configurationText2 (v.$colorTextIni, 0.8rem);
+          margin-right: 1%;
+        }
+
+        &>.typeFormat {
+          @include d.configurationText1 (v.$colorNavy, 0.8rem);
+          margin-right: 10%;
+        }
+
+        &>.formatPrice {
+          @include d.configurationText1 (v.$colorRedNeu, 0.9rem);
+        }
+
+        &:nth-child(3) {
+
+          &>.format {
+            margin-right: 10%;
+
+            &>.typeFormat {
+              margin-right: 0%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes heartPulse {
+  0% {
+    transform: scale(1);
+    color: v.$colorRedHellT2;
+  }
+
+  20% {
+    transform: scale(1);
+    color: v.$colorRedNeuT;
+  }
+
+  50% {
+    transform: scale(3);
+    font-weight: bolder;
+    color: v.$colorRedNeu;
+  }
+
+  80% {
+    transform: scale(1);
+    font-weight: bold;
+    color: v.$colorRedNeuT;
+  }
+
+  100% {
+    transform: scale(1);
+    color: v.$colorRedHellT2;
+  }
+}

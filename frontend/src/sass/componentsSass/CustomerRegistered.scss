@@ -1,0 +1,339 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+@use '../glassMorphismus' as g;
+
+
+.contUserRegistered {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  background-image: url("../../images/theBeatles/beatlescentral.png"), url("../../images/theBeatles/Avatar/beatleArt18.jpg");
+  background-size: 40%;
+  background-position: -15% 40%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 36%, v.$backgroundColorDunkelBlack), url("../../images/theBeatles/Avatar/beatleArt18.jpg");
+  background-color: v.$backgroundColorDunkelBlack;
+
+  &>.headerTitelRegister {
+    @include l.layoutFlexboxRowCenter;
+    @include d.desigHeader (transparent);
+    @include g.GlassMorphismus6;
+    width: 54%;
+    padding: 0.5% 2%;
+    margin: 1% auto;
+    margin-bottom: 0.8%;
+
+    &>.titelFormularRegisterCustomer {
+      @include d.desig_H_element (v.$colorHell, 2.8rem);
+      font-weight: bolder;
+      margin: 0% auto;
+      text-shadow: v.$textShadowGreen;
+    }
+  }
+
+  &>.contDataRegisterd {
+    @include l.layoutFlexboxColumCenter;
+    @include n.neuMorphismus3;
+    border-radius: 6px;
+    width: 54%;
+    margin: 0% auto;
+    padding: 0.3%;
+
+    &>.contComponentsData {
+      @include l.layoutFlexboxColumCenter;
+      align-items: flex-start;
+      padding: 0% 2%;
+      margin: 0% auto;
+
+      &>.contMessageLogin {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: space-between;
+        @include d.desigHeader (transparent);
+        @include n.teclaNeumorphismus1;
+        border: none;
+        border-radius: 6px;
+        width: 20rem;
+        position: absolute;
+        top: 6%;
+        right: 3%;
+        z-index: 20;
+        padding: 1% auto;
+        margin: 1% auto;
+        transition: all 0.35s ease;
+        animation: changeFilter 3s ease infinite;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          @include n.teclaNeumorphismus1Hover;
+          transform: scale(0.96);
+          border-radius: 6px;
+
+          &>.messageLogin {
+            color: v.$colorRedNeu;
+            font-size: 1.3rem;
+            font-weight: bolder;
+          } 
+        }
+
+        &>.figureLogoBeatles {
+          @include d.figure;
+          width: auto;
+          height: 3rem;
+          margin: 1%;
+          margin-right: 4%;
+          padding: 0%;
+          overflow: hidden;
+          box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+
+          &>.logoBeatles {
+            @include d.imageGenerall;
+            width: 4rem;
+            height: 2rem;
+            object-fit: cover;
+            object-position: center;
+            background-color: white;
+            animation: transitionImage 6s ease-out forwards;
+          }
+        }
+
+        &>.messageLogin {
+          @include d.configurationText2 (v.$colorRed, 1.2rem);
+        }
+      }
+
+      &>.headerSubtitelTitelRegister {
+        @include d.desigHeader (transparent);
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        padding: 0.5% auto;
+        margin: 0%;
+
+        &>.subtitelRegisterd {
+          @include d.desig_H_element (v.$colorTextIni, 1.3rem);
+          font-weight: bolder;
+          margin: 0%;
+          padding: 0%;
+          text-shadow: v.$textShadow2;
+        }
+      }
+
+      &>.sectionDataRegisterd {
+        @include l.layoutFlexboxRowCenter;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0% auto;
+        padding: 0.3%;
+
+        &>.contData {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          margin: 0.5% auto;
+          padding: 0%;
+
+          &>.figureAvatar {
+            @include d.figure;
+            @include n.neuMorphismus3;
+            width: 10rem;
+            height: 10rem;
+            margin: 2%;
+            margin-bottom: 1%;
+            padding: 0%;
+            border-radius: 50%;
+            box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+            animation: changeFilter 3s ease infinite;
+            background-color: v.$backgroundColorIni;
+
+            &>.imgAvatar {
+              @include d.imageGenerall;
+              border-radius: 50%;
+              width: 10rem;
+              height: 10rem;
+              object-fit: cover;
+              object-position: center;
+              background-color: white;
+            }
+          }
+
+          &>.contPersonalData {
+            @include l.layoutFlexboxColumCenter;
+            align-items: flex-start;
+            padding: 0% auto;
+            margin: 0%;
+
+            &>.contOfDataPers {
+              @include l.layoutFlexboxColumCenter;
+              align-items: flex-start;
+
+              &>.contRowData {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-start;
+                margin-left: 2%;
+                width: 98%;
+
+                &>#treament {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 10%;
+                }
+
+                &>#name {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 70%
+                }
+
+                &>#age {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 10%;
+                }
+
+                &>#id {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 39%;
+                  margin-left: 28%;
+                }
+
+                &>#regData {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 50%
+                }
+
+                &>#phone {
+                  @include l.layoutFlexboxRowCenter;
+                  margin-left: 28%;
+                  width: 30%;
+                }
+
+                &>#email {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 30%;
+                }
+
+                &>#street {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 62%
+                }
+
+                &>#n° {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 10%
+                }
+
+                &>#postCode {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 20%
+                }
+
+                &>#city {
+                  @include l.layoutFlexboxRowCenter;
+                  margin-left: 24.5%;
+                  width: 30%
+                }
+
+                &>#state {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 30%
+                }
+
+                &>#country {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 30%
+                }
+
+                &>#typePay {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 30%
+                }
+
+                &>#holder {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 60%
+                }
+
+                &>#cardNumber {
+                  @include l.layoutFlexboxRowCenter;
+                  margin-left: 23.5%;
+                  width: 50%
+                }
+
+                &>#dateExp {
+                  @include l.layoutFlexboxRowCenter;
+                  width: 40%
+                }
+              }
+            }
+
+            &>.firstPersonalData {
+              margin-top: 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.containerButtons {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-around;
+  width: 30%;
+  bottom: -14.6%;
+  right: 3%;
+  position: absolute;
+
+  &>button {
+    width: 16vw;
+
+    &:first-child {
+      margin-left: 5%;
+    }
+  }
+}
+
+@keyframes changeFilter {
+  0% {
+    box-shadow: rgba(122, 196, 120, 0.5) 4px 4px 6px 0px, rgb(225, 246, 216) -4px -4px 6px 0px;
+  }
+
+  20% {
+    box-shadow: rgba(66, 184, 62, 0.5) 6px 6px 8px 0px, rgb(208, 251, 189) -6px -6px 8px 0px;
+
+  }
+
+  40% {
+    box-shadow: rgba(17, 184, 11, 0.5) 8px 8px 12px 0px, rgb(179, 209, 166) -8px -6px 12px 0px;
+
+  }
+
+  60% {
+    box-shadow: rgba(66, 184, 62, 0.5) 3px 6px 10px 0px, rgb(208, 251, 189) -3px -6px 10px 0px;
+
+  }
+
+  80% {
+    box-shadow: rgba(66, 184, 62, 0.5) 5px 5px 8px 0px, rgb(208, 251, 189) -5px -5px 8px 0px;
+
+  }
+
+  100% {
+    box-shadow: rgba(122, 196, 120, 0.5) 4px 4px 6px 0px, rgb(225, 246, 216) -4px -4px 6px 0px;
+  }
+}
+
+@keyframes transitionImage {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}

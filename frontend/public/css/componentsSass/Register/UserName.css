@@ -1,0 +1,52 @@
+/*   ////////////////////////////////////////       */
+.containerdataCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0% auto;
+  margin: 0%;
+  margin-bottom: 0%;
+  background-color: aqua;
+}
+.containerdataCustomer > .contLabelData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+.containerdataCustomer > .contLabelData > .label {
+  position: relative;
+  text-align: justify;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bolder;
+  padding: 0%;
+  margin: 0%;
+  text-align: left;
+}
+.containerdataCustomer > .contLabelData > .data {
+  position: relative;
+  text-align: justify;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: 700;
+  padding: 0%;
+  margin: 0%;
+  text-align: left;
+}
+
+/*# sourceMappingURL=UserName.css.map */

@@ -1,0 +1,33 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+
+
+.contTitel {
+    @include l.layoutFlexboxRowCenter;
+    @include n.neuMorphismus2;
+    border-radius: 3px;
+    width: 14rem;
+    padding: 1%;
+    margin: 0%;
+    margin-left: 1%;
+    margin-right: 3%;
+
+    &>.headerDataRegisterd {
+        @include d.desigHeader (transparent);
+        @include l.layoutFlexboxRowCenter;
+        padding: 1% auto;
+        margin: 0%;
+        margin-left: 0%;
+        text-shadow: v.$textShadow1;
+
+        &>.titelDataRegisterd {
+          @include d.desig_H_element (v.$colorTextIni, 1.1rem);
+          font-weight: bold;
+          text-shadow: v.$textShadow1;
+          margin: 0%;
+          padding: 0%;
+        }
+      }
+}

@@ -1,0 +1,112 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+
+
+.contSidebarUser {
+  @include l.layoutFlexboxRowCenter;
+  min-width: 100%;
+  margin: 0% auto;
+  margin-top: 10%;
+  transition: all 0.45s ease;
+
+  &>.avatarUser {
+    @include l.layoutFlexboxColumCenter;
+    margin: 0%;
+    padding: 0%;
+
+    &>.figAvatarUser {
+      @include d.figure;
+      width: 3.1rem;
+      height: 3.1rem;
+      border-radius: 50%;
+      margin: 0% auto;
+      margin-bottom: 2%;
+      padding: 1%;
+      background-color: v.$backgroundColorIni;
+
+      &>.imgAvatarUser {
+        @include d.imageGenerall;
+        border-radius: 50%;
+        width: 3.1rem;
+        height: 3.1rem;
+        margin: 0% auto;
+        padding: 0%;
+        transition: all lineal 0.45s;
+      }
+    }
+
+    &>.userImgLogged {
+      border: 2px solid v.$colorGreenHell;
+      animation: imgLogged 6s linear reverse infinite;
+    }
+
+    &>.userImgNotLogged {
+      border: 2px solid v.$colorRedNeu;
+      animation: imgNotLogged 6s linear reverse infinite;
+    }
+
+    &>.nameUser {
+      @include d.configurationText2 (v.$colorTextIni, 0.96rem);
+      transition: all 0.45s ease;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(0.96);
+
+      &>.nameUser {
+        font-size: 0.9rem;
+        color: v.$colorRedNeu;
+        font-weight: bold;
+      }
+    }
+
+    &>.userNotLogged {
+      color: v.$colorRedNeu;
+      text-shadow: v.$textShadowRed;
+    }
+
+    &>.userLogged {
+      color: v.$colorGreen;
+      text-shadow: v.$textShadowGreen;
+    }
+  }
+}
+
+@keyframes imgLogged {
+  0% {
+    box-shadow: v.$boxShadow9;
+  }
+
+  40% {
+    box-shadow: v.$boxShadow10;
+  }
+
+  60% {
+    box-shadow: v.$boxShadow10;
+  }
+
+  100% {
+    box-shadow: v.$boxShadow9;
+  }
+}
+
+@keyframes imgNotLogged {
+  0% {
+    box-shadow: v.$boxShadow8;
+  }
+
+  40% {
+    box-shadow: v.$boxShadow11;
+  }
+
+  60% {
+    box-shadow: v.$boxShadow11;
+  }
+
+  100% {
+    box-shadow: v.$boxShadow8;
+  }
+}

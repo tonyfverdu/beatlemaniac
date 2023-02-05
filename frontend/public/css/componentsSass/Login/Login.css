@@ -1,0 +1,188 @@
+/*   ////////////////////////////////////////       */
+.containerCentral {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 66.2vh;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.containerCentral .containerForm {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  width: 24vw;
+  height: 39vh;
+  margin: 5% auto;
+  padding: 2% 0%;
+}
+.containerCentral .containerForm > .LoginForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 22vw;
+  height: 28vh;
+  margin: 0% auto;
+  padding: 2%;
+}
+.containerCentral .containerForm > .LoginForm > .titleOfLoginForm {
+  color: rgba(4, 32, 52, 0.9);
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  width: 100%;
+  float: left;
+  padding: 2%;
+  margin-left: 2%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.containerCentral .containerForm > .LoginForm > .containerDataLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -15px -15px 29px #aaaaaa, 15px 15px 29px #ffffff;
+  border-radius: 12px;
+  width: 89%;
+  height: 20vh;
+  margin: 2% auto;
+  margin-bottom: 4%;
+  padding: 2%;
+}
+.containerCentral .containerForm > .LoginForm > .containerDataLogin > .containerLabel_Input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+}
+.containerCentral .containerForm > .LoginForm > .containerDataLogin > .containerLabel_Input > label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin-right: 1%;
+  width: 30%;
+}
+.containerCentral .containerForm > .LoginForm > .containerDataLogin > .containerLabel_Input > input {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  max-width: 100%;
+  text-align: left;
+  transition: all 0.25s ease;
+  border: 1px solid rgb(63, 63, 63);
+}
+.containerCentral .containerForm > .LoginForm > .containerDataLogin > .containerLabel_Input > input:hover, .containerCentral .containerForm > .LoginForm > .containerDataLogin > .containerLabel_Input > input:focus {
+  cursor: pointer;
+  border: 2px solid rgb(213, 140, 4);
+}
+.containerCentral .containerForm > .LoginForm > .containerButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2% auto;
+  margin: 2% auto;
+  margin-right: 20%;
+}
+.containerCentral .containerForm > .LoginForm > .ulOfErrors {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.containerCentral .containerForm > .LoginForm > .ulOfErrors > .liError {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 0% auto;
+}
+.containerCentral .containerForm > .LoginForm > .register-switch {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  float: left;
+  width: 100%;
+  text-decoration: underline;
+  transition: all ease 0.45s;
+  margin-left: 6%;
+  margin-bottom: 2%;
+}
+.containerCentral .containerForm > .LoginForm > .register-switch:hover, .containerCentral .containerForm > .LoginForm > .register-switch:focus {
+  cursor: pointer;
+  font-size: 1.35rem;
+  font-style: italic;
+  color: rgb(250, 29, 29);
+  text-decoration: double;
+  font-weight: bolder;
+}
+
+i {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: scale(1.5);
+  color: rgb(5, 29, 253);
+  font-weight: bolder;
+  margin: 0% 1%;
+}
+
+/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,48 @@
+{
+  "name": "11_02_references",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "eslint": "npx eslint controllers/** --fix",
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "bootstrap": "^5.2.3",
+    "cloudinary": "^1.33.0",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.14.2",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.7.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "react-bootstrap": "^2.6.0",
+    "sendmail": "^1.6.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

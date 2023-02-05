@@ -1,0 +1,95 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+@use '../glassMorphismus' as g;
+
+.contFormularRegister {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  background-image: linear-gradient(v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 36%, v.$backgroundColorDunkelBlack),url("../../images/theBeatles/B&W8.jpg");
+  background-size: 25%;
+  background-position: 0% 48%;
+  background-repeat: no-repeat;
+  background-color: v.$backgroundColorDunkelBlack;
+
+  &>.headerTitelRegister {
+    @include l.layoutFlexboxRowCenter;
+    @include d.desigHeader (transparent);
+    @include g.GlassMorphismus5;
+    width: 54%;
+    padding: 0.5% 2%;
+    margin: 1% auto;
+    margin-bottom: 0.8%;
+
+    &>.titelFormularRegisterCustomer {
+      @include d.desig_H_element (v.$colorHell, 2.8rem);
+      font-weight: bolder;
+      margin: 0% auto;
+      text-shadow: g.$textShadowGlassMorphismusTextRed;
+    }
+  }
+
+  &>.contForm {
+    @include l.layoutFlexboxColumCenter;
+    @include n.neuMorphismus4;
+    width: 54%;
+    margin: 0% auto;
+    padding: 0.3%;   
+
+    &>.formRegister {
+      @include l.layoutFlexboxColumCenter;
+      align-items: flex-start;
+      padding: 0% 2%;
+      margin: 0% auto;
+
+      &>.headerSubtitelCreateAccount {
+        @include d.desigHeader (transparent);
+        @include l.layoutFlexboxRowCenter;
+        padding: 0.2% auto;
+        justify-content: flex-start;
+        margin: 0.5% auto;
+
+        &>.subtitelCreateAccount {
+          @include d.desig_H_element (v.$colorTextIni, 1.3rem);
+          font-weight: bolder;
+          margin: 0%;
+          padding:0%;
+          text-shadow: v.$textShadow1;
+        }
+      }
+
+      &>.containerButtons {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: space-around;
+        width: 30%;
+        bottom: -9.6%;
+        right: 3%;
+        position: absolute;
+      
+        &>button {
+          width: 16vw;
+      
+          &:first-child {
+            margin-left: 5%;
+          }
+        }
+      
+      }
+
+      &>.containerDataOfRegister_1 {
+        @include l.layoutFlexboxColumCenter;
+      }
+    }
+  }
+}
+
+.contWelcome {
+  @include l.layoutFlexboxRowCenter;
+}

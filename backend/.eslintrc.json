@@ -1,0 +1,24 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": "standard",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-multiple-empty-lines":"off",
+        "no-multi-spaces":"off",
+        "space-before-function-paren": "off",
+        "quotes":"off",
+        "eol-last": "off",
+        "no-const-assign": "off",
+        "quote-props": "off",
+        "camelcase": "off",
+        "object-property-newline": "off"
+    }
+}

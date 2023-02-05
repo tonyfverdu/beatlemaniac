@@ -1,0 +1,452 @@
+/*   ////////////////////////////////////////       */
+.contTableRegistroArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  width: 64%;
+  height: auto;
+  overflow-y: scroll;
+  border-radius: 6px 6px 0px 0px;
+  padding: 1%;
+  margin: 0%;
+}
+
+.contTableStripedSongs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 99%;
+  justify-content: flex-start;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  height: auto;
+  max-height: 74vh;
+  border-radius: 3px 3px 0px 0px;
+  padding: 1% auto;
+  margin: 0% auto;
+  margin-bottom: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.contTableStripedSongs > .tableHeadSongs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  border-radius: 6px 6px 0px 0px;
+  margin: 0%;
+  padding: 1%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(231, 230, 230);
+  border-radius: 6px 6px 0px 0px;
+  height: 2.2rem;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(1, 1, 68);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th > i {
+  width: auto;
+  transform: scale(1.5);
+  color: rgb(1, 1, 68);
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th > .icoShoppingCart {
+  transform: scale(1.3);
+  color: rgb(250, 29, 29);
+  margin-top: 60%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(1) {
+  width: 3%;
+  margin-left: 1%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(2) {
+  width: 16%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(3) {
+  width: 25%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(4) {
+  width: 25%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(5) {
+  width: 6%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(6) {
+  width: 18%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(7) {
+  width: 8%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(8) {
+  width: 8%;
+  text-align: center;
+  margin-left: 2%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(9) {
+  width: 4%;
+  font-size: 0.7rem;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(9) button {
+  width: 138%;
+  height: 26px;
+  padding: 0%;
+  margin: 0% auto;
+  font-size: 0.6rem;
+  transition: all 0.35s ease;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(9) button:hover, .contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(9) button:focus {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(10) {
+  width: 4%;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+  margin-left: 1%;
+}
+.contTableStripedSongs > .tableHeadSongs > tr > th:nth-child(10) > i {
+  transform: scale(1.8) translateY(-3px);
+  color: rgb(1, 1, 68);
+}
+.contTableStripedSongs > .tableBodySongs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  border-radius: 0px 0px 6px 6px;
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  margin: 0% 1%;
+  padding: 1%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(231, 230, 230);
+  height: 3rem;
+  border-radius: 0%;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 0.05%;
+  transition: all 0.35s ease;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem:nth-child(even) {
+  background-color: rgb(140, 140, 140);
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td > .global-class-name {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+  transition: all ease 0.35s;
+  border: 1px solid black;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td > .global-class-name:hover, .contTableStripedSongs > .tableBodySongs > .containerArticleItem > td > .global-class-name:focus {
+  cursor: pointer;
+  transform: scale(1.05);
+  border: 1px solid blue;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td > i {
+  transform: scale(1);
+  width: auto;
+  color: rgb(250, 29, 29);
+  margin-left: 2%;
+  transition: all 0.45s ease;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td > i:hover, .contTableStripedSongs > .tableBodySongs > .containerArticleItem > td > i:focus {
+  cursor: pointer;
+  color: rgb(250, 29, 29);
+  border-radius: 50%;
+  transform: scale(2) translateY(-5px);
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(1) {
+  width: 3%;
+  margin-left: 1%;
+  font-size: 0.9rem;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(2) {
+  width: 16%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(2) > .containerFigureTableResultSearch {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(2) > .containerFigureTableResultSearch > .UlImage {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(2) > .containerFigureTableResultSearch > .UlImage > .liImage {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style-image: none;
+  list-style: none;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(2) > .containerFigureTableResultSearch > .UlImage > .liImage > .imageTableResultSearch {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 2.6rem;
+  height: 2.6rem;
+  outline: 1px solid rgba(167, 166, 166, 0.3);
+  outline-offset: 1px;
+  transition: all 0.35s ease;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(2) > .containerFigureTableResultSearch > .UlImage > .liImage > .imageTableResultSearch:hover, .contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(2) > .containerFigureTableResultSearch > .UlImage > .liImage > .imageTableResultSearch:focus {
+  cursor: pointer;
+  transform: scale(1.5);
+  outline: 1px solid rgb(252, 212, 140);
+  outline-offset: 1px;
+  z-index: 100;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(3) {
+  width: 25%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(4) {
+  width: 18%;
+  overflow: hidden;
+  font-size: 0.7rem;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(4) > .contAccordionAlbums {
+  margin: 0% auto;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(4) > .contAccordionAlbums > .ItemAccordionAlbums {
+  margin: 1% auto;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(4) > .contAccordionAlbums > .ItemAccordionAlbums > .headerAccordionAlbums {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100%;
+  height: 1rem;
+  background-color: transparent;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(4) > .contAccordionAlbums > .ItemAccordionAlbums > .headerAccordionAlbums > .albumsLabel {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  text-shadow: -2px -2px 1px rgba(0, 0, 0, 0.39), 2px 2px 5px #5d5d63;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(4) > .contAccordionAlbums > .ItemAccordionAlbums > .accordionBody {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-y: scroll;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(4) > .contAccordionAlbums > .ItemAccordionAlbums > .accordionBody > .dataAlbums {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  padding: 2% auto;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(5) {
+  width: 6%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(6) {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 18%;
+  margin: 0% auto;
+  text-align: justify;
+  padding: 0%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(7) {
+  width: 8%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(8) {
+  width: 8%;
+  margin-left: 2%;
+  font-size: 0.9rem;
+  color: rgba(207, 35, 35, 0.9);
+  text-align: center;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(9) {
+  width: 4%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(9) button {
+  width: 138%;
+  height: 26px;
+  padding: 0%;
+  margin: 0% auto;
+  font-size: 0.6rem;
+  transition: all 0.35s ease;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(9) button:hover, .contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(9) button:focus {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(10) {
+  width: 5%;
+  font-size: 0.6rem;
+  transition: all 0.45s ease;
+  margin-left: 1%;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(10) > i {
+  transform: scale(1.8);
+  color: rgb(250, 29, 29);
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(10):hover, .contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(10):focus {
+  cursor: pointer;
+  color: rgb(250, 29, 29);
+  z-index: 100;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(10):hover > i, .contTableStripedSongs > .tableBodySongs > .containerArticleItem > td:nth-child(10):focus > i {
+  background-color: rgb(250, 29, 29);
+  transform: scale(3.6) translateY(-3px);
+  padding: 2%;
+  color: rgb(246, 240, 240);
+  z-index: 100;
+}
+.contTableStripedSongs > .tableBodySongs > .containerArticleItem:hover, .contTableStripedSongs > .tableBodySongs > .containerArticleItem:focus {
+  cursor: pointer;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  padding: 0.4%;
+  transform: scale(1.05);
+  z-index: 20;
+}
+
+#contIcoPlay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: inset 0.8rem 0.5rem 4rem 0 rgba(195, 195, 195, 0.8);
+  backdrop-filter: blur(12px);
+  border: 0.3rem solid rgb(170, 169, 169);
+  border-left: 0.3rem solid rgb(90, 90, 90);
+  border-bottom: 0.38rem solid rgb(49, 49, 49);
+  border-radius: 12px;
+  width: 1.6rem;
+  height: 1.6rem;
+  color: rgb(246, 240, 240);
+  margin: 0% auto;
+  padding: 0.5%;
+  transform: scale(1.05);
+  border-radius: 50%;
+  transition: all ease 0.35s;
+}
+#contIcoPlay:hover, #contIcoPlay:focus {
+  transform: scale(0.89);
+  background-color: red;
+  color: rgb(220, 21, 21);
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+}
+
+/*# sourceMappingURL=TableSongs.css.map */

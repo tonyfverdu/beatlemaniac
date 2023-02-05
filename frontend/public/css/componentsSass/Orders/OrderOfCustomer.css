@@ -1,0 +1,915 @@
+/*   ////////////////////////////////////////       */
+.contMainOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 0%;
+  margin: 0%;
+}
+.contMainOrder > .contResultOrder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 48vw;
+  height: auto;
+  padding: 0% auto;
+  margin: 1.5% 3%;
+  margin-left: 6%;
+}
+.contMainOrder > .contResultOrder > .headerOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 2%;
+  padding-bottom: 0.5%;
+  margin: 0% auto;
+  margin-left: 2%;
+}
+.contMainOrder > .contResultOrder > .headerOrder > .contIconOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+contTableOrders .contMainOrder > .contResultOrder > .headerOrder > .contIconOrder:hover, .contMainOrder > .contResultOrder > .headerOrder > .contIconOrder:focus {
+  cursor: pointer;
+}
+.contMainOrder > .contResultOrder > .headerOrder > .contIconOrder > .iconOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: scale(2.6);
+  width: 20px;
+  height: 20px;
+  color: rgb(250, 29, 29);
+  animation: orderMove 6s 3s ease forwards;
+}
+.contMainOrder > .contResultOrder > .headerOrder > .titleOrder {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0% 2%;
+}
+.contMainOrder > .contResultOrder > .headerOrder > .contSubtitles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 0%;
+  padding: 0%;
+}
+.contMainOrder > .contResultOrder > .headerOrder > .contSubtitles > .subtitleOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 38%;
+  text-align: center;
+  margin: 0% 2%;
+}
+.contMainOrder > .contResultOrder > .headerOrder > .contSubtitles > .subtitleOrder > b {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: rgb(250, 29, 29);
+  margin-right: 4%;
+  margin-left: 1%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: auto;
+  padding: 0.5%;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder {
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 6px;
+  width: 96%;
+  height: auto;
+  padding: 1%;
+  margin: 0.5% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: auto;
+  padding: 0%;
+  margin: 0.3% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 96%;
+  margin: 0% auto;
+  margin-bottom: 2%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > .headerTitelOfOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  width: 49%;
+  padding: 0%;
+  margin: 0%;
+  margin-top: 1%;
+  margin-right: 10%;
+  margin-left: 6%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > .headerTitelOfOrder > .companyName {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  width: 34rem;
+  padding: 0%;
+  margin: 0% 2%;
+  margin-left: 4%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > .headerTitelOfOrder > .logoOfCompany {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 2.6vw;
+  height: 2.6vh;
+  padding: 0%;
+  margin-left: 0%;
+  background-color: rgb(231, 230, 230);
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > .headerTitelOfOrder > .logoOfCompany > .imagefigureOfProduct {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 5vw;
+  height: 5vh;
+  padding: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > .dataOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 50%;
+  margin-right: 5%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > .dataOrder > .OrderTitle {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: justify;
+  width: 48%;
+  margin: 0% 2%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > .dataOrder > .OrderData {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  border: none;
+  background-color: rgb(246, 240, 240);
+  border-radius: 0%;
+  text-align: left;
+  padding: 0% 2%;
+  margin: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > :nth-child(2) {
+  margin-right: 3%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > :nth-child(2) > .OrderTitle {
+  width: 4.5rem;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > :nth-child(2) > .OrderData {
+  width: 3rem;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > :nth-child(3) {
+  margin-right: 5%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > :nth-child(3) > .OrderTitle {
+  width: 3rem;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .firstLine > :nth-child(3) > .OrderData {
+  width: 10rem;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  margin-bottom: 1%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .contHeaderCompany {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .contHeaderCompany > .headerAddressOfCompany {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 10%;
+  padding: 0%;
+  margin: 0% 3.5%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .contHeaderCompany > .headerAddressOfCompany > .addresOfCompany {
+  position: relative;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  text-align: left;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+  margin: 0% 2%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .contHeaderCompany > .dataCompany {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 50%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .contHeaderCompany > .dataCompany > .name {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 20%;
+  margin: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .contHeaderCompany > .dataCompany > .data {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: 500;
+  margin: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .dataOfCompany {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .dataOfCompany > .ulDataOfCompany {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .dataOfCompany > .ulDataOfCompany > .liDataOfCompany {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0% auto;
+  margin-bottom: 1%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .dataOfCompany > .ulDataOfCompany > .liData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 1%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .dataOfCompany > .ulDataOfCompany > .liData > .dataAddress {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .dataOfCompany > .ulDataOfCompany > .liDataOfContact {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .addressCompany > .dataOfCompany > .ulDataOfCompany > .liDataOfContact > .dataOfContact {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .terms_Conditions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  margin: 1% auto;
+  margin-bottom: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .terms_Conditions > .headerTermsConditions {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: "transparent";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-items: flex-start;
+  width: 22%;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 0.5%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .terms_Conditions > .headerTermsConditions > .titleTermsConditions {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  padding: 0%;
+  text-align: left;
+  margin-left: 8%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .terms_Conditions > .divTermsConditions {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .terms_Conditions > .divTermsConditions > .ulConditionsOfOrder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .terms_Conditions > .divTermsConditions > .ulConditionsOfOrder > .liTermCondition {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0%;
+  margin-bottom: 0.8%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .TopOfOrder > .terms_Conditions > .divTermsConditions > .ulConditionsOfOrder > .liTermCondition > .textTermCondition {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: normal;
+  text-align: left;
+  padding: 0% 2%;
+  margin: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableHead {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(146, 153, 176, 0.4);
+  box-shadow: 0 1.2rem 2.1rem 0 rgba(1, 1, 68, 0.518) inset;
+  backdrop-filter: blur(5.5px);
+  border-radius: 9px;
+  border: 0.18rem solid rgb(224, 224, 236);
+  box-shadow: 1px 1px 2px 0px #f5f4f8, inset 5px 5px 8px 0px #4c4c4c, 1px 1px 2px 2px #f5f4f8;
+  border-radius: 6px 6px 0px 0px;
+  padding: 1%;
+  margin: 0% auto;
+  outline: 1px solid rgb(167, 166, 166);
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableHead > tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableHead > tr > th {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(1, 1, 68);
+  margin: 1% 2%;
+  padding: 1%;
+  height: 32px;
+  margin: 0% auto;
+  text-align: center;
+  text-shadow: -0.6rem -0.4rem 0.28rem rgb(173, 173, 174);
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  border-radius: 0px;
+  margin: 0% auto;
+  padding: 1%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableBody > .contArticleItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.5vh;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  transition: all 0.45s ease;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableBody > .contArticleItem > td {
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(1, 14, 131);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableBody > .contArticleItem:nth-child(even) {
+  background-color: rgb(140, 140, 140);
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableBody > .contArticleItem:hover, .contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableBody > .contArticleItem:focus {
+  cursor: pointer;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  border-radius: 0%;
+  transform: scale(1.03);
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  height: 12vh;
+  margin: 0% auto;
+  padding: 1%;
+  border-radius: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.8vh;
+  margin: 0% auto;
+  background-color: transparent;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > td {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0% auto;
+  padding: 0%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > td:nth-child(1) {
+  justify-content: flex-end;
+  position: relative;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0%;
+  text-align: right;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > td:nth-child(2) {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 16%;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > #titleTheTotal {
+  font-size: 0.9rem;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .HalfOfOrder > .tableOfOrder > .contTableStriped > .orderTableFoot > .containerTableResults > .tableBody > tr > #theTotal {
+  color: rgb(250, 29, 29);
+  font-size: 1rem;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .BottomsOfOrder {
+  border-radius: 12px;
+  background: linear-gradient(315deg, #B8B9BC, #FFFFFF);
+  box-shadow: -2px -2px 3px #7d7d7d, 2px 2px 3px #ffffff, inset 16.52px 16.52px 28px #B5B6B9, inset -16.52px -16.52px 28px #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  margin: 0%;
+  padding: 0.5%;
+}
+.contMainOrder > .contResultOrder > .bodyOrder > .purchaseOrder > .BottomsOfOrder > .containerButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 2%;
+  gap: 8%;
+}
+.contMainOrder > .contInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: auto;
+  min-height: 50vh;
+  margin: 1.5% auto;
+  padding: 0%;
+  gap: 20%;
+}
+.contMainOrder > .contInfo > .contInfoClient {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0% auto;
+  margin-bottom: 5%;
+  padding: 0%;
+}
+
+.orderName {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(23, 23, 24, 0.85);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: bold;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 1%;
+}
+
+.orderData {
+  position: relative;
+  text-align: justify;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  font-weight: 400;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  margin-right: 4%;
+}
+
+tr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(231, 230, 230);
+  padding: 0%;
+  margin: 0% auto;
+}
+tr > th, tr > td {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+}
+tr > th:nth-child(1), tr > td:nth-child(1) {
+  width: 5%;
+}
+tr > th:nth-child(2), tr > td:nth-child(2) {
+  width: 30%;
+}
+tr > th:nth-child(3), tr > td:nth-child(3) {
+  width: 25%;
+}
+tr > th:nth-child(4), tr > td:nth-child(4) {
+  width: 10%;
+}
+tr > th:nth-child(5), tr > td:nth-child(5) {
+  width: 15%;
+}
+tr > th:nth-child(6), tr > td:nth-child(6) {
+  width: 15%;
+}
+
+@keyframes orderMove {
+  from {
+    width: 20px;
+    height: 20px;
+    transform: scale(2.4);
+  }
+  to {
+    width: 20px;
+    height: 20px;
+    color: rgba(2, 2, 101, 0.9);
+    transform: scale(2.4) translateX(160px);
+  }
+}
+
+/*# sourceMappingURL=OrderOfCustomer.css.map */

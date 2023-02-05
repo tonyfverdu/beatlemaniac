@@ -1,0 +1,180 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+.contLogin {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  height: 100%;
+  margin: 0% auto;
+
+  &>.containerLogin {
+    @include l.layoutFlexboxColumCenter;
+    @include n.neuMorphismus4;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 0% auto;
+    padding: 2%;
+    border-radius: 0px 29px 29px 0px;
+
+    &>.headerLoggin {
+      @include l.layoutFlexboxColumCenter;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      max-width: 32%;
+      @include d.desigHeader (transparent);
+
+      margin-bottom: 2%;
+
+      &>.titleLogin {
+        @include d.desig_H_element (v.$colorTextIni, 2.8rem);
+        font-weight: bolder;
+        padding: 1%;
+        margin: 0% auto;
+        text-shadow: v.$textShadow3;
+      }
+    }
+
+    &>.colorRed {
+      @include g.GlassMorphismus5;
+      padding: 0.5% 2%;
+      margin: 4% auto;
+
+      &>.titelFormularLoginCustomer {
+        @include d.desig_H_element (v.$colorTextIni, 2.1rem);
+        font-weight: bolder;
+        padding: 1%;
+        margin: 0% auto;
+        text-shadow: g.$textShadowGlassMorphismusTextRed;
+      }
+    }
+
+    &>.colorGreen {
+      @include g.GlassMorphismus6;
+      padding: 0.5% 2%;
+      margin: 4% auto;
+
+      &>.titleLogin {
+        @include d.desig_H_element (v.$colorTextIni, 2.1rem);
+        font-weight: bolder;
+        padding: 1%;
+        margin: 0% auto;
+        text-shadow: g.$textShadowGlassMorphismusTextGreen;
+      }
+    }
+
+    &>.contFormLoginPlay {
+      @include l.layoutFlexboxColumCenter;
+      width: 24rem;
+      height: auto;
+      margin: 0% auto;
+      padding: 0%;
+
+      &>.contDataLogIn {
+        @include l.layoutFlexboxColumCenter;
+        @include n.neuMorphismus2;
+        border-radius: 9px;
+        height: auto;
+        margin: 1% auto;
+        margin-bottom: 0%;
+        padding: 1%;
+
+        &>.contLabel_Input {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-start;
+          margin-bottom: 2%;
+
+          &>label {
+            @include l.layoutFlexboxRowCenter;
+            @include d.configurationLabel (v.$colorTextIni, 1rem);
+            margin-right: 4%;
+            width: auto;
+
+            &>.ico {
+              transform: scale(1.4);
+              color: v.$colorDarkBlue1;
+              padding: 1%;
+              margin: 0% 1%;
+              margin-left: 12%;
+            }
+          }
+
+          &>input {
+            @include d.configurationText2 (v.$colorTextIni, 0.9rem);
+            max-width: 50%;
+            text-align: left;
+            font-weight: 400;
+            transition: all 0.45s ease;
+            border: 2px solid v.$backgroundColorDunkelGray4;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              border: 2px solid v.$colorbackgroudneuOrange;
+            }
+          }
+
+          &>#emailUserLogin {
+            margin-left: 10%;
+          }
+
+          &>#passwordUserLogin {
+            width: 57.8%;
+            margin-bottom: 1%;
+          }
+
+          &>.contCheckBox {
+            @include l.layoutFlexboxRowCenter;
+            width: auto;
+            height: auto;
+            position: absolute;
+            bottom: 15%;
+            right: 6%;
+            transform: scale(2.5);
+          }
+        }
+      }
+
+      &>.contButtonsPlay {
+        @include l.layoutFlexboxRowCenter;
+        width: 16rem;
+        justify-content: space-evenly;
+        padding: 0%;
+        margin: 0%;
+        margin-top: 4%;
+        margin-left: 40%;
+      }
+
+      &>.ulOfErrors {
+        @include l.layoutFlexboxColumCenter;
+        list-style: none;
+
+        &>.liError {
+          @include d.configurationText1 (v.$colorNavy, 0.9rem);
+
+        }
+      }
+    }
+  }
+
+  &>.containerLogout {
+    @extend .contFormLoginPlay;
+    @include l.layoutFlexboxColumCenter;
+    align-items: flex-start;
+    max-width: 32%;
+    min-height: 12vh;
+    margin-top: 0%;
+
+    &>.contButtonsLogout {
+      @include l.layoutFlexboxRowCenter;
+      width: 16rem;
+      justify-content: space-evenly;
+      padding: 0%;
+      margin-top: 1%;
+      margin-left: 55%;
+      gap: 10%;
+    }
+  }
+}

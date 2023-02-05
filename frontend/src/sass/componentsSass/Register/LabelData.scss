@@ -1,0 +1,44 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+
+
+.containerdataCustomer {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1% auto;
+  margin: 0%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+
+  &>.contLabelData {
+    @include l.layoutFlexboxRowCenter;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0%;
+    padding: 0%;
+
+    &>.label {
+      @include d.configurationText2 (v.$colorTextIni, 0.9rem);
+      width: auto;
+      font-weight: bolder;
+      padding: 1% auto;
+      margin: 0%;
+      margin-right: 3%;
+      text-align: right;
+    }
+
+    &>.data {
+      @include d.configurationText2 (v.$backgroundColorDunkelGray4, 0.9rem);
+      @include n.neuMorphismus4;
+      width: auto;
+      border-radius: 3px;
+      font-weight: normal;
+      padding: 1% 2%;
+      margin: 0%;
+      text-align: left;
+    }
+  }
+}

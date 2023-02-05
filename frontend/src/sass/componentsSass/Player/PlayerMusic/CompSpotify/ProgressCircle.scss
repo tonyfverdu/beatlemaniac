@@ -1,0 +1,58 @@
+@use '../../../layouts' as l;
+@use '../../../myvariables' as v;
+@use '../../../designElement' as d;
+@use '../../../glassMorphismus' as g;
+@use '../../../neumorphismus' as n;
+
+.progressCircle {
+  @include l.layoutFlexboxRowCenter;
+  margin-left: 8rem;
+
+  border: 1px solid red;
+
+
+  &>image.active {
+    transform-origin: 50% 50%;
+    animation: rotation 30s infinite linear;
+  }
+
+}
+
+circle {
+  transition: all 1s ease-in-out;
+  transform: rotate(93deg);
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+circle {
+  transition: all 1s ease-in-out;
+  transform: rotate(93deg);
+  transform-origin: 50% 50%;
+  transform: scale(0.78);
+}
+
+image.active {
+  animation: rotation 30s infinite linear;
+  transform-origin: 50% 50%;
+  transform: scale(0.6);
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

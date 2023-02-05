@@ -1,0 +1,229 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+
+.contQueryBox {
+  @include l.layoutFlexboxColumCenter;
+  @include g.GlassMorphismus5;
+  width: 54.85%;
+  height: 6rem;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  transition: all 0.45s ease;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    @include g.GlassMorphismus7;
+    transform: scale(0.97);
+    
+  }
+
+  &>.headerAccordion {
+    @include d.desigHeader (v.$backgroundColorIni);
+    width: 54%;
+    padding: 0%;
+    margin: 0% auto;
+    background-color: transparent;
+
+    &>.titleAccordion {
+      @include d.desig_H_element (v.$colorHell, 1.8rem);
+      text-align: center;
+      margin: 0% auto;
+      transition: all 0.45s ease;
+    }
+  }
+}
+
+.panelAccordion {
+  @include l.layoutFlexboxRowCenter;
+  // display: none;
+  @include n.neuMorphismus4;
+  width: 54.8%;
+  height: 6rem;
+  padding: 0%;
+  margin: 0%;
+  border: 0px 0px 9px 9px;
+  margin-bottom: 1%;
+
+  &>.contBodyQuerys {
+    @include l.layoutFlexboxRowCenter;
+    padding: 0%;
+    margin: 0% auto;
+    border: 0px 0px 9px 9px;
+
+    &>.formQuerys {
+      @include l.layoutFlexboxColumCenter;
+      justify-content: flex-start;
+      border: 0px 0px 9px 9px;
+      padding: 0%;
+      margin: 0%;
+
+      &>.contLine {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+
+        &:nth-child(1)>.contInput {
+          width: 100%;
+        }
+
+        &:nth-child(2)>.contInput {
+          width: auto;
+        }
+
+        &:nth-child(3)>.contInput {
+          width: 22rem;
+          margin-left: 5.8%;
+          margin-right: -5.6%;
+        }
+
+        &>.headerTitleQuerys {
+          @include d.desigHeader (transparent);
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-start;
+          width: auto;
+          padding: 0.5%;
+          margin: 0%;
+          margin-left: 2%;
+
+          &>.titleQuerys {
+            @include d.desig_H_element (v.$colorTextIni, 0.8rem);
+            font-weight: 700;
+            margin: 0%;
+            padding: 0%;
+            text-shadow: v.$textShadow1;
+          }
+        }
+
+        &>.headerPrice {
+          margin-right: 1.4%;
+        }
+
+        &>.contInput {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-start;
+          width: auto;
+          padding: 0.5%;
+          margin: 0%;
+
+          &>.container2Fields {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: flex-start;
+            width: auto;
+            margin: 0%;
+            padding: 0%;
+
+            &>.labelName {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              @include d.configurationLabel (v.$colorDunkelSecondary, 0.8rem);
+              width: 32rem;
+              font-weight: bold;
+              padding: 0%;
+              margin-right: 2%;
+              margin-left: 8%;
+            }
+
+            &>.labelDate {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-end;
+              @include d.configurationLabel (v.$colorDunkelSecondary, 0.8rem);
+              width: 5.5rem;
+              font-weight: bold;
+              padding: 0%;
+              margin-right: 2%;
+            }
+
+            &>.labelPrice {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              @include d.configurationLabel (v.$colorDunkelSecondary, 0.8rem);
+              width: 6rem;
+              font-weight: bold;
+              padding: 0%;
+              margin-right: 2%;
+            }
+
+            &>.nameOfAlbum {
+              @include l.layoutFlexboxRowCenter;
+              @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.8rem);
+              width: 16.2rem;
+              padding: 0%;
+              margin-bottom: 0%;
+              margin-right: 40%;
+              transition: all 0.45s ease;
+
+              &:hover, &:focus {
+                cursor: pointer;
+                border: 2px solid v.$colorHellOrange;
+              }
+            }
+
+            &>.rangeInput {
+              @include l.layoutFlexboxRowCenter;
+              justify-content: flex-start;
+              @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.8rem);
+              width: 14rem;
+              padding: 0%;
+              margin-bottom: 0%;
+              margin-right: 4%;
+
+              &:hover, &:focus {
+                cursor: pointer;
+                border: 2px solid v.$colorHellOrange;
+              }
+            }
+
+            &>.textDate {
+              @include d.configurationText2 (v.$colorRedNeu, 0.8rem);
+              margin: 0% 2%;
+              margin-right: 4%;
+            }
+
+            &>#listYears {
+              @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.6rem);
+            }
+          }
+        }
+
+        &>.containerButtons {
+          @include l.layoutFlexboxRowCenter;
+          width: 16rem;
+          justify-content: space-between;
+          margin-left: 8.0%;
+          gap: 10%;
+        }
+      }
+    }
+  }
+}
+
+
+input[type=range]~datalist option:after {
+  content: attr(value);
+}
+
+.colorRed {
+  @include g.GlassMorphismus5;
+
+  &:hover,
+  &:focus {
+    @include g.GlassMorphismus7;
+  }
+}
+
+.colorGreen {
+  @include g.GlassMorphismus6;
+
+  &:hover,
+  &:focus {
+    @include g.GlassMorphismus8;
+  }
+}

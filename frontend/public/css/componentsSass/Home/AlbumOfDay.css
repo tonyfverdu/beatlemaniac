@@ -1,0 +1,351 @@
+/*   ////////////////////////////////////////       */
+.contAlbumDay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 16.8vw;
+  height: 41vh;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -15px -15px 29px #aaaaaa, 15px 15px 29px #ffffff;
+  border-radius: 6px;
+}
+.contAlbumDay > .headerAlbumDay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  margin: 3% auto;
+  margin-bottom: 8%;
+}
+.contAlbumDay > .headerAlbumDay > .albumDay {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0% auto;
+}
+.contAlbumDay > .contOfButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2% auto;
+  padding: 0%;
+}
+.contAlbumDay > .headerTitleAlbumDay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 8% auto;
+}
+.contAlbumDay > .headerTitleAlbumDay > .titleAlbum {
+  color: rgba(2, 2, 101, 0.9);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0% auto;
+}
+.contAlbumDay > .contHalf {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0%;
+  margin: 2% auto;
+}
+.contAlbumDay > .contHalf > .conLeftSide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 12vw;
+  height: 28vh;
+  margin: 0% 2%;
+}
+.contAlbumDay > .contHalf > .conLeftSide > .contInfoAlbum {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.3% auto;
+}
+.contAlbumDay > .contHalf > .conLeftSide > .contInfoAlbum > .contReleased {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  width: auto;
+  margin-bottom: 5%;
+}
+.contAlbumDay > .contHalf > .conLeftSide > .contInfoAlbum > .contReleased > .labelReleased {
+  position: relative;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin-right: 2%;
+}
+.contAlbumDay > .contHalf > .conLeftSide > .contInfoAlbum > .contReleased > .valueReleased {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 5.2rem;
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
+  margin: 0% auto;
+  margin: 0%;
+  margin-top: 3%;
+}
+.contAlbumDay > .contHalf > .conLeftSide > .contInfoAlbum > .contReleased > .valueLabel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  justify-content: flex-start;
+  border-radius: 12px;
+  background-color: rgb(224, 229, 236);
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  position: relative;
+  text-align: justify;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgb(220, 21, 21);
+  margin: 1% 2%;
+  padding: 1%;
+  padding: 0.8% auto;
+  margin: 0% auto;
+  margin-top: 4%;
+  border-radius: 0%;
+  text-align: center;
+}
+.contAlbumDay > .contHalf > .conLeftSide > .commentAlbum {
+  width: 100%;
+  height: 10rem;
+  overflow-y: scroll;
+}
+.contAlbumDay > .contHalf > .conLeftSide > .commentAlbum > .valueComment {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: rgba(4, 32, 52, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0%;
+  text-align: justify;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  padding: 0.3%;
+}
+.contAlbumDay > .contHalf > .contRigthSide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 7.4vw;
+  height: 80%;
+  margin: 0% auto;
+  margin-left: 1%;
+  margin-top: 0%;
+}
+.contAlbumDay > .contHalf > .contRigthSide > .figureImgAlbum {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  padding: 0.2%;
+  margin: 0% auto;
+}
+.contAlbumDay > .contHalf > .contRigthSide > .figureImgAlbum > .imageArticle {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  padding: 0%;
+  margin: 0% auto;
+  background-color: linear-gradient(to bottom, rgb(167, 166, 166) 55%, rgb(231, 230, 230));
+  box-shadow: 2px 2px 5px 2px rgb(184, 255, 134), inset 7px 7px 18px 3px #03fb03, 2px 3px 6px 2px #99f0b6;
+  animation: moveRecord 24s linear infinite;
+}
+
+.contSC {
+  position: absolute;
+  top: 6%;
+  right: 8%;
+  width: 1rem;
+  height: 1rem;
+  color: rgba(250, 29, 29, 0.3);
+  padding: 0%;
+  margin: 0% auto;
+  border-radius: 50%;
+  z-index: 20;
+  transition: all 0.45s ease;
+  animation: pulseShoppingCart 1s linear infinite alternate;
+}
+.contSC > .iconAddToShoopingCart {
+  transform: scale(1);
+  width: 0.9rem;
+  height: 0.9rem;
+  color: rgb(246, 240, 240);
+  font-weight: bold;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contSC:hover, .contSC:focus {
+  cursor: pointer;
+  animation: hoverShoppingCart 0.85s ease-in-out forwards;
+}
+
+.contDiscount {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 18%;
+  right: 4%;
+  width: auto;
+  height: auto;
+  padding: 1% 2%;
+  margin: 0%;
+  transform: rotate(-10deg);
+  background-color: rgb(253, 253, 253);
+}
+.contDiscount > .line {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 4%;
+}
+.contDiscount > .line:nth-child(2) {
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+}
+.contDiscount > .line > .firstColumn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: auto;
+  padding: 1%;
+}
+.contDiscount > .line > .firstColumn > i {
+  transform: scale(2);
+  color: rgb(250, 29, 29);
+  font-weight: bold;
+  padding: 0%;
+  margin: 0%;
+}
+.contDiscount > .line > .firstColumn > span {
+  position: relative;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 3.61rem;
+}
+.contDiscount > .line > .secondColumn {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+}
+
+/*# sourceMappingURL=AlbumOfDay.css.map */

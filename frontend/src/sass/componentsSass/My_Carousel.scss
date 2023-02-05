@@ -1,0 +1,40 @@
+@use '../layouts' as l;
+@use '../myvariables' as v;
+@use '../designElement' as d;
+@use '../glassMorphismus' as g;
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.contMyCarousel {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: flex-start;
+  width: 100vw;
+  height: auto;
+  padding:0%;
+  margin:0% auto;
+
+  &>.carrouselItem {
+    @include l.layoutFlexboxRowCenter;
+    // @include g.GlassMorphismus1;
+    width: 100vw;
+    height: 20%;
+    padding: 0%;
+    margin: 0%;
+
+    &>.imageCarousel {
+      @include l.layoutBlock;
+      width: 100vw;
+      height: 20%;
+      padding: 0%;
+      margin: 0%;
+      object-fit:cover;
+      image-rendering: optimizeSpeed;
+    }
+  }
+}
+
+.titleOfSlide {
+  @include d.desig_H_element (v.$colorHell0, 2.1rem);
+  @include l.layoutFlexboxRowCenter;
+  margin: 0% auto;
+  text-shadow: v.$textShadow1;
+}

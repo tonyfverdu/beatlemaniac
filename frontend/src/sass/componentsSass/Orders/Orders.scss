@@ -1,0 +1,181 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+
+.mainTableOrders {
+  @include l.layoutFlexboxColumCenter;
+  width: 35vw;
+  height: auto;
+  margin: 0% auto;
+  padding: 0%;
+
+  &>.contTableOrders {
+    @include l.layoutFlexboxColumCenter;
+    margin: 0% auto;
+
+    &>.theadTableOrders {
+      @include l.layoutFlexboxRowCenter;
+      @include g.GlassMorphismus1;
+      box-shadow: v.$boxShadow3;
+      border-radius: 3px 3px 0px 0px;
+      padding: 1%;
+      margin: 0% auto;
+      outline: 1px solid v.$backgroundColorHellGray;
+
+      &>tr {
+        @include l.layoutFlexboxRowCenter;
+        margin: 0% auto;
+        background: v.$gradientSliceDark;
+
+        &>th {
+          @include d.configurationText2 (v.$colorHell, 0.76rem);
+          height: 32px;
+          margin: 0% auto;
+          text-align: center;
+          text-shadow: g.$textShadowGlassMorphismusText1;
+
+          &:nth-child(1) {
+            width: 4%;
+          }
+
+          &:nth-child(2) {
+            width: 28%;
+          }
+
+          &:nth-child(3) {
+            width: 14%;
+          }
+
+          &:nth-child(4) {
+            width: 14%;
+          }
+
+          &:nth-child(5) {
+            width: 15%;
+          }
+
+          &:nth-child(6) {
+            width: 10%;
+          }
+        }
+      }
+    }
+
+    &>.orderTableBody {
+      @include l.layoutFlexboxColumCenter;
+      @include g.GlassMorphismus1;
+      border-radius: 0px;
+      margin: 0% auto;
+      padding: 1%;
+
+      &>.contArticleItem {
+        @include l.layoutFlexboxRowCenter;
+        height: 3vh;
+        margin: 0% auto;
+        padding: 0%;
+        background-color: transparent;
+        transition: all 0.45s ease;
+
+        &>td {
+          @include d.configurationText2 (v.$backgroundColorDunkelGray5, 0.65rem);
+          margin: 0% auto;
+          padding: 0%;
+          background-color: transparent;
+          overflow: hidden;
+
+          &:nth-child(1) {
+            width: 4%;
+          }
+
+          &:nth-child(2) {
+            width: 28%;
+          }
+
+          &:nth-child(3) {
+            width: 14%;
+          }
+
+          &:nth-child(4) {
+            width: 14%;
+          }
+
+          &:nth-child(5) {
+            width: 15%;
+          }
+
+          &:nth-child(6) {
+            width: 10%;
+          }
+        }
+
+        &:nth-child(even) {
+          background-color: v.$backgroundColorHellGray2;
+        }
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          background-color: v.$colorDunkelGreen;
+          border-radius: 0%;
+          transform: scale(1.03);
+
+          &>td {
+            color: v.$colorHell;
+            font-size: 0.75rem;
+            font-weight: bolder;
+          }
+        }
+
+      }
+    }
+
+    &>.orderTableFoot {
+      @include n.neuMorphismus5;
+      @include l.layoutFlexboxRowCenter;
+      justify-content: space-around;
+      border-radius: 0px 0px 6px 6px;
+      margin: 0% auto;
+      padding: 0.5%;
+
+      &>.contSpanText {
+        @include l.layoutFlexboxRowCenter;
+        width: 60%;
+        padding: 0% 2%;
+        margin: 0%;
+
+        &>.spanText {
+          @include d.configurationText2 (v.$colorRedNeu, 0.85rem);
+          font-weight: 700;
+          text-align: center;
+          padding: 0%;
+          margin: 0%;
+          margin-left: 10%;
+          overflow: hidden;
+          animation: moveSpanText 2s linear forwards;
+        }
+      }
+
+      &>.contButtons {
+        @include l.layoutFlexboxRowCenter;
+        width: 30%;
+        justify-content: flex-end;
+        padding: 0%;
+        margin: 0%;
+        margin-right: 8%;
+      }
+    }
+  }
+}
+
+@keyframes moveSpanText {
+  0% {
+    transform: translateX(-101%);
+  }
+
+  100% {
+    transform: translateX (100%);
+  }
+}

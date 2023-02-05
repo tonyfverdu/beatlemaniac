@@ -1,0 +1,99 @@
+.formSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 22rem;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+  margin-right: 2%;
+}
+.formSearch > .contInputSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-right: 3%;
+  transition: all ease 0.35s;
+}
+.formSearch > .contInputSearch > .icoSearch {
+  transform: scale(2.5);
+  width: 1.5rem;
+  height: 1.2rem;
+  background-color: rgb(1, 14, 131);
+  color: #e0e0e0;
+  transition: all ease 0.35s;
+}
+.formSearch > .contInputSearch > .inputSearch {
+  position: relative;
+  display: block;
+  width: 190px;
+  width: 12.8rem;
+  height: 2.8rem;
+  border: 1px solid rgb(205, 204, 204);
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+  margin: 1% 2%;
+  padding: 1%;
+  padding: 0.8%;
+  transition: all 0.45s ease;
+}
+.formSearch > .contInputSearch:hover > .inputSearch, .formSearch > .contInputSearch:focus > .inputSearch {
+  border: 2px solid rgb(250, 29, 29);
+  color: rgb(9, 9, 9);
+}
+.formSearch > .contInputSearch:hover .iconSearch, .formSearch > .contInputSearch:focus .iconSearch {
+  background-color: rgb(250, 29, 29);
+}
+.formSearch > .contButtonSearch {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  transition: all 0.45s ease;
+}
+.formSearch > .contButtonSearch > i {
+  position: absolute;
+  width: 34%;
+  top: 32%;
+  left: -54%;
+  color: rgb(56, 1, 1);
+  transform: scale(1.4);
+  padding: 1%;
+  margin-right: 2%;
+  transition: all 0.45s ease;
+}
+.formSearch > .contButtonSearch > button {
+  width: 100%;
+  height: 2.8rem;
+  padding: 1% 2%;
+  margin-left: 5%;
+  font-size: 0.6rem;
+  transition: all 0.45s ease;
+}
+.formSearch > .contButtonSearch > button:hover, .formSearch > .contButtonSearch > button:focus {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.formSearch > .contButtonSearch:hover, .formSearch > .contButtonSearch:focus {
+  cursor: pointer;
+}
+.formSearch > .contButtonSearch:hover > i, .formSearch > .contButtonSearch:focus > i {
+  z-index: 20;
+  transform: scale(2.4) translateX(-5px) rotate(100deg);
+}
+
+/*# sourceMappingURL=Search.css.map */

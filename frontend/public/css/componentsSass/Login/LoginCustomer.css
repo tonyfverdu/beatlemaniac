@@ -1,0 +1,506 @@
+/*   ////////////////////////////////////////       */
+.contCentral {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 0%;
+  margin: 0% auto;
+  background-image: linear-gradient(rgba(3, 3, 3, 0.93) 16%, rgba(3, 3, 3, 0.2) 36%, rgba(3, 3, 3, 0.93)), url("../../../images/theBeatles/Fans/fans8.webp");
+  background-size: 64% 68%;
+  background-position: 0% 16%;
+  background-repeat: no-repeat;
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.contCentral > .contMessageLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 50vmax;
+  height: 15vh;
+  max-width: 32%;
+  padding: 0.5% 2%;
+  margin: 1% auto;
+}
+.contCentral > .contMessageLogin > .figImgAvatar {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  padding: 1%;
+  border-radius: 50%;
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  animation: changeFilter 3s ease infinite;
+  background-color: rgb(231, 230, 230);
+}
+.contCentral > .contMessageLogin > .figImgAvatar > .imgAvatar {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  object-position: center;
+  background-color: white;
+}
+.contCentral > .contMessageLogin > .contWelcome {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 1%;
+  margin: 0% auto;
+}
+.contCentral > .contMessageLogin > .contWelcome > .titleWillkommen {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 0%;
+  margin: 0%;
+  text-shadow: 0.8rem 0.3rem 0.5rem rgb(68, 151, 71);
+}
+.contCentral > .contMessageLogin > .contWelcome > .contAnimationSpan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 40%;
+  margin: 0% auto;
+  margin-top: 5%;
+  padding: 1% auto;
+  overflow: hidden;
+  background-color: rgb(253, 253, 253);
+}
+.contCentral > .contMessageLogin > .contWelcome > .contAnimationSpan > .textIsLoggend {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(2, 110, 2, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  margin: 0%;
+  padding: 0%;
+  transform: translateX(-100%);
+  animation: moveText 3s linear forwards;
+}
+.contCentral > .headerLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 50vmax;
+  max-width: 32%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  padding: 0.5% 2%;
+  margin: 2% auto;
+  margin-bottom: 1%;
+}
+.contCentral > .headerLogin > .titleFormularLogin {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 1%;
+  margin: 0% auto;
+}
+.contCentral > .colorRed {
+  background: rgba(244, 34, 34, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px #950202, inset 7px 8px 15px 3px #fb1803, 0px 1px 3px 3px #feb699;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(125, 70, 70, 0.68);
+}
+.contCentral > .colorRed > .titelFormularLoginCustomer {
+  text-shadow: 0.8rem 0.3rem 0.5rem rgb(151, 68, 68);
+}
+.contCentral > .colorGreen {
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+}
+.contCentral > .colorGreen > .titelFormularLoginCustomer {
+  text-shadow: 0.8rem 0.3rem 0.5rem rgb(68, 151, 71);
+}
+.contCentral > .contFormLogin, .contCentral > .contFormLogout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  max-width: 32%;
+  min-height: 25vh;
+  margin: 0% auto;
+  padding: 1%;
+}
+.contCentral > .contFormLogin > .formLogin, .contCentral > .contFormLogout > .formLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 80%;
+  height: auto;
+  margin: 0% auto;
+  padding: 0%;
+}
+.contCentral > .contFormLogin > .formLogin > .headerFormLogin, .contCentral > .contFormLogout > .formLogin > .headerFormLogin {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  padding: 0%;
+  margin: 0%;
+}
+.contCentral > .contFormLogin > .formLogin > .headerFormLogin > .titleOfFormular, .contCentral > .contFormLogout > .formLogin > .headerFormLogin > .titleOfFormular {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  float: left;
+  padding: 0%;
+  margin-left: 0%;
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn, .contCentral > .contFormLogout > .formLogin > .contDataLogIn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -15px -15px 29px #aaaaaa, 15px 15px 29px #ffffff;
+  border-radius: 9px;
+  height: auto;
+  margin: 1% auto;
+  padding: 1%;
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > label, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  margin-right: 4%;
+  width: auto;
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > label > .ico, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > label > .ico {
+  transform: scale(1.4);
+  color: rgb(1, 14, 131);
+  padding: 1%;
+  margin: 0% 1%;
+  margin-left: 12%;
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > input, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > input {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+  margin: 1% 2%;
+  padding: 1%;
+  max-width: 66%;
+  text-align: left;
+  font-weight: 400;
+  transition: all 0.45s ease;
+  border: 2px solid rgb(63, 63, 63);
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > input:hover, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > input:hover, .contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > input:focus, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > input:focus {
+  cursor: pointer;
+  border: 2px solid rgb(213, 140, 4);
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > #emailUserLogin, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > #emailUserLogin {
+  margin-left: 9%;
+  width: 57.7%;
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > #passwordUserLogin, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > #passwordUserLogin {
+  width: 57.8%;
+  margin-bottom: 1%;
+}
+.contCentral > .contFormLogin > .formLogin > .contDataLogIn > .contLabel_Input > .contCheckBox, .contCentral > .contFormLogout > .formLogin > .contDataLogIn > .contLabel_Input > .contCheckBox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 15%;
+  right: 4%;
+  transform: scale(2.5);
+}
+.contCentral > .contFormLogin > .formLogin > .contButtons, .contCentral > .contFormLogout > .formLogin > .contButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16rem;
+  justify-content: space-evenly;
+  padding: 0%;
+  margin-top: 2%;
+  margin-left: 102%;
+}
+.contCentral > .contFormLogin > .formLogin > .ulOfErrors, .contCentral > .contFormLogout > .formLogin > .ulOfErrors {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.contCentral > .contFormLogin > .formLogin > .ulOfErrors > .liError, .contCentral > .contFormLogout > .formLogin > .ulOfErrors > .liError {
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 0% auto;
+}
+.contCentral > .contFormLogin > .formLogin > .register-switch, .contCentral > .contFormLogout > .formLogin > .register-switch {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(2, 2, 101, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+  float: left;
+  text-decoration: underline;
+  transition: all ease 0.45s;
+  margin-left: 6%;
+  margin-bottom: 2%;
+}
+.contCentral > .contFormLogin > .formLogin > .register-switch:hover, .contCentral > .contFormLogout > .formLogin > .register-switch:hover, .contCentral > .contFormLogin > .formLogin > .register-switch:focus, .contCentral > .contFormLogout > .formLogin > .register-switch:focus {
+  cursor: pointer;
+  font-size: 1.35rem;
+  font-style: italic;
+  color: rgb(250, 29, 29);
+  text-decoration: double;
+  font-weight: bolder;
+}
+.contCentral > .contFormLogout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  max-width: 32%;
+  min-height: 12vh;
+  margin-top: 0%;
+}
+.contCentral > .contFormLogout > .contButtonsLogout {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 16rem;
+  justify-content: space-evenly;
+  padding: 0%;
+  margin-top: 1%;
+  margin-left: 55%;
+  gap: 10%;
+}
+
+.contNewCustormerRegister {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 30rem;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 0%;
+}
+.contNewCustormerRegister > .headerFormRegisterNewCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0%;
+  margin: 0% auto;
+}
+.contNewCustormerRegister > .headerFormRegisterNewCustomer > .titleOfRegisterNewCustomer {
+  color: rgba(2, 2, 101, 0.9);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  text-align: left;
+  transition: all ease 0.45s;
+}
+.contNewCustormerRegister > .headerFormRegisterNewCustomer > .titleOfRegisterNewCustomer:hover, .contNewCustormerRegister > .headerFormRegisterNewCustomer > .titleOfRegisterNewCustomer:focus {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgb(250, 29, 29);
+  font-weight: bold;
+}
+.contNewCustormerRegister > .contButtonCreateNewCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 8.5rem;
+  margin-right: -43%;
+}
+
+@keyframes changeFilter {
+  0% {
+    box-shadow: rgba(122, 196, 120, 0.5) 4px 4px 6px 0px, rgb(225, 246, 216) -4px -4px 6px 0px;
+  }
+  20% {
+    box-shadow: rgba(66, 184, 62, 0.5) 6px 6px 8px 0px, rgb(208, 251, 189) -6px -6px 8px 0px;
+  }
+  40% {
+    box-shadow: rgba(17, 184, 11, 0.5) 8px 8px 12px 0px, rgb(179, 209, 166) -8px -6px 12px 0px;
+  }
+  60% {
+    box-shadow: rgba(66, 184, 62, 0.5) 3px 6px 10px 0px, rgb(208, 251, 189) -3px -6px 10px 0px;
+  }
+  80% {
+    box-shadow: rgba(66, 184, 62, 0.5) 5px 5px 8px 0px, rgb(208, 251, 189) -5px -5px 8px 0px;
+  }
+  100% {
+    box-shadow: rgba(122, 196, 120, 0.5) 4px 4px 6px 0px, rgb(225, 246, 216) -4px -4px 6px 0px;
+  }
+}
+@keyframes moveText {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=LoginCustomer.css.map */

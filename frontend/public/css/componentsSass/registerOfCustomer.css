@@ -1,0 +1,277 @@
+/*   ////////////////////////////////////////       */
+.containerOfLogin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100vw;
+  height: auto;
+  margin: 2% auto;
+  background-color: "transparent";
+}
+.containerOfLogin > .formOfRegisterOfCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 30%;
+  padding: 0.3% 2%;
+  margin: 0.5% auto;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .headerFormLogIn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.3% 2%;
+  margin: 0% auto;
+  margin-bottom: 2%;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .headerFormLogIn > .titleOfFormular {
+  color: rgb(83, 83, 84);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  margin: 0% auto;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgb(224, 229, 236);
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  margin: 0% auto;
+  padding: 3% 4%;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(315deg, #cacaca, #f0f0f0);
+  box-shadow: -2px -2px 4px #7d7d7d, 2px 2px 4px #ffffff;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 3% 3%;
+  margin: 0% auto;
+  margin-bottom: 5%;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin > .ico {
+  transform: scale(2.3);
+  color: rgb(1, 14, 131);
+  padding: 1%;
+  margin-right: 1%;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin > input {
+  position: relative;
+  display: block;
+  width: 96%;
+  height: 46px;
+  border: 1px solid rgb(205, 204, 204);
+  position: relative;
+  text-align: justify;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(83, 83, 84);
+  margin: 1% 2%;
+  padding: 1%;
+  padding: 1%;
+  transition: all 0.45s ease;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin > input:hover, .containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin > input:focus {
+  border: 2px solid cyan;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin:nth-child(2) {
+  margin-bottom: 1%;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin:nth-child(2) > input:hover, .containerOfLogin > .formOfRegisterOfCustomer > .containerDataLogIn > .containerInputDataLogin:nth-child(2) > input:focus {
+  border: 2px solid rgb(213, 140, 4);
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 45%;
+  margin-top: 2%;
+  width: 50%;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 80%;
+  margin-top: 1%;
+  transition: all 0.35s ease;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog > .iconArrow {
+  position: absolute;
+  z-index: 20;
+  transform: scale(1);
+  padding: 2%;
+  margin-right: 5%;
+  transition: all 0.35s ease;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog > .iconLeft {
+  bottom: 0%;
+  right: 36%;
+  color: rgb(202, 4, 4);
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog > .iconRigth {
+  top: 0%;
+  right: -28%;
+  color: rgba(2, 110, 2, 0.9);
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog > button {
+  padding: 1% 2%;
+  font-size: 0.6rem;
+  transform: scale(0.9);
+  transition: all 0.45s ease;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog > button:hover, .containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog > button:focus {
+  cursor: pointer;
+  transform: scale(0.8);
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog:hover, .containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog:focus {
+  cursor: pointer;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog:hover > .iconRigth, .containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog:focus > .iconRigth {
+  transform: scale(1.8) translateX(15px) translateY(8px);
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog:hover > .iconLeft, .containerOfLogin > .formOfRegisterOfCustomer > .containerGruppeButtons > .containerButtonLog:focus > .iconLeft {
+  transform: scale(1.8) translateX(-15px) translateY(-8px);
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: 80%;
+  margin-top: 1%;
+  transition: all 0.35s ease;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin > i {
+  position: absolute;
+  top: -18%;
+  right: -14%;
+  color: rgb(202, 4, 4);
+  transform: scale(1);
+  padding: 2%;
+  margin-right: 5%;
+  transition: all 0.35s ease;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin > button {
+  padding: 1% 2%;
+  font-size: 0.6rem;
+  transform: scale(0.9);
+  transition: all 0.45s ease;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin > button:hover, .containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin > button:focus {
+  cursor: pointer;
+  transform: scale(0.8);
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin:hover, .containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin:focus {
+  cursor: pointer;
+}
+.containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin:hover > i, .containerOfLogin > .formOfRegisterOfCustomer > .containerButtonLogin:focus > i {
+  z-index: 20;
+  transform: scale(1.8) translateX(20px) translateY(8px);
+}
+.containerOfLogin > .containerNewCustormerRegister {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 30vw;
+  margin-top: 2%;
+}
+.containerOfLogin > .containerNewCustormerRegister > .headerFormRegisterNewCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 80%;
+  padding: 0.1% 2%;
+  margin: 0% auto;
+  margin-bottom: 2%;
+  margin-right: 3%;
+}
+.containerOfLogin > .containerNewCustormerRegister > .headerFormRegisterNewCustomer > .titleOfRegisterNewCustomer {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  padding: 0%;
+  margin: 0%;
+}
+.containerOfLogin > .containerNewCustormerRegister > .containerButtonCreateNewCustomer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: 14vw;
+}
+.containerOfLogin > .containerNewCustormerRegister > .containerButtonCreateNewCustomer > button {
+  width: 30vw;
+  margin-left: 2%;
+}
+
+/*# sourceMappingURL=registerOfCustomer.css.map */

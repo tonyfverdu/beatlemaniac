@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/*   ////////////////////////////////////////       */
+.contUserRegistered {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: auto;
+  padding: 0%;
+  margin: 0% auto;
+  margin-bottom: 1%;
+  background-image: url("../../images/theBeatles/beatlescentral.png"), url("../../images/theBeatles/Avatar/beatleArt18.jpg");
+  background-size: 40%;
+  background-position: -15% 40%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(3, 3, 3, 0.93) 16%, rgba(3, 3, 3, 0.2) 36%, rgba(3, 3, 3, 0.93)), url("../../images/theBeatles/Avatar/beatleArt18.jpg");
+  background-color: rgba(3, 3, 3, 0.93);
+}
+.contUserRegistered > .headerTitelRegister {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  background: rgba(5, 247, 5, 0.3);
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px 2px rgb(184, 255, 134), inset 6px 6px 12px 0px #03fb03, 0px 1px 3px 3px #99f0b6;
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(70, 125, 75, 0.68);
+  width: 54%;
+  padding: 0.5% 2%;
+  margin: 1% auto;
+  margin-bottom: 0.8%;
+}
+.contUserRegistered > .headerTitelRegister > .titelFormularRegisterCustomer {
+  color: rgb(246, 240, 240);
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 0% auto;
+  text-shadow: -4px -3px 4px rgba(39, 253, 39, 0.3), 2px 3px 4px rgba(39, 246, 39, 0.3);
+}
+.contUserRegistered > .contDataRegisterd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  border-radius: 6px;
+  width: 54%;
+  margin: 0% auto;
+  padding: 0.3%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0% 2%;
+  margin: 0% auto;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  border-radius: 12px;
+  background-color: rgb(224, 229, 236);
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  border: none;
+  border-radius: 6px;
+  width: 20rem;
+  position: absolute;
+  top: 6%;
+  right: 3%;
+  z-index: 20;
+  padding: 1% auto;
+  margin: 1% auto;
+  transition: all 0.35s ease;
+  animation: changeFilter 3s ease infinite;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin:hover, .contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin:focus {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(128, 131, 134);
+  box-shadow: rgba(72, 77, 87, 0.5) 6px 6px 8px 3px, rgb(180, 180, 180) -6px -6px 8px 3px;
+  transform: scale(0.96);
+  border-radius: 6px;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin:hover > .messageLogin, .contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin:focus > .messageLogin {
+  color: rgb(250, 29, 29);
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin > .figureLogoBeatles {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  width: auto;
+  height: 3rem;
+  margin: 1%;
+  margin-right: 4%;
+  padding: 0%;
+  overflow: hidden;
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin > .figureLogoBeatles > .logoBeatles {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  width: 4rem;
+  height: 2rem;
+  object-fit: cover;
+  object-position: center;
+  background-color: white;
+  animation: transitionImage 6s ease-out forwards;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .contMessageLogin > .messageLogin {
+  position: relative;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(207, 35, 35, 0.9);
+  margin: 1% 2%;
+  padding: 1%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .headerSubtitelTitelRegister {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0.5% auto;
+  margin: 0%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .headerSubtitelTitelRegister > .subtitelRegisterd {
+  color: rgb(9, 9, 9);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 3% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  margin: 0%;
+  padding: 0%;
+  text-shadow: -9px -4px 4px rgba(0, 0, 0, 0.39), 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0% auto;
+  padding: 0.3%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0.5% auto;
+  padding: 0%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .figureAvatar {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  width: 10rem;
+  height: 10rem;
+  margin: 2%;
+  margin-bottom: 1%;
+  padding: 0%;
+  border-radius: 50%;
+  box-shadow: rgba(163, 177, 198, 0.5) 4px 4px 6px 0px, rgb(255, 255, 255) -4px -4px 6px 0px;
+  animation: changeFilter 3s ease infinite;
+  background-color: rgb(231, 230, 230);
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .figureAvatar > .imgAvatar {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  image-rendering: optimizeSpeed;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+  background-color: white;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  padding: 0% auto;
+  margin: 0%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 2%;
+  width: 98%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #treament {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 10%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #name {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 70%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #age {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 10%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #id {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 39%;
+  margin-left: 28%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #regData {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 50%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #phone {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 28%;
+  width: 30%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #email {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 30%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #street {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 62%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #n° {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 10%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #postCode {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 20%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #city {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 24.5%;
+  width: 30%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #state {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 30%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #country {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 30%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #typePay {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 30%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #holder {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 60%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #cardNumber {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 23.5%;
+  width: 50%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .contOfDataPers > .contRowData > #dateExp {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 40%;
+}
+.contUserRegistered > .contDataRegisterd > .contComponentsData > .sectionDataRegisterd > .contData > .contPersonalData > .firstPersonalData {
+  margin-top: 10%;
+}
+
+.containerButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  width: 30%;
+  bottom: -14.6%;
+  right: 3%;
+  position: absolute;
+}
+.containerButtons > button {
+  width: 16vw;
+}
+.containerButtons > button:first-child {
+  margin-left: 5%;
+}
+
+@keyframes changeFilter {
+  0% {
+    box-shadow: rgba(122, 196, 120, 0.5) 4px 4px 6px 0px, rgb(225, 246, 216) -4px -4px 6px 0px;
+  }
+  20% {
+    box-shadow: rgba(66, 184, 62, 0.5) 6px 6px 8px 0px, rgb(208, 251, 189) -6px -6px 8px 0px;
+  }
+  40% {
+    box-shadow: rgba(17, 184, 11, 0.5) 8px 8px 12px 0px, rgb(179, 209, 166) -8px -6px 12px 0px;
+  }
+  60% {
+    box-shadow: rgba(66, 184, 62, 0.5) 3px 6px 10px 0px, rgb(208, 251, 189) -3px -6px 10px 0px;
+  }
+  80% {
+    box-shadow: rgba(66, 184, 62, 0.5) 5px 5px 8px 0px, rgb(208, 251, 189) -5px -5px 8px 0px;
+  }
+  100% {
+    box-shadow: rgba(122, 196, 120, 0.5) 4px 4px 6px 0px, rgb(225, 246, 216) -4px -4px 6px 0px;
+  }
+}
+@keyframes transitionImage {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=CustomerRegistered.css.map */

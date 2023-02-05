@@ -1,0 +1,177 @@
+@use './layouts' as l;
+@use './myvariables' as v;
+@use './designElement' as d;
+@use './neumorphismus' as n;
+
+
+.containerLogos {
+  @include l.layoutFlexboxRowCenter;
+  justify-content: space-between;
+  position: absolute;
+  top: 0%;
+  left: 2%;
+  width: 16%;
+  z-index: 10;
+
+  &>.MERNFigure {
+    @include d.figure;
+    border-radius: 0%;
+    margin: 0% 2.5%;
+    padding: 0%;
+    background-color: transparent;
+
+    &>.imageLogo {
+      @include d.imageGenerall;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin: 0% 2%;
+    }
+  }
+}
+
+.containerApp {
+  @include l.layoutFlexboxColumCenter;
+  width: 100%;
+  height: auto;
+  border-radius: 0%;
+  margin: 0% auto;
+  overflow: hidden;
+
+  background-color: v.$backgroundColorBlack;
+
+  &>.contIconExit {
+    @include l.layoutFlexboxRowCenter;
+    @include n.teclaNeumorphismus1;
+    width: 1.8rem;
+    height: 1.8rem;
+    z-index: 20;
+    position: absolute;
+    top: 0.6%;
+    right: 0.3%;
+    border-radius: 3px;
+    color: v.$colorRedNeuDunkel3;
+    transition: all ease 0.45s;
+
+    &:hover, &:focus {
+      color: v.$colorRedNew;
+      @include n.teclaNeumorphismus1Hover;
+      border-radius: 3px;
+      transform: scale(0.85);
+    }
+
+    &>i {
+      z-index: 20;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+  }
+
+  &>.header-Principal {
+    @include l.layoutFlexboxRowCenter;
+    height: 10vh;
+    padding: 1% auto;
+    margin-bottom: 0%;
+    background-color: v.$colorbackgroudneuOrange;
+    overflow: hidden;
+
+    &>h2 {
+      @include d.desig_H_element (v.$colorTextIni, 2.3rem);
+      position: relative;
+      margin: 0% auto;
+      padding: 0%;
+    }
+  }
+}
+
+.containerMain {
+  @include l.layoutFlexboxColumCenter;
+  width: 100vw;
+  height: auto;
+  background: black;
+}
+
+.containerFooter {
+  @include l.layoutFlexboxRowCenter;
+  height: auto;
+}
+
+@keyframes App-logo-move {
+  0% {
+    transform: rotate(0deg) translateX(0px) scale(2) translateY(0px);
+    border-radius: 50%;
+  }
+
+  15% {
+    transform: rotate(-15deg) translateX(-20px) scale(2.2) translateY(-5px);
+  }
+
+  25% {
+    transform: rotate(15deg) translateX(20px) scale(2.4) translateY(5px);
+  }
+
+  50% {
+    transform: rotate(-15deg) translateX(-40px) scale(2.6) translateY(0px);
+  }
+
+  75% {
+    transform: rotate(15deg) translateX(40px) scale(2.4) translateY(-5px);
+  }
+
+  90% {
+    transform: rotate(-15deg) translateX(-20px) scale(2.2) translateY(5px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0px) scale(2) translateY(0px);
+    border-radius: 50%;
+  }
+}
+
+@keyframes changeColor {
+
+  0% {
+    color: v.$colorHell;
+  }
+
+  10% {
+    color: v.$colorHell0;
+  }
+
+  20% {
+    color: v.$colorHell1;
+  }
+
+  30% {
+    color: v.$colorHell2;
+  }
+
+  40% {
+    color: v.$colorHell3;
+  }
+
+  50% {
+    color: v.$colorHell4;
+  }
+
+  60% {
+    color: v.$colorHell5;
+  }
+
+  70% {
+    color: v.$colorHell6;
+  }
+
+  80% {
+    color: v.$colorHell7;
+  }
+
+  90% {
+    color: v.$colorHell8;
+  }
+
+  100% {
+    color: v.$colorHell9;
+  }
+}

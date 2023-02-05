@@ -1,0 +1,161 @@
+@use '../../layouts' as l;
+@use '../../myvariables' as v;
+@use '../../designElement' as d;
+@use '../../neumorphismus' as n;
+@use '../../glassMorphismus' as g;
+
+.contCategoryDataEdited {
+  @include l.layoutFlexboxColumCenter;
+  @include n.neuMorphismus5;
+  align-items: flex-start;
+  margin: 1% auto;
+  border-radius: 3px;
+
+  &>.headerDataGeneral {
+    @include d.desigHeader (transparent);
+    @include l.layoutFlexboxRowCenter;
+    justify-content: flex-start;
+    width: 50%;
+    height: auto;
+    padding: 1% auto;
+    margin: 2%;
+    margin-bottom: 1%;
+
+    &>.titleDataGeneral {
+      @include d.desig_H_element (v.$colorTextIni, 1rem);
+      font-weight: bolder;
+      margin: 0%;
+      margin-bottom: 2.5%;
+      padding: 0%;
+      text-shadow: v.$textShadow2;
+    }
+  }
+
+  &>.contRow {
+    @include l.layoutFlexboxRowCenter;
+    justify-content: space-between;
+    margin: 0% auto;
+    padding: 0%;
+
+    &>.contLIData {
+      @include l.layoutFlexboxRowCenter;
+      width: 100%;
+      padding: 0%;
+      margin: 0% auto;
+      margin-bottom: 0.8%;
+
+      &>.LI_OfDataRegister {
+        @include l.layoutFlexboxRowCenter;
+        justify-content: flex-start;
+        margin: 0% auto;
+        margin-left: 4%;
+
+        &>.titleOfLi {
+          @include l.layoutFlexboxRowCenter;
+          justify-content: flex-start;
+          @include d.configurationText1 (v.$colorTextIni, 0.8rem);
+          width: auto;
+          font-weight: 700;
+          padding: 0%;
+          margin: 0%;
+          margin-right: 4%;
+          border-radius: 0%;
+        }
+
+        &>.dataOfLi {
+          @include l.layoutFlexboxRowCenter;
+          @include g.GlassMorphismus1;
+          justify-content: flex-start;
+          background-color: v.$colorHell;
+          @include d.configurationText1 (v.$backgroundColorDunkelGray4, 0.8rem);
+          width: auto;
+          font-weight: normal;
+          padding: 1%;
+          margin: 0%;
+          border: none;
+          border-radius: 0%;
+        }
+      }
+
+      &>.treament {
+        @extend .LI_OfDataRegister;
+        margin-left: 4%;
+        margin-right: 2.5%;
+        width: 10%;
+      }
+      &>.anyName {
+        width: 30%;
+      }
+      &>.age {
+        width: 8%;
+      }
+      &>.phoneEmail {
+        width: 40%;
+        margin-right: 5%;
+
+        &:nth-child(2) {
+          margin-left: 7%;
+        }
+      }
+
+      &>.street {
+        width: 81%;
+      }
+      &>.numStreet {
+        width: 8%;
+      }
+      &>.city {
+        width: 24%;
+      }
+      &>.stateProv {
+        width: 34%;
+      }
+      &>.zipCode {
+        width: 19%;
+      }
+      &>.country {
+        width: 25%;
+        margin-right: 2%;
+      }
+
+      &>.card {
+        width: 28%;
+        border-radius: 0%;
+        margin-right: 1%;
+      }
+      &>.holder {
+        width: 34%;
+        margin-right: 1%;
+        margin-left: 0%;
+      }
+      &>.cardNumber {
+        width: 21%;
+        margin-right: 1%;
+        margin-left: 0%;
+
+        &>.titleOfLi {
+          width: 4.8rem;
+          font-size: 0.7rem;
+        }
+
+        &>.dataOfLi {
+          width: 100%;
+        }
+      }
+      &>.expData {
+        width: 24%;
+        margin-right: 1%;
+        margin-left: 0%;
+
+        &>.titleOfLi {
+          width: 4.8rem;
+          font-size: 0.7rem;
+          margin-left: 2%;
+        }
+        &>.dataOfLi {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
