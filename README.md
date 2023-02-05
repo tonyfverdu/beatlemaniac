@@ -5,8 +5,16 @@ project Beatlemania online-shop
 
 # Probe in Local
 
-1. In the directory "backend" run: npm server
+0. Fork it or clone the repo directly from here
+   git clone: https://github.com/tonyfverdu/beatlemaniac.git  (ja, ja, mit htpps ist besser)
 
-2.- In the directory "frontend" run: npm run dev and click url, 
+   Man musst nicth vergessen:  Install NPM packages:  npm install
+
+1. In the directory "backend" (with node) run: npm server  (logic!!)
+
+2.- In the directory "frontend" run: npm run dev (and click url ) (its vipe)
 
 3.-  http://localhost:3000/
+
+
+Ich glaube, dass ich ein container von Docker machen werde, automatich das Process zu machen !!
