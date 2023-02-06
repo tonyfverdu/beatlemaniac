@@ -21,8 +21,7 @@ function HomePlayer() {
   const [tokenSpotify, setTokenSpotify] = useState("")
   const [errors, setErrors] = useState([])
 
-  const { isLoggedin, setRecordsOfBeatles, isFunction, isPlaying,
-    songs, setSongs, currentSong, setCurrentSong,
+  const { isLoggedin, setRecordsOfBeatles, isFunction, isPlaying, currentSong, setCurrentSong,
     totalDuration, setTotalDuration, myCurrentTime, setMyCurrentTime, theVolume, theMuted,
     changeCurrentTime, songsReproductions, setSongsReproductions
   } = useContext(MyScoreContext)
@@ -76,10 +75,8 @@ function HomePlayer() {
 
   useEffect(() => {
     if (isPlaying) {
-      console.log('songsReproductions.reproductions:  ', songsReproductions.reproductions)
       setSongsReproductions([...songsReproductions, { song: currentSong, reproductions: songsReproductions.reproductions + 1 }])
     }
-    console.log('Que canciones son estas??? songs:  ', songsReproductions)
   }, [isPlaying])
 
   useEffect(() => {
@@ -98,10 +95,6 @@ function HomePlayer() {
     }
   }, [isPlaying])
 
-  // useEffect(() => {
-  //   audioElem.current.currentTime = myCurrentTime * 60
-  //   setMyCurrentTime(audioElem.current.currentTime / 60)
-  // }, [changeCurrentTime])
 
   function onPlaying() {
     setTotalDuration(audioElem.current.duration / 60) //  Duration in Minuten

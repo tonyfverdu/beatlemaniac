@@ -81,11 +81,12 @@ function CompLogin() {
     const { message, token, user } = response
 
     if (fetchDataOfUser.status === 200) {
+      uploadAvatar()
       setUserCustomer(user)
       setLoggedin(true)
       setNameOfUserLogin(user.firstName)
       console.log(`All Ok. ${message}`)
-      navigate('/player')
+      navigate('/player', { replace: false })
     } else {
       setLoggedin(false)
       console.error('all bad !!')

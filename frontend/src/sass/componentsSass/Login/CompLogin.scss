@@ -6,18 +6,26 @@
 
 .contLogin {
   @include l.layoutFlexboxColumCenter;
+  @include n.neuMorphismus3;
   justify-content: flex-start;
   height: 100%;
+  padding: 0%;
   margin: 0% auto;
+
 
   &>.containerLogin {
     @include l.layoutFlexboxColumCenter;
-    @include n.neuMorphismus4;
     justify-content: flex-start;
     height: 100%;
     margin: 0% auto;
     padding: 2%;
     border-radius: 0px 29px 29px 0px;
+    background-image: linear-gradient(to top, v.$backgroundColorDunkelBlack 16%, v.$backgroundColorDunkelBlackT 36%, 
+    v.$backgroundColorDunkelBlack), url(./src/images/theBeatles/B&W9.jpg);
+    background-repeat: no-repeat;
+    background-position: 12rem 16.5rem;
+    background-size: 60% 60%;
+    background-color: v.$backgroundColorDunkelBlack;
 
     &>.headerLoggin {
       @include l.layoutFlexboxColumCenter;
@@ -53,13 +61,13 @@
 
     &>.colorGreen {
       @include g.GlassMorphismus6;
-      padding: 0.5% 2%;
+      padding: 1.6% 3.6%;
       margin: 4% auto;
 
       &>.titleLogin {
-        @include d.desig_H_element (v.$colorTextIni, 2.1rem);
+        @include d.desig_H_element (v.$colorHell, 1.8rem);
         font-weight: bolder;
-        padding: 1%;
+        padding: 1.6% 2.4%;
         margin: 0% auto;
         text-shadow: g.$textShadowGlassMorphismusTextGreen;
       }
@@ -74,7 +82,7 @@
 
       &>.contDataLogIn {
         @include l.layoutFlexboxColumCenter;
-        @include n.neuMorphismus2;
+        @include n.neuMorphismus3;
         border-radius: 9px;
         height: auto;
         margin: 1% auto;
