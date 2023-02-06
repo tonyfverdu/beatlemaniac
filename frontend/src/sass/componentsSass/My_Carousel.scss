@@ -14,7 +14,6 @@
 
   &>.carrouselItem {
     @include l.layoutFlexboxRowCenter;
-    // @include g.GlassMorphismus1;
     width: 100vw;
     height: 20%;
     padding: 0%;
@@ -36,5 +35,5 @@
   @include d.desig_H_element (v.$colorHell0, 2.1rem);
   @include l.layoutFlexboxRowCenter;
   margin: 0% auto;
-  text-shadow: v.$textShadow1;
+  // text-shadow: v.$textShadow1;
 }
