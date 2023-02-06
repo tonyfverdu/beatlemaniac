@@ -111,8 +111,8 @@ function PlayerMusic({ audioElem }) {
 
   //  6.-  Search songs in album
   useEffect(() => {
-    searchElementInArrayByName(songsOfBeatles, currentSong.album[0])
-  }, [setCurrentSong])
+    setSongsInAlbum(searchElementInArrayByName(songsOfBeatles, currentSong.album[0]))
+  }, [currentSong])
 
   // 7.-  Function Change current song  (handlerSongPlay)
   function handlerSongPlay(parSong) {
