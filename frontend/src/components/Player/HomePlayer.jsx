@@ -21,10 +21,9 @@ function HomePlayer() {
   const [tokenSpotify, setTokenSpotify] = useState("")
   const [errors, setErrors] = useState([])
 
-  const { isLoggedin, setRecordsOfBeatles, isFunction, isPlaying, currentSong, setCurrentSong,
-    totalDuration, setTotalDuration, myCurrentTime, setMyCurrentTime, theVolume, theMuted,
-    changeCurrentTime, songsReproductions, setSongsReproductions
-  } = useContext(MyScoreContext)
+  const { isLoggedin, setRecordsOfBeatles, setSongsOfBeatles, isFunction, isPlaying, currentSong,
+    setTotalDuration, setMyCurrentTime, theVolume, theMuted,
+    songsReproductions, setSongsReproductions } = useContext(MyScoreContext)
 
   const audioElem = useRef()
 
@@ -52,9 +51,36 @@ function HomePlayer() {
       setErrors(['Etwas ist schief gelaufen'])
     }
   }
+  async function fecthOfSongs() {
+    const fetchDataSongs = await fetch('http://127.0.0.1:3001/songs', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+
+    const response = await fetchDataSongs.json()
+    const { message, songs } = response
+
+    if (response.status === 200) {
+      console.log('All OK:  ', message)
+      setSongsOfBeatles(songs)
+    } else if (response.status === 400) {
+      const result = await response.json()
+      for (const row of result.message) {
+        for (const key in row) {
+          errors.push(row[key])
+        }
+      }
+      setErrors(errors)
+    } else {
+      setErrors(['Etwas ist schief gelaufen'])
+    }
+  }
 
   useEffect(() => {
     fetchDataRecords()
+    fecthOfSongs()
   }, [])
 
   useEffect(() => {
@@ -95,11 +121,11 @@ function HomePlayer() {
     }
   }, [isPlaying])
 
-
   function onPlaying() {
     setTotalDuration(audioElem.current.duration / 60) //  Duration in Minuten
     setMyCurrentTime(audioElem.current.currentTime / 60) //  Duration played in Minuten
   }
+
 
   return (
     <>

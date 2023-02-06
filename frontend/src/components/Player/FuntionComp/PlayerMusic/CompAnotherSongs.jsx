@@ -11,7 +11,7 @@ function CompAnotherSongs({ another3Songs }) {
     setCurrentSong(parSong)
   }
 
-  if (another3Songs) {
+  if (another3Songs.length > 0) {
     return (
       <>
         {another3Songs.map(songSimilar => {

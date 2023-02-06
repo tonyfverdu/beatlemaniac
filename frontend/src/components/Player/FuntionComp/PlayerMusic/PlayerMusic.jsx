@@ -221,7 +221,7 @@ function PlayerMusic({ audioElem }) {
                 </div>
                 <div className="contlabelText">
                   <span className="titleLabelTR">Released:</span>
-                  <span className="InfoTR">{songsInAlbum[0].year}</span>
+                  <span className="InfoTR">{songsInAlbum.year}</span>
                 </div>
               </div>
               <div className="contSongs">

@@ -11,7 +11,7 @@ function CompShowSong() {
     yesLike: "You like it!",
     frageLike: "Are do you like it?"
   }
-  const { userCustomer, setUserCustomer, currentSong, setCurrentSong } = useContext(MyScoreContext)
+  const { userCustomer, setUserCustomer, currentSong } = useContext(MyScoreContext)
   const [errors, setErrors] = useState([])
   const [isLike, setIsLike] = useState(false)
   const [songDataToModify, setSongDataToModify] = useState(currentSong)
@@ -20,7 +20,7 @@ function CompShowSong() {
   const [itLiked, setItLiked] = useState(false)
 
   function includesSong(parArraySongs, parSongId) {
-    if (Array.isArray(parArraySongs) && typeof parSongId === 'string') {
+    if (Array.isArray(parArraySongs)) {
       const resultado = parArraySongs.includes(parSongId)
       // console.log('Incuye ya la cancion en el arrary de canciones que te gustan?  ', resultado)
       setItLiked(resultado)
@@ -33,14 +33,12 @@ function CompShowSong() {
 
   useEffect(() => {
     setSongDataToModify(currentSong)
-    includesSong(userCustomer.songsLikes, currentSong._id)
+    includesSong(userCustomer.songsLikes, currentSong)
     if (itLiked) {
       setIsLike(true)
     } else {
       setIsLike(false)
     }
-    // console.log('itLiked:  ', itLiked)
-    // console.log('isLike?:  ', isLike)
   }, [currentSong])
 
   useEffect(() => {
